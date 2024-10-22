@@ -1,31 +1,84 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using WorkManagementApp.Models;
+using TaskModel = WorkManagementApp.Models.Task;
+using WorkManagementApp.Repositories;
 
-[ApiController]
-[Route("api/[controller]")]
-public class TasksController : ControllerBase
+namespace WorkManagementApp.Controllers
 {
-    private readonly ApplicationDbContext _context;
-
-    public TasksController(ApplicationDbContext context)
+    [ApiController]
+    [Route("api/[controller]")]
+    public class TasksController : ControllerBase
     {
-        _context = context;
+        private readonly IRepository<TaskModel> _taskRepository;
+
+        public TasksController(IRepository<TaskModel> taskRepository)
+        {
+            _taskRepository = taskRepository;
+        }
+
+        // GET: api/tasks
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var tasks = await _taskRepository.GetAllAsync();
+            return Ok(tasks);
+        }
+
+        // GET: api/tasks/{id}
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var task = await _taskRepository.GetByIdAsync(id);
+            if (task == null)
+            {
+                return NotFound();
+            }
+            return Ok(task);
+        }
+
+        // POST: api/tasks
+        [HttpPost]
+        public async Task<IActionResult> Create([FromBody] TaskModel task)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            await _taskRepository.AddAsync(task);
+            return CreatedAtAction(nameof(GetById), new { id = task.Id }, task);
+        }
+
+        // PUT: api/tasks/{id}
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id, [FromBody] TaskModel updatedTask)
+        {
+            if (id != updatedTask.Id)
+            {
+                return BadRequest();
+            }
+
+            var task = await _taskRepository.GetByIdAsync(id);
+            if (task == null)
+            {
+                return NotFound();
+            }
+
+            await _taskRepository.UpdateAsync(updatedTask);
+            return NoContent();
+        }
+
+        // DELETE: api/tasks/{id}
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var task = await _taskRepository.GetByIdAsync(id);
+            if (task == null)
+            {
+                return NotFound();
+            }
+
+            await _taskRepository.DeleteAsync(id);
+            return NoContent();
+        }
     }
-
-    [HttpGet]
-    public async Task<ActionResult<IEnumerable<WorkManagementApp.Models.Task>>> GetTasks()
-    {
-        return await _context.Tasks.ToListAsync();
-    }
-
-    [HttpPost]
-    public async Task<ActionResult<WorkManagementApp.Models.Task>> PostTask(WorkManagementApp.Models.Task task)
-    {
-        _context.Tasks.Add(task);
-        await _context.SaveChangesAsync();
-
-        return CreatedAtAction(nameof(GetTasks), new { id = task.Id }, task);
-    }
-
 }
