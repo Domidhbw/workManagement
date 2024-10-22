@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\WorkManagementApp",
+    "\\WorkManagementApp\\WorkManagementApp",
+    "\\WorkManagementApp\\WorkManagementApp\\Migrations"
+  ],
+  "SelectedNode": "\\WorkManagementApp\\WorkManagementApp\\Migrations\\20241021154349_InitialCreate.cs",
+  "PreviewInSolutionExplorer": false
+}

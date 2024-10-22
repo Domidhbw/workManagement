@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iDosMToHQFZ+f5RFcBmwMeFWOq/jG+y81QNp9Mwv5QA=",
+  "Hash": "URIv6JdS5A5YBjIz9CaMj/QUfBdQP7YExWx4dd4+gSw=",
   "Source": "WorkManagementApp",
   "BasePath": "_content/WorkManagementApp",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "WorkManagementApp\\wwwroot",
       "Source": "WorkManagementApp",
-      "ContentRoot": "C:\\Users\\wn00226592\\source\\repos\\WorkManagementApp\\WorkManagementApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\wn00226592\\Source\\Repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\",
       "BasePath": "_content/WorkManagementApp",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\wn00226592\\source\\repos\\WorkManagementApp\\WorkManagementApp\\wwwroot\\css\\style.css",
+      "Identity": "C:\\Users\\wn00226592\\Source\\Repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\css\\style.css",
       "SourceId": "WorkManagementApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\wn00226592\\source\\repos\\WorkManagementApp\\WorkManagementApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\wn00226592\\Source\\Repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\",
       "BasePath": "_content/WorkManagementApp",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "C:\\Users\\wn00226592\\source\\repos\\WorkManagementApp\\WorkManagementApp\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\wn00226592\\Source\\Repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\index.html",
       "SourceId": "WorkManagementApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\wn00226592\\source\\repos\\WorkManagementApp\\WorkManagementApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\wn00226592\\Source\\Repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\",
       "BasePath": "_content/WorkManagementApp",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\wn00226592\\source\\repos\\WorkManagementApp\\WorkManagementApp\\wwwroot\\js\\app.js",
+      "Identity": "C:\\Users\\wn00226592\\Source\\Repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\js\\app.js",
       "SourceId": "WorkManagementApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\wn00226592\\source\\repos\\WorkManagementApp\\WorkManagementApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\wn00226592\\Source\\Repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\",
       "BasePath": "_content/WorkManagementApp",
       "RelativePath": "js/app.js",
       "AssetKind": "All",

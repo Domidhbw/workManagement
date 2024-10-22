@@ -1,4 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using TaskModel = WorkManagementApp.Models.Task;
+using WorkManagementApp.Repositories;
+using WorkManagementApp.Models;
 namespace WorkManagementApp
 {
     public class Program
@@ -9,6 +12,10 @@ namespace WorkManagementApp
 
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+           
+            builder.Services.AddScoped<IRepository<TaskModel>, TaskRepository>();
+            builder.Services.AddScoped<IRepository<Project>, ProjectRepository>();
+            builder.Services.AddScoped<IRepository<User>, UserRepository>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
