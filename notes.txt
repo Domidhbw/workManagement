@@ -1,0 +1,108 @@
+
+Für die User müssen ganz Wichtig Firmen bestehen sowie Gruppen und in den gruppen Hirachien
+
+
+Im Background wird ein Object gebraucht was eine Aufgabe darstellt
+Ansicht aller Projekte:
+    - je nach anzahl zugewissener Projekte kann man x anzahl sehen
+    - Jedes Projekt hat fortschritt Calculiert durch Aufgaben
+        - Wie groß aufgabe so viel px vervollständigt sich die Progress Bar 
+            - Grün wenn alle Deadlines eingehalten sind
+            - Gelb wenn nur 30 bis 50 prozent nicht eingehalten werden
+            - Rot wenn mehr als 50 nicht eingehalten werden
+    - Wenn aufgaben oder Projekte über der Deadline sind rechts angezeigt nochmal
+    - Mail subscription auf aufgaben möglich 
+        - bei Projekt subscription über das Projekt und alle aufgaben oder nur über Projekt
+    - Instant mail wenn man einer Aufgabe oder Projekt zugewissen wird
+    - Bei Deadlines e-mail notifikation x tage vorher
+        - Prozentual über die Größe der Aufgabe oder Projekt definiert eg. wenn nur noch Prozentual gesehen 10 % der Tage übrig sind dann mail (bei 100 Tagen dauer 10 tage vorher)
+
+
+Projekt enthält Aufgaben:
+    - Daten eg. Wann wurde erstellt, wann wurde welcher Status verändert
+        - eine Möglichkeit die Daten zu Planen eg. Deadlines
+        - Wann kam welche Aufgabe dazu
+    - Aufwand wird über die Aufgaben ermittelt
+    - Anderer Zugriff als Aufgaben selber
+        - Projet Zugewisene können alle Aufgaben sehen 
+        - Jemand der eine Aufgabe im Projekt hat kann aber nicht automatisch alle Aufgaben des Projekts sehen
+
+Aufgabe:
+    - Diese Aufgabe enthält die Beschreibung
+    - Einen Arbeitsaufwand
+    - Eine Zugewisene Person
+    - Daten eg. Wann wurde erstellt, wann wurde welcher Status verändert
+        - eine Möglichkeit die Daten zu Planen eg. Deadlines
+    - Zugriffs berechtigungen
+        - Welche Personen dürfen Sehen, Bearbeiten
+    - Felder für Kommentare 
+    - Einen Status eg. Offen, In plannung, In Bearbeitung, Testing, Erledigt
+    
+Kommentar:
+    - Von wem ist der Kommentar
+    - Text zum Kommentar
+    - Kann selber weitere Kommentare haben 
+
+Kann man Bilder oder auch .mp4 dateien vielleicht einer Aufgabe oder Kommentar anhängen
+
+Ein server handelt alles
+Frontend sendet an Server den Nutzer: Server sendet alles zurück auf was er zugriff hat
+Damit rendert dann frontend 
+Es muss möglich sein nur Aufgaben zugesendet zu bekommen und die dann anzuzeigen unter dem Projekt
+Aber server darf andere Aufgaben unter dem Projekt nicht mitschicken
+
+Damit hat man einmal lade zeit beim aufrufen
+
+Wenn man ein Projekt erstellt oder einen Kommentar hinterlässt wird das an den Server gesendet der dann updated
+Als user kann man manuel reloaden und erhält dann updates wenn es auch updates gibt eg. server muss für jeden Nutzer Tracken ob es bei seiner Aufgabe ein Update gibt
+
+Es ist wichtig mit subscriptions und notifikations zu arbeiten sonst muss der server konstant alles loopen und checken
+
+Für die UI:
+
+Landing Page mit Login 
+    - Feld für username
+    - Feld für Password
+    - Button für Login oder Register
+        - Bei Register überprüfung ob user existiert, dementsprechendes feedback
+        - Ansonsten anlegen, das eingegebene password wird gehased und an server gesendet
+
+        - Bei Login wird das Password gehased und mit username an server gesendet, dementsprechendes feedback
+    - Wenn geladen wird muss der Server mitschicken wann fertig ist - es gibt es zwei überegungen
+    - Es kommt auch ganz darauf an wie lange die LadeZeit am ende wirklich ist
+        - Die erste ist die Ui zu laden und dann den hinhalt nachzuladen: Beispiel yt
+        - Oder lade Screen und dann gesamt anzeigen 
+
+    - ein wenig einen Style von VSCode haben?
+    - Links 
+        - eine Spalte wo unten Settings sind        oben vielleicht suche/explorer     
+        - Settings: Dark Mode sowie Light Mode und Password-Name ändern
+        - Überelgung ob man einen "Explorer" Bereistellen möchte mit einer Such Funktion eg. "word wird gemacht von" Daraufin alle Aufgaben anzeigen die dieses Schlagwort in einem Kommentar haben 
+        - ein Plus Button um ein Projekt hinzuzufügen oder Aufgabe
+        - Button der zu zugewissene Aufgaben leitet also alle aufgaben ansicht aber schon gefiltert nach user
+        - Button der zu zugewissene Projekte leitet also alle Projekte ansicht aber schon gefiltern nach user
+        - Back Home Button 
+    - Mitte 
+        -Alle Projekte Ansicht
+            - Spalten je nach Status
+            - In der Spalte alle Projekte eg. ProjektName, Zugewissene Person, Aufwand, Progress, Deadline, Anzahl der Zugewisenen Aufgaben
+            - Filter Bar/vielleicht hier sogar suche oder Filter bei such Button
+                - Nach Grün Gelb Rot, zugewissene Person, aufwand etc.
+            - Klick auf Projekt öffnet ein Projekt Ansicht
+        - Ein Projekt Ansicht
+            - Eine gleiche Ansicht wie Alle Projekte aber mit allen Aufgaben die im Projekt sind
+            - Anischt der Aufgaben nach Status
+            - Aufgabe zeigt zugeordente Person etc.
+            - rechts
+                - Bei alle Aufgaben ansicht sieht man hier einen Chat der alle Kommentare sozusagen repräsentiert über das Gesamt Projekt
+        - Sicht eine Aufgabe
+            - es öffnet sich eine Ansicht die nur die Einzelne Aufgabe zeigt
+            -rechts
+                - sind die kommentare abgebildet
+            -Mitte ist die Aufgabe beschrieben
+            -Oben Titel etc
+            -Links standard bar 
+            
+
+
+
