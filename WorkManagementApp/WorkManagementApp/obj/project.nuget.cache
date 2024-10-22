@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eqbSvfoYSp8=",
+  "dgSpecHash": "+L5dnchpNxg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\wn00226592\\source\\repos\\WorkManagementApp\\WorkManagementApp\\WorkManagementApp.csproj",
+  "projectFilePath": "C:\\Users\\wn00226592\\Source\\Repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\WorkManagementApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wn00226592\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\wn00226592\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

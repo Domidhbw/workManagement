@@ -110,8 +110,7 @@
               "RelativeToolTip": "WorkManagementApp\\Migrations\\20241022072500_AddTaskCommentTable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T08:12:41.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T08:12:41.085Z"
             },
             {
               "$type": "Document",
@@ -123,8 +122,7 @@
               "RelativeToolTip": "WorkManagementApp\\Migrations\\20241022073154_addTaskUserProjects.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T08:12:39.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T08:12:39.876Z"
             },
             {
               "$type": "Document",
@@ -134,7 +132,7 @@
               "RelativeDocumentMoniker": "WorkManagementApp\\Migrations\\20241021154349_InitialCreate.cs",
               "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\WorkManagementApp\\WorkManagementApp\\Migrations\\20241021154349_InitialCreate.cs",
               "RelativeToolTip": "WorkManagementApp\\Migrations\\20241021154349_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T08:12:34.34Z",
               "EditorCaption": ""
@@ -161,8 +159,7 @@
               "RelativeToolTip": "WorkManagementApp\\Models\\Project.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T06:45:03.817Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T06:45:03.817Z"
             },
             {
               "$type": "Document",
@@ -186,8 +183,7 @@
               "RelativeToolTip": "WorkManagementApp\\Migrations\\ApplicationDbContextModelSnapshot.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T15:45:16.37Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T15:45:16.37Z"
             },
             {
               "$type": "Document",
@@ -223,8 +219,7 @@
               "RelativeToolTip": "WorkManagementApp\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T15:02:21.017Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T15:02:21.017Z"
             },
             {
               "$type": "Document",
