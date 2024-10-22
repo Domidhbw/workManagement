@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "iDosMToHQFZ+f5RFcBmwMeFWOq/jG+y81QNp9Mwv5QA=",
+  "Source": "WorkManagementApp",
+  "BasePath": "_content/WorkManagementApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WorkManagementApp\\wwwroot",
+      "Source": "WorkManagementApp",
+      "ContentRoot": "C:\\Users\\wn00226592\\source\\repos\\WorkManagementApp\\WorkManagementApp\\wwwroot\\",
+      "BasePath": "_content/WorkManagementApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\wn00226592\\source\\repos\\WorkManagementApp\\WorkManagementApp\\wwwroot\\css\\style.css",
+      "SourceId": "WorkManagementApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\wn00226592\\source\\repos\\WorkManagementApp\\WorkManagementApp\\wwwroot\\",
+      "BasePath": "_content/WorkManagementApp",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\wn00226592\\source\\repos\\WorkManagementApp\\WorkManagementApp\\wwwroot\\index.html",
+      "SourceId": "WorkManagementApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\wn00226592\\source\\repos\\WorkManagementApp\\WorkManagementApp\\wwwroot\\",
+      "BasePath": "_content/WorkManagementApp",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\wn00226592\\source\\repos\\WorkManagementApp\\WorkManagementApp\\wwwroot\\js\\app.js",
+      "SourceId": "WorkManagementApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\wn00226592\\source\\repos\\WorkManagementApp\\WorkManagementApp\\wwwroot\\",
+      "BasePath": "_content/WorkManagementApp",
+      "RelativePath": "js/app.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\app.js"
+    }
+  ]
+}
