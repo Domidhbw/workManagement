@@ -3,8 +3,9 @@
     "",
     "\\WorkManagementApp",
     "\\WorkManagementApp\\WorkManagementApp",
-    "\\WorkManagementApp\\WorkManagementApp\\Migrations"
+    "\\WorkManagementApp\\WorkManagementApp\\Controllers",
+    "\\WorkManagementApp\\WorkManagementApp\\Services"
   ],
-  "SelectedNode": "\\WorkManagementApp\\WorkManagementApp\\Migrations\\20241021154349_InitialCreate.cs",
+  "SelectedNode": "\\WorkManagementApp\\WorkManagementApp\\Controllers\\TasksController.cs",
   "PreviewInSolutionExplorer": false
 }
