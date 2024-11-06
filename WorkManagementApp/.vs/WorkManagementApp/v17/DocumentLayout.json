@@ -110,9 +110,9 @@
               "Title": "ITaskService.cs",
               "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Services\\ITaskService.cs",
               "RelativeDocumentMoniker": "WorkManagementApp\\Services\\ITaskService.cs",
-              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Services\\ITaskService.cs*",
-              "RelativeToolTip": "WorkManagementApp\\Services\\ITaskService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Services\\ITaskService.cs",
+              "RelativeToolTip": "WorkManagementApp\\Services\\ITaskService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T12:23:51.053Z",
               "EditorCaption": ""
@@ -127,8 +127,7 @@
               "RelativeToolTip": "WorkManagementApp\\Services\\TaskService.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAYwCQAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T12:22:47.287Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T12:22:47.287Z"
             },
             {
               "$type": "Document",
@@ -212,8 +211,7 @@
               "RelativeToolTip": "WorkManagementApp\\Controllers\\TasksController.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAQwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T15:26:23.861Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T15:26:23.861Z"
             },
             {
               "$type": "Document",
