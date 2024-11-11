@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using ProjectModel = WorkManagementApp.Models.Project;
 
-namespace WorkManagementApp.Services
+namespace WorkManagementApp.Services.Projects
 {
     public interface IProjectService
     {

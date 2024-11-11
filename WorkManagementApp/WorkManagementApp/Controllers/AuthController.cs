@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WorkManagementApp.DTOs;
 using WorkManagementApp.Models;
-using WorkManagementApp.Services;
 using Microsoft.AspNetCore.Identity;
 using System.Threading.Tasks;
+using WorkManagementApp.Services.Authentification;
 
 namespace WorkManagementApp.Controllers
 {
@@ -35,7 +35,7 @@ namespace WorkManagementApp.Controllers
                 Email = model.Email
             };
 
-            var result = await _userService.RegisterUserAsync(user, model.Password);
+            var result = await _userService.RegisterUserAsync(user, model.Password, model.Role);
             if (result == null)
             {
                 return BadRequest("Benutzer konnte nicht erstellt werden.");

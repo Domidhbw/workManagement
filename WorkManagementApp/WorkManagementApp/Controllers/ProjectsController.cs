@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WorkManagementApp.Models;
-using WorkManagementApp.Services;
+using WorkManagementApp.Services.Projects;
 
 namespace WorkManagementApp.Controllers
 {
@@ -8,9 +8,9 @@ namespace WorkManagementApp.Controllers
     [Route("api/[controller]")]
     public class ProjectsController : ControllerBase
     {
-        private readonly ProjectService _projectService;
+        private readonly IProjectService _projectService;
 
-        public ProjectsController(ProjectService projectService)
+        public ProjectsController(IProjectService projectService)
         {
             _projectService = projectService;
         }

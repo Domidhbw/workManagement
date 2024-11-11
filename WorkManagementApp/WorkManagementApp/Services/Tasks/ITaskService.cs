@@ -1,6 +1,6 @@
 ﻿using TaskModel = WorkManagementApp.Models.Task;
 
-namespace WorkManagementApp.Services
+namespace WorkManagementApp.Services.Tasks
 {
     public interface ITaskService
     {

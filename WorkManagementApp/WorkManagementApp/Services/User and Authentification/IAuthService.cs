@@ -5,7 +5,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WorkManagementApp.Services
+namespace WorkManagementApp.Services.Authentification
 {
     public interface IAuthService
     {

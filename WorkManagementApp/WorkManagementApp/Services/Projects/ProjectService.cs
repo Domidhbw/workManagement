@@ -6,7 +6,7 @@ using Task = System.Threading.Tasks.Task;
 
 
 
-namespace WorkManagementApp.Services
+namespace WorkManagementApp.Services.Projects
 {
     public class ProjectService : IProjectService
     {

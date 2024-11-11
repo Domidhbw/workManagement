@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TaskModel = WorkManagementApp.Models.Task;
 using WorkManagementApp.Repositories;
+using WorkManagementApp.Services.Tasks;
 
 namespace WorkManagementApp.Controllers
 {
@@ -8,18 +9,18 @@ namespace WorkManagementApp.Controllers
     [Route("api/[controller]")]
     public class TasksController : ControllerBase
     {
-        private readonly IRepository<TaskModel> _taskRepository;
+        private readonly ITaskService _taskService;
 
-        public TasksController(IRepository<TaskModel> taskRepository)
+        public TasksController(ITaskService taskService)
         {
-            _taskRepository = taskRepository;
+            _taskService = taskService;
         }
 
         // GET: api/tasks
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var tasks = await _taskRepository.GetAllAsync();
+            var tasks = await _taskService.GetAllTasksAsync();
             return Ok(tasks);
         }
 
@@ -27,7 +28,7 @@ namespace WorkManagementApp.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var task = await _taskRepository.GetByIdAsync(id);
+            var task = await _taskService.GetTaskByIdAsync(id);
             if (task == null)
             {
                 return NotFound();
@@ -44,7 +45,7 @@ namespace WorkManagementApp.Controllers
                 return BadRequest(ModelState);
             }
 
-            await _taskRepository.AddAsync(task);
+            await _taskService.CreateTaskAsync(task);
             return CreatedAtAction(nameof(GetById), new { id = task.Id }, task);
         }
 
@@ -57,13 +58,13 @@ namespace WorkManagementApp.Controllers
                 return BadRequest();
             }
 
-            var task = await _taskRepository.GetByIdAsync(id);
+            var task = await _taskService.GetTaskByIdAsync(id);
             if (task == null)
             {
                 return NotFound();
             }
 
-            await _taskRepository.UpdateAsync(updatedTask);
+            await _taskService.UpdateTaskAsync(updatedTask);
             return NoContent();
         }
 
@@ -71,13 +72,13 @@ namespace WorkManagementApp.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var task = await _taskRepository.GetByIdAsync(id);
+            var task = await _taskService.GetTaskByIdAsync(id);
             if (task == null)
             {
                 return NotFound();
             }
 
-            await _taskRepository.DeleteAsync(id);
+            await _taskService.DeleteTaskAsync(id);
             return NoContent();
         }
     }
