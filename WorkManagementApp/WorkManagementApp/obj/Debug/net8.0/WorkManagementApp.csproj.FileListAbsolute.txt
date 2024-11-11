@@ -267,3 +267,14 @@ C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagement
 C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\obj\Debug\net8.0\WorkManagementApp.pdb
 C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\obj\Debug\net8.0\WorkManagementApp.genruntimeconfig.cache
 C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\obj\Debug\net8.0\ref\WorkManagementApp.dll
+C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
+C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll

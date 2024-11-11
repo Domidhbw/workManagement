@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WorkManagementApp.Models;
-using WorkManagementApp.Repositories;
+using WorkManagementApp.Services;
 
 namespace WorkManagementApp.Controllers
 {
@@ -8,18 +8,18 @@ namespace WorkManagementApp.Controllers
     [Route("api/[controller]")]
     public class ProjectsController : ControllerBase
     {
-        private readonly IRepository<Project> _projectRepository;
+        private readonly ProjectService _projectService;
 
-        public ProjectsController(IRepository<Project> projectRepository)
+        public ProjectsController(ProjectService projectService)
         {
-            _projectRepository = projectRepository;
+            _projectService = projectService;
         }
 
         // GET: api/projects
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var projects = await _projectRepository.GetAllAsync();
+            var projects = await _projectService.GetAllProjectsAsync();
             return Ok(projects);
         }
 
@@ -27,7 +27,7 @@ namespace WorkManagementApp.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var project = await _projectRepository.GetByIdAsync(id);
+            var project = await _projectService.GetProjectByIdAsync(id);
             if (project == null)
             {
                 return NotFound();
@@ -44,8 +44,8 @@ namespace WorkManagementApp.Controllers
                 return BadRequest(ModelState);
             }
 
-            await _projectRepository.AddAsync(project);
-            return CreatedAtAction(nameof(GetById), new { id = project.Id }, project);
+            await _projectService.CreateProjectAsync(project);
+            return Ok();
         }
 
         // PUT: api/projects/{id}
@@ -57,13 +57,15 @@ namespace WorkManagementApp.Controllers
                 return BadRequest();
             }
 
-            var project = await _projectRepository.GetByIdAsync(id);
-            if (project == null)
+            try
+            {
+                await _projectService.UpdateProjectAsync(updatedProject);
+            }
+            catch (KeyNotFoundException)
             {
                 return NotFound();
             }
 
-            await _projectRepository.UpdateAsync(updatedProject);
             return NoContent();
         }
 
@@ -71,13 +73,15 @@ namespace WorkManagementApp.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var project = await _projectRepository.GetByIdAsync(id);
-            if (project == null)
+            try
+            {
+                await _projectService.DeleteProjectAsync(id);
+            }
+            catch (KeyNotFoundException)
             {
                 return NotFound();
             }
 
-            await _projectRepository.DeleteAsync(id);
             return NoContent();
         }
     }

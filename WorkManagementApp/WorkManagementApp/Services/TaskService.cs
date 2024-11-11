@@ -22,7 +22,7 @@ namespace WorkManagementApp.Services
             return await _taskRepository.GetByIdAsync(id);
         }
 
-        public async Task AddTaskAsync(TaskModel task)
+        public async Task CreateTaskAsync(TaskModel task)
         {
             await _taskRepository.AddAsync(task);
         }

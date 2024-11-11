@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using WorkManagementApp.Models;
+using System.Threading.Tasks;
+using System.Linq;
 using Task = System.Threading.Tasks.Task;
 
 namespace WorkManagementApp.Repositories
@@ -29,7 +31,6 @@ namespace WorkManagementApp.Repositories
                 .FirstOrDefaultAsync(p => p.Id == id);
         }
 
-
         public async Task AddAsync(Project project)
         {
             await _context.Projects.AddAsync(project);
@@ -51,6 +52,11 @@ namespace WorkManagementApp.Repositories
                 await _context.SaveChangesAsync();
             }
         }
-    }
 
+        // Überprüft, ob ein Projekt mit der angegebenen ID existiert
+        public async Task<bool> ExistsAsync(int id)
+        {
+            return await _context.Projects.AnyAsync(p => p.Id == id);
+        }
+    }
 }

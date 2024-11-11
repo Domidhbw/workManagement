@@ -1,33 +1,65 @@
-﻿using WorkManagementApp.Models;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using WorkManagementApp.Models;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Task = System.Threading.Tasks.Task;
 
 namespace WorkManagementApp.Repositories
 {
     public class UserRepository : IRepository<User>
     {
-        public Task AddAsync(User entity)
+        private readonly ApplicationDbContext _context;
+        private readonly UserManager<User> _userManager;
+
+        public UserRepository(ApplicationDbContext context, UserManager<User> userManager)
         {
-            throw new NotImplementedException();
+            _context = context;
+            _userManager = userManager;
         }
 
-        public Task DeleteAsync(int id)
+        public async Task<User> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _context.Users.FindAsync(id); // Keine Änderung notwendig
         }
 
-        public Task<IEnumerable<User>> GetAllAsync()
+        public async Task<IEnumerable<User>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            return await _context.Users.ToListAsync(); // Keine Änderung notwendig
         }
 
-        public Task<User> GetByIdAsync(int id)
+        public async Task AddAsync(User user)
         {
-            throw new NotImplementedException();
+            await _userManager.CreateAsync(user); // Nutzung von UserManager zum Erstellen eines Benutzers
+            await _context.SaveChangesAsync();
         }
 
-        public Task UpdateAsync(User entity)
+        public async Task UpdateAsync(User user)
         {
-            throw new NotImplementedException();
+            _context.Users.Update(user); // Keine Änderung notwendig
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task DeleteAsync(int id)
+        {
+            var user = await GetByIdAsync(id);
+            if (user != null)
+            {
+                _context.Users.Remove(user);
+                await _context.SaveChangesAsync();
+            }
+        }
+
+        public async Task<bool> ExistsAsync(int id)
+        {
+            return await _context.Users.AnyAsync(u => u.Id == id); 
+        }
+
+        // Geänderte Methode zur Benutzerabfrage anhand des UserName
+        public async Task<User> GetUserByUsernameAsync(string userName)
+        {
+            return await _userManager.FindByNameAsync(userName); // Benutzername mit UserName ersetzen
         }
     }
 }

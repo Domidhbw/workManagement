@@ -1,17 +1,16 @@
-﻿namespace WorkManagementApp.Models
+﻿using Microsoft.AspNetCore.Identity;
+using System.Collections.Generic;
+
+namespace WorkManagementApp.Models
 {
-    public class User
+    // Erbt von IdentityUser<int>, um die ID als int zu definieren
+    public class User : IdentityUser<int>  // Achtung: Die ID ist jetzt vom Typ int
     {
-        public int Id { get; set; }
-        public string Username { get; set; }
-        public string Email { get; set; }
-        public string PasswordHash { get; set; }
+        // Benutzerdefinierte Felder hinzufügen
+        public Role Role { get; set; }
 
-        public UserRole Role { get; set; }
-
-        // Navigation Properties
+        // Navigation Properties (Beziehungen zu anderen Entitäten)
         public ICollection<Project> Projects { get; set; }
         public ICollection<Task> AssignedTasks { get; set; }
     }
-
 }

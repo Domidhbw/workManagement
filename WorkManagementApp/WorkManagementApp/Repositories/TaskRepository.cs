@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using TaskModel = WorkManagementApp.Models.Task;
+using System.Threading.Tasks;
+using System.Linq;
 
 namespace WorkManagementApp.Repositories
 {
@@ -43,7 +45,11 @@ namespace WorkManagementApp.Repositories
                 await _context.SaveChangesAsync();
             }
         }
-        
-    }
 
+        // Überprüft, ob eine Aufgabe mit der angegebenen ID existiert
+        public async Task<bool> ExistsAsync(int id)
+        {
+            return await _context.Tasks.AnyAsync(t => t.Id == id);
+        }
+    }
 }

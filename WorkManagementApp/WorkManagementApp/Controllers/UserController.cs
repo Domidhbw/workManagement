@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WorkManagementApp.Models;
-using WorkManagementApp.Repositories;
+using WorkManagementApp.Services;
+using System.Threading.Tasks;
 
 namespace WorkManagementApp.Controllers
 {
@@ -8,78 +9,76 @@ namespace WorkManagementApp.Controllers
     [Route("api/[controller]")]
     public class UserController : ControllerBase
     {
-        private readonly IRepository<User> _userRepository;
+        private readonly IUserService _userService;
 
-        public UserController(IRepository<User> userRepository)
+        // Constructor
+        public UserController(IUserService userService)
         {
-            _userRepository = userRepository;
+            _userService = userService;
         }
 
         // GET: api/users
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var users = await _userRepository.GetAllAsync();
-            return Ok(users);
+            // Wir holen alle Benutzer über den Service
+            var users = await _userService.GetAllUsersAsync();
+            if (users == null || !users.Any())
+            {
+                return NoContent(); // Gibt 204 No Content zurück, wenn keine Benutzer vorhanden sind.
+            }
+            return Ok(users); // Gibt die Liste der Benutzer zurück.
         }
 
         // GET: api/users/{id}
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var user = await _userRepository.GetByIdAsync(id);
+            // Benutzer anhand der ID über den Service finden
+            var user = await _userService.GetUserByIdAsync(id);
             if (user == null)
             {
-                return NotFound();
+                return NotFound(); // Gibt 404 zurück, wenn der Benutzer nicht gefunden wurde.
             }
-            return Ok(user);
-        }
-
-        // POST: api/users/register
-        [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] User user)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            // Optional: Passwörter sollten gehasht werden
-            await _userRepository.AddAsync(user);
-            return CreatedAtAction(nameof(GetById), new { id = user.Id }, user);
+            return Ok(user); // Gibt den Benutzer zurück.
         }
 
         // PUT: api/users/{id}
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] User updatedUser)
         {
+            // Sicherstellen, dass die IDs übereinstimmen
             if (id != updatedUser.Id)
             {
-                return BadRequest();
+                return BadRequest(); // Gibt 400 Bad Request zurück, wenn die IDs nicht übereinstimmen.
             }
 
-            var user = await _userRepository.GetByIdAsync(id);
+            // Benutzer anhand der ID suchen
+            var user = await _userService.GetUserByIdAsync(id);
             if (user == null)
             {
-                return NotFound();
+                return NotFound(); // Gibt 404 zurück, wenn der Benutzer nicht gefunden wurde.
             }
 
-            await _userRepository.UpdateAsync(updatedUser);
-            return NoContent();
+            // Benutzer über den Service aktualisieren
+            await _userService.UpdateUserAsync(updatedUser);
+            return NoContent(); // Gibt 204 No Content zurück, wenn die Aktualisierung erfolgreich war.
         }
 
         // DELETE: api/users/{id}
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var user = await _userRepository.GetByIdAsync(id);
+            // Benutzer anhand der ID suchen
+            var user = await _userService.GetUserByIdAsync(id);
             if (user == null)
             {
-                return NotFound();
+                return NotFound(); // Gibt 404 zurück, wenn der Benutzer nicht gefunden wurde.
             }
 
-            await _userRepository.DeleteAsync(id);
-            return NoContent();
+            // Benutzer über den Service löschen
+            await _userService.DeleteUserAsync(id);
+            return NoContent(); // Gibt 204 No Content zurück, wenn der Benutzer erfolgreich gelöscht wurde.
         }
     }
 }
