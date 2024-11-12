@@ -27,6 +27,11 @@ namespace WorkManagementApp.Services.Tasks
             return await _taskRepository.GetTasksByUserIdAsync(userId); // Delegiert an Repository
         }
 
+        public async Task<IEnumerable<TaskModel>> GetTasksByProjectIdAsync(int projectId) // Implementierung der neuen Methode
+        {
+            return await _taskRepository.GetTasksByProjectIdAsync(projectId); // Delegiert an Repository
+        }
+
         public async Task CreateTaskAsync(TaskModel task)
         {
             await _taskRepository.AddAsync(task);

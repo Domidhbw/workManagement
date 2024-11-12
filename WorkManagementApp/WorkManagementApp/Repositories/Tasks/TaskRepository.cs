@@ -33,6 +33,16 @@ namespace WorkManagementApp.Repositories.Tasks
                 .ToListAsync();
         }
 
+        public async Task<IEnumerable<TaskModel>> GetTasksByProjectIdAsync(int projectId)
+        {
+            return await _context.Tasks
+                .Include(t => t.AssignedTo)
+                .Include(t => t.Project)
+                .Where(t => t.ProjectId == projectId)
+                .ToListAsync();
+        }
+
+
         public async Task AddAsync(TaskModel task)
         {
             await _context.Tasks.AddAsync(task);
