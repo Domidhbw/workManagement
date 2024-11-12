@@ -141,7 +141,11 @@ C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagement
 C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\WorkManagementApp.dll
 C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\WorkManagementApp.pdb
 C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Humanizer.dll
+C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
 C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
@@ -156,9 +160,15 @@ C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagement
 C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
 C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\Mono.TextTemplating.dll
 C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\SQLitePCLRaw.batteries_v2.dll
@@ -173,6 +183,7 @@ C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagement
 C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\System.Composition.Hosting.dll
 C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\System.Composition.Runtime.dll
 C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\wn00226592\Source\Repos\workManagement\WorkManagementApp\WorkManagementApp\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll

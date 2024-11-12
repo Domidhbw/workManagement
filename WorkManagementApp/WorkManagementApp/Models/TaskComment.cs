@@ -6,11 +6,11 @@
         public string CommentText { get; set; }
         public DateTime CreatedAt { get; set; }
 
-        // Foreign Key
+        // Fremdschlüssel zur verknüpften Aufgabe
         public int TaskId { get; set; }
         public Task Task { get; set; }
 
-        // Optional: Benutzer, der den Kommentar erstellt hat
+        // Fremdschlüssel zum Benutzer, der den Kommentar erstellt hat
         public int UserId { get; set; }
         public User User { get; set; }
     }

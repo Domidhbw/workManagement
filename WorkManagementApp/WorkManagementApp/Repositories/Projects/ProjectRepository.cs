@@ -1,10 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using WorkManagementApp.Models;
+using System.Threading.Tasks;
+using System.Linq;
 using Task = System.Threading.Tasks.Task;
 
-namespace WorkManagementApp.Repositories
+namespace WorkManagementApp.Repositories.Projects
 {
-    public class ProjectRepository : IRepository<Project>
+    public class ProjectRepository : IProjectRepository
     {
         private readonly ApplicationDbContext _context;
 
@@ -29,7 +31,6 @@ namespace WorkManagementApp.Repositories
                 .FirstOrDefaultAsync(p => p.Id == id);
         }
 
-
         public async Task AddAsync(Project project)
         {
             await _context.Projects.AddAsync(project);
@@ -51,6 +52,20 @@ namespace WorkManagementApp.Repositories
                 await _context.SaveChangesAsync();
             }
         }
-    }
 
+        // Überprüft, ob ein Projekt mit der angegebenen ID existiert
+        public async Task<bool> ExistsAsync(int id)
+        {
+            return await _context.Projects.AnyAsync(p => p.Id == id);
+        }
+
+        public async Task<IEnumerable<Project>> GetProjectsByUserIdAsync(int userId)
+        {
+            return await _context.Projects
+                .Include(p => p.AssignedUser) // Falls 'AssignedTo' eine Navigationseigenschaft zu User ist
+                .Where(p => p.AssignedUserId == userId) // Überprüft, ob das Projekt dem Benutzer zugewiesen ist
+                .ToListAsync();
+        }
+
+    }
 }

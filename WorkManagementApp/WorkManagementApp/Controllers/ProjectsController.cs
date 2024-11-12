@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WorkManagementApp.Models;
-using WorkManagementApp.Repositories;
+using WorkManagementApp.DTOs;
+using WorkManagementApp.Services.Projects;
 
 namespace WorkManagementApp.Controllers
 {
@@ -8,18 +9,18 @@ namespace WorkManagementApp.Controllers
     [Route("api/[controller]")]
     public class ProjectsController : ControllerBase
     {
-        private readonly IRepository<Project> _projectRepository;
+        private readonly IProjectService _projectService;
 
-        public ProjectsController(IRepository<Project> projectRepository)
+        public ProjectsController(IProjectService projectService)
         {
-            _projectRepository = projectRepository;
+            _projectService = projectService;
         }
 
         // GET: api/projects
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var projects = await _projectRepository.GetAllAsync();
+            var projects = await _projectService.GetAllProjectsAsync();
             return Ok(projects);
         }
 
@@ -27,7 +28,7 @@ namespace WorkManagementApp.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var project = await _projectRepository.GetByIdAsync(id);
+            var project = await _projectService.GetProjectByIdAsync(id);
             if (project == null)
             {
                 return NotFound();
@@ -35,35 +36,64 @@ namespace WorkManagementApp.Controllers
             return Ok(project);
         }
 
+        // GET: api/projects/user/{userId}
+        [HttpGet("user/{userId}")]
+        public async Task<IActionResult> GetProjectsByUserId(int userId)
+        {
+            var projects = await _projectService.GetProjectsByUserIdAsync(userId);
+            if (projects == null || !projects.Any())
+            {
+                return NotFound();
+            }
+            return Ok(projects);
+        }
+
         // POST: api/projects
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] Project project)
+        public async Task<IActionResult> Create([FromBody] ProjectDto projectDto)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            await _projectRepository.AddAsync(project);
+            var project = new Project
+            {
+                Name = projectDto.Name,
+                Description = projectDto.Description,
+                StartDate = projectDto.StartDate,
+                EndDate = projectDto.EndDate,
+                ManagerId = projectDto.ManagerId,
+                AssignedUserId = projectDto.AssignedUserId
+            };
+
+            await _projectService.CreateProjectAsync(project);
             return CreatedAtAction(nameof(GetById), new { id = project.Id }, project);
         }
 
         // PUT: api/projects/{id}
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] Project updatedProject)
+        public async Task<IActionResult> Update(int id, [FromBody] ProjectDto updatedProjectDto)
         {
-            if (id != updatedProject.Id)
+            if (id != updatedProjectDto.ID)
             {
                 return BadRequest();
             }
 
-            var project = await _projectRepository.GetByIdAsync(id);
+            var project = await _projectService.GetProjectByIdAsync(id);
             if (project == null)
             {
                 return NotFound();
             }
 
-            await _projectRepository.UpdateAsync(updatedProject);
+            project.Name = updatedProjectDto.Name;
+            project.Description = updatedProjectDto.Description;
+            project.StartDate = updatedProjectDto.StartDate;
+            project.EndDate = updatedProjectDto.EndDate;
+            project.ManagerId = updatedProjectDto.ManagerId;
+            project.AssignedUserId = updatedProjectDto.AssignedUserId;
+
+            await _projectService.UpdateProjectAsync(project);
             return NoContent();
         }
 
@@ -71,13 +101,13 @@ namespace WorkManagementApp.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var project = await _projectRepository.GetByIdAsync(id);
+            var project = await _projectService.GetProjectByIdAsync(id);
             if (project == null)
             {
                 return NotFound();
             }
 
-            await _projectRepository.DeleteAsync(id);
+            await _projectService.DeleteProjectAsync(id);
             return NoContent();
         }
     }

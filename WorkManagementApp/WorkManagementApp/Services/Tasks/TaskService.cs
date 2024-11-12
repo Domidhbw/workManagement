@@ -1,13 +1,13 @@
-﻿using WorkManagementApp.Repositories;
+﻿using WorkManagementApp.Repositories.Tasks;
 using TaskModel = WorkManagementApp.Models.Task;
 
-namespace WorkManagementApp.Services
+namespace WorkManagementApp.Services.Tasks
 {
     public class TaskService : ITaskService
     {
-        private readonly IRepository<TaskModel> _taskRepository;
+        private readonly ITaskRepository _taskRepository;
 
-        public TaskService(IRepository<TaskModel> taskRepository)
+        public TaskService(ITaskRepository taskRepository)
         {
             _taskRepository = taskRepository;
         }
@@ -22,7 +22,12 @@ namespace WorkManagementApp.Services
             return await _taskRepository.GetByIdAsync(id);
         }
 
-        public async Task AddTaskAsync(TaskModel task)
+        public async Task<IEnumerable<TaskModel>> GetTasksByUserIdAsync(int userId) // Implementierung der neuen Methode
+        {
+            return await _taskRepository.GetTasksByUserIdAsync(userId); // Delegiert an Repository
+        }
+
+        public async Task CreateTaskAsync(TaskModel task)
         {
             await _taskRepository.AddAsync(task);
         }
@@ -37,4 +42,5 @@ namespace WorkManagementApp.Services
             await _taskRepository.DeleteAsync(id);
         }
     }
+
 }

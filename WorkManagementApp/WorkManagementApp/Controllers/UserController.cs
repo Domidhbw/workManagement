@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WorkManagementApp.Models;
-using WorkManagementApp.Repositories;
+using WorkManagementApp.DTOs;
+using WorkManagementApp.Services;
+using Microsoft.AspNetCore.Identity;
+using System.Threading.Tasks;
+using System.Linq;
 
 namespace WorkManagementApp.Controllers
 {
@@ -8,63 +12,90 @@ namespace WorkManagementApp.Controllers
     [Route("api/[controller]")]
     public class UserController : ControllerBase
     {
-        private readonly IRepository<User> _userRepository;
+        private readonly IUserService _userService;
 
-        public UserController(IRepository<User> userRepository)
+        // Constructor
+        public UserController(IUserService userService)
         {
-            _userRepository = userRepository;
+            _userService = userService;
         }
 
         // GET: api/users
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var users = await _userRepository.GetAllAsync();
-            return Ok(users);
+            var users = await _userService.GetAllUsersAsync();
+
+            if (users == null || !users.Any())
+            {
+                return NoContent(); // Gibt 204 No Content zurück, wenn keine Benutzer vorhanden sind.
+            }
+
+            // Mapping von User auf UserDto
+            var userDtos = new List<UserDto>();
+
+            foreach (var user in users)
+            {
+                var roles = await _userService.GetUserRolesAsync(user); // Rollen des Benutzers abrufen
+
+                var userDto = new UserDto
+                {
+                    Id = user.Id,
+                    Username = user.UserName,
+                    Email = user.Email,
+                    Roles = roles.ToList() // Alle Rollen als Liste
+                };
+
+                userDtos.Add(userDto);
+            }
+
+            return Ok(userDtos); // Gibt die Liste der Benutzer zurück.
         }
 
         // GET: api/users/{id}
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var user = await _userRepository.GetByIdAsync(id);
+            var user = await _userService.GetUserByIdAsync(id);
+
             if (user == null)
             {
-                return NotFound();
+                return NotFound(); // Gibt 404 zurück, wenn der Benutzer nicht gefunden wurde.
             }
-            return Ok(user);
-        }
 
-        // POST: api/users/register
-        [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] User user)
-        {
-            if (!ModelState.IsValid)
+            var roles = await _userService.GetUserRolesAsync(user); // Rollen des Benutzers abrufen
+
+            var userDto = new UserDto
             {
-                return BadRequest(ModelState);
-            }
+                Id = user.Id,
+                Username = user.UserName,
+                Email = user.Email,
+                Roles = roles.ToList() // Alle Rollen als Liste
+            };
 
-            // Optional: Passwörter sollten gehasht werden
-            await _userRepository.AddAsync(user);
-            return CreatedAtAction(nameof(GetById), new { id = user.Id }, user);
+            return Ok(userDto); // Gibt den Benutzer zurück.
         }
 
         // PUT: api/users/{id}
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] User updatedUser)
+        public async Task<IActionResult> Update(int id, [FromBody] UpdateUserDto updatedUserDto)
         {
-            if (id != updatedUser.Id)
+            if (id == 0 || updatedUserDto == null)
             {
-                return BadRequest();
+                return BadRequest("Ungültige Eingabedaten.");
             }
 
-            var user = await _userRepository.GetByIdAsync(id);
+            var user = await _userService.GetUserByIdAsync(id);
             if (user == null)
             {
                 return NotFound();
             }
 
-            await _userRepository.UpdateAsync(updatedUser);
+            user.Email = updatedUserDto.Email ?? user.Email;
+            user.UserName = updatedUserDto.UserName ?? user.UserName;
+
+            await _userService.UpdateUserAsync(user);
+
             return NoContent();
         }
 
@@ -72,13 +103,13 @@ namespace WorkManagementApp.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var user = await _userRepository.GetByIdAsync(id);
+            var user = await _userService.GetUserByIdAsync(id);
             if (user == null)
             {
                 return NotFound();
             }
 
-            await _userRepository.DeleteAsync(id);
+            await _userService.DeleteUserAsync(id);
             return NoContent();
         }
     }

@@ -1,17 +1,17 @@
-﻿namespace WorkManagementApp.Models
+﻿using Microsoft.AspNetCore.Identity;
+using System.Collections.Generic;
+
+namespace WorkManagementApp.Models
 {
-    public class User
+    public class User : IdentityUser<int>
     {
-        public int Id { get; set; }
-        public string Username { get; set; }
-        public string Email { get; set; }
-        public string PasswordHash { get; set; }
+        // Der Benutzer kann mehrere Projekte leiten
+        public ICollection<Project> ManagedProjects { get; set; }
 
-        public UserRole Role { get; set; }
-
-        // Navigation Properties
-        public ICollection<Project> Projects { get; set; }
+        // Aufgaben, die diesem Benutzer zugewiesen sind
         public ICollection<Task> AssignedTasks { get; set; }
-    }
 
+        // Kommentare, die der Benutzer zu Aufgaben hinterlassen hat
+        public ICollection<TaskComment> TaskComments { get; set; }
+    }
 }
