@@ -3,9 +3,9 @@ using TaskModel = WorkManagementApp.Models.Task;
 using System.Threading.Tasks;
 using System.Linq;
 
-namespace WorkManagementApp.Repositories
+namespace WorkManagementApp.Repositories.Tasks
 {
-    public class TaskRepository : IRepository<TaskModel>
+    public class TaskRepository : ITaskRepository
     {
         private readonly ApplicationDbContext _context;
 
@@ -22,6 +22,15 @@ namespace WorkManagementApp.Repositories
         public async Task<TaskModel> GetByIdAsync(int id)
         {
             return await _context.Tasks.Include(t => t.AssignedTo).Include(t => t.Project).FirstOrDefaultAsync(t => t.Id == id);
+        }
+
+        public async Task<IEnumerable<TaskModel>> GetTasksByUserIdAsync(int userId)
+        {
+            return await _context.Tasks
+                .Include(t => t.AssignedTo)
+                .Include(t => t.Project)
+                .Where(t => t.AssignedToUserId == userId)
+                .ToListAsync();
         }
 
         public async Task AddAsync(TaskModel task)
@@ -46,10 +55,11 @@ namespace WorkManagementApp.Repositories
             }
         }
 
-        // Überprüft, ob eine Aufgabe mit der angegebenen ID existiert
         public async Task<bool> ExistsAsync(int id)
         {
             return await _context.Tasks.AnyAsync(t => t.Id == id);
         }
     }
+
+
 }

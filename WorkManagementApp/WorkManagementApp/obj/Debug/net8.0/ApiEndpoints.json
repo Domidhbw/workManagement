@@ -50,8 +50,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "project",
-        "Type": "WorkManagementApp.Models.Project",
+        "Name": "projectDto",
+        "Type": "WorkManagementApp.DTOs.ProjectDto",
         "IsRequired": true
       }
     ],
@@ -87,8 +87,8 @@
         "IsRequired": true
       },
       {
-        "Name": "updatedProject",
-        "Type": "WorkManagementApp.Models.Project",
+        "Name": "updatedProjectDto",
+        "Type": "WorkManagementApp.DTOs.ProjectDto",
         "IsRequired": true
       }
     ],
@@ -104,6 +104,22 @@
     "Parameters": [
       {
         "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkManagementApp.Controllers.ProjectsController",
+    "Method": "GetProjectsByUserId",
+    "RelativePath": "api/Projects/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -129,8 +145,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "task",
-        "Type": "WorkManagementApp.Models.Task",
+        "Name": "taskDto",
+        "Type": "WorkManagementApp.DTOs.TaskDto",
         "IsRequired": true
       }
     ],
@@ -166,8 +182,8 @@
         "IsRequired": true
       },
       {
-        "Name": "updatedTask",
-        "Type": "WorkManagementApp.Models.Task",
+        "Name": "updatedTaskDto",
+        "Type": "WorkManagementApp.DTOs.TaskDto",
         "IsRequired": true
       }
     ],
@@ -183,6 +199,22 @@
     "Parameters": [
       {
         "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkManagementApp.Controllers.TasksController",
+    "Method": "GetTasksByUserId",
+    "RelativePath": "api/Tasks/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -229,8 +261,8 @@
         "IsRequired": true
       },
       {
-        "Name": "updatedUser",
-        "Type": "WorkManagementApp.Models.User",
+        "Name": "updatedUserDto",
+        "Type": "WorkManagementApp.DTOs.UpdateUserDto",
         "IsRequired": true
       }
     ],

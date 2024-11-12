@@ -11,5 +11,6 @@ namespace WorkManagementApp.Services.Projects
         Task CreateProjectAsync(ProjectModel project);
         Task UpdateProjectAsync(ProjectModel project);
         Task DeleteProjectAsync(int id);
+        Task<IEnumerable<ProjectModel>> GetProjectsByUserIdAsync(int userId);
     }
 }

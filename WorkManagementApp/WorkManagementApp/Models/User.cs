@@ -3,11 +3,15 @@ using System.Collections.Generic;
 
 namespace WorkManagementApp.Models
 {
-    public class User : IdentityUser<int> 
+    public class User : IdentityUser<int>
     {
-        public Role Role { get; set; }
+        // Der Benutzer kann mehrere Projekte leiten
+        public ICollection<Project> ManagedProjects { get; set; }
 
-        public ICollection<Project> Projects { get; set; }
+        // Aufgaben, die diesem Benutzer zugewiesen sind
         public ICollection<Task> AssignedTasks { get; set; }
+
+        // Kommentare, die der Benutzer zu Aufgaben hinterlassen hat
+        public ICollection<TaskComment> TaskComments { get; set; }
     }
 }

@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WorkManagementApp.Models;
+using WorkManagementApp.DTOs;
 using WorkManagementApp.Services;
+using Microsoft.AspNetCore.Identity;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace WorkManagementApp.Controllers
 {
@@ -21,64 +24,93 @@ namespace WorkManagementApp.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            // Wir holen alle Benutzer über den Service
             var users = await _userService.GetAllUsersAsync();
+
             if (users == null || !users.Any())
             {
                 return NoContent(); // Gibt 204 No Content zurück, wenn keine Benutzer vorhanden sind.
             }
-            return Ok(users); // Gibt die Liste der Benutzer zurück.
+
+            // Mapping von User auf UserDto
+            var userDtos = new List<UserDto>();
+
+            foreach (var user in users)
+            {
+                var roles = await _userService.GetUserRolesAsync(user); // Rollen des Benutzers abrufen
+
+                var userDto = new UserDto
+                {
+                    Id = user.Id,
+                    Username = user.UserName,
+                    Email = user.Email,
+                    Roles = roles.ToList() // Alle Rollen als Liste
+                };
+
+                userDtos.Add(userDto);
+            }
+
+            return Ok(userDtos); // Gibt die Liste der Benutzer zurück.
         }
 
         // GET: api/users/{id}
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            // Benutzer anhand der ID über den Service finden
             var user = await _userService.GetUserByIdAsync(id);
+
             if (user == null)
             {
                 return NotFound(); // Gibt 404 zurück, wenn der Benutzer nicht gefunden wurde.
             }
-            return Ok(user); // Gibt den Benutzer zurück.
+
+            var roles = await _userService.GetUserRolesAsync(user); // Rollen des Benutzers abrufen
+
+            var userDto = new UserDto
+            {
+                Id = user.Id,
+                Username = user.UserName,
+                Email = user.Email,
+                Roles = roles.ToList() // Alle Rollen als Liste
+            };
+
+            return Ok(userDto); // Gibt den Benutzer zurück.
         }
 
         // PUT: api/users/{id}
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] User updatedUser)
+        public async Task<IActionResult> Update(int id, [FromBody] UpdateUserDto updatedUserDto)
         {
-            // Sicherstellen, dass die IDs übereinstimmen
-            if (id != updatedUser.Id)
+            if (id == 0 || updatedUserDto == null)
             {
-                return BadRequest(); // Gibt 400 Bad Request zurück, wenn die IDs nicht übereinstimmen.
+                return BadRequest("Ungültige Eingabedaten.");
             }
 
-            // Benutzer anhand der ID suchen
             var user = await _userService.GetUserByIdAsync(id);
             if (user == null)
             {
-                return NotFound(); // Gibt 404 zurück, wenn der Benutzer nicht gefunden wurde.
+                return NotFound();
             }
 
-            // Benutzer über den Service aktualisieren
-            await _userService.UpdateUserAsync(updatedUser);
-            return NoContent(); // Gibt 204 No Content zurück, wenn die Aktualisierung erfolgreich war.
+            user.Email = updatedUserDto.Email ?? user.Email;
+            user.UserName = updatedUserDto.UserName ?? user.UserName;
+
+            await _userService.UpdateUserAsync(user);
+
+            return NoContent();
         }
 
         // DELETE: api/users/{id}
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            // Benutzer anhand der ID suchen
             var user = await _userService.GetUserByIdAsync(id);
             if (user == null)
             {
-                return NotFound(); // Gibt 404 zurück, wenn der Benutzer nicht gefunden wurde.
+                return NotFound();
             }
 
-            // Benutzer über den Service löschen
             await _userService.DeleteUserAsync(id);
-            return NoContent(); // Gibt 204 No Content zurück, wenn der Benutzer erfolgreich gelöscht wurde.
+            return NoContent();
         }
     }
 }

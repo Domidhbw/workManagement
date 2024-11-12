@@ -1,30 +1,29 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using WorkManagementApp.Models;
-using WorkManagementApp.Repositories;
+using WorkManagementApp.Repositories.Projects;
+using WorkManagementApp.Repositories.Tasks;
+using WorkManagementApp.Repositories.Users;
 using WorkManagementApp.Services;
 using WorkManagementApp.Services.Authentification;
 using WorkManagementApp.Services.Projects;
 using WorkManagementApp.Services.Tasks;
 using Task = System.Threading.Tasks.Task;
-using TaskModel = WorkManagementApp.Models.Task;
-
 
 namespace WorkManagementApp
 {
     public class Program
     {
-        public static async Task Main(string[] args)  // Main muss async sein
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-            // Registrierung der Repositories
-            builder.Services.AddScoped<IRepository<TaskModel>, TaskRepository>();
-            builder.Services.AddScoped<IRepository<Project>, ProjectRepository>();
-            builder.Services.AddScoped<IRepository<User>, UserRepository>();
+            // Registrierung der spezifischen Repositories
+            builder.Services.AddScoped<ITaskRepository, TaskRepository>();
+            builder.Services.AddScoped<IProjectRepository, ProjectRepository>();
 
             // Registrierung der Services
             builder.Services.AddScoped<IUserService, UserService>();
@@ -36,7 +35,7 @@ namespace WorkManagementApp
             builder.Services.AddIdentity<User, Role>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders()
-                .AddRoleManager<RoleManager<Role>>();  // Rolle hinzufügen (RoleManager)
+                .AddRoleManager<RoleManager<Role>>();
 
             builder.Services.Configure<IdentityOptions>(options =>
             {

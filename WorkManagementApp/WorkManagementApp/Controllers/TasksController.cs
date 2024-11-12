@@ -1,7 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using TaskModel = WorkManagementApp.Models.Task;
-using WorkManagementApp.Repositories;
+using WorkManagementApp.Models;
+using WorkManagementApp.DTOs;
 using WorkManagementApp.Services.Tasks;
+using TaskModel = WorkManagementApp.Models.Task;
 
 namespace WorkManagementApp.Controllers
 {
@@ -36,14 +37,36 @@ namespace WorkManagementApp.Controllers
             return Ok(task);
         }
 
+        // GET: api/tasks/user/{userId}
+        [HttpGet("user/{userId}")]
+        public async Task<IActionResult> GetTasksByUserId(int userId)
+        {
+            var tasks = await _taskService.GetTasksByUserIdAsync(userId);
+            if (tasks == null || !tasks.Any())
+            {
+                return NotFound();
+            }
+            return Ok(tasks);
+        }
+
         // POST: api/tasks
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] TaskModel task)
+        public async Task<IActionResult> Create([FromBody] TaskDto taskDto)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
+
+            var task = new TaskModel
+            {
+                Title = taskDto.Title,
+                Description = taskDto.Description,
+                DueDate = taskDto.DueDate,
+                Status = taskDto.Status,
+                ProjectId = taskDto.ProjectId,
+                AssignedToUserId = taskDto.AssignedUserId
+            };
 
             await _taskService.CreateTaskAsync(task);
             return CreatedAtAction(nameof(GetById), new { id = task.Id }, task);
@@ -51,9 +74,9 @@ namespace WorkManagementApp.Controllers
 
         // PUT: api/tasks/{id}
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] TaskModel updatedTask)
+        public async Task<IActionResult> Update(int id, [FromBody] TaskDto updatedTaskDto)
         {
-            if (id != updatedTask.Id)
+            if (id != updatedTaskDto.Id)
             {
                 return BadRequest();
             }
@@ -64,7 +87,14 @@ namespace WorkManagementApp.Controllers
                 return NotFound();
             }
 
-            await _taskService.UpdateTaskAsync(updatedTask);
+            task.Title = updatedTaskDto.Title;
+            task.Description = updatedTaskDto.Description;
+            task.DueDate = updatedTaskDto.DueDate;
+            task.Status = updatedTaskDto.Status;
+            task.ProjectId = updatedTaskDto.ProjectId;
+            task.AssignedToUserId = updatedTaskDto.AssignedUserId;
+
+            await _taskService.UpdateTaskAsync(task);
             return NoContent();
         }
 

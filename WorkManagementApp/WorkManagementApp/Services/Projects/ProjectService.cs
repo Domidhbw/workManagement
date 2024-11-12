@@ -1,18 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using WorkManagementApp.Models;
-using WorkManagementApp.Repositories;
+using WorkManagementApp.Repositories.Projects;
 using Task = System.Threading.Tasks.Task;
-
-
 
 namespace WorkManagementApp.Services.Projects
 {
     public class ProjectService : IProjectService
     {
-        private readonly IRepository<Project> _projectRepository;
+        private readonly IProjectRepository _projectRepository;
 
-        public ProjectService(IRepository<Project> projectRepository)
+        public ProjectService(IProjectRepository projectRepository)
         {
             _projectRepository = projectRepository;
         }
@@ -40,6 +38,12 @@ namespace WorkManagementApp.Services.Projects
         public async Task DeleteProjectAsync(int id)
         {
             await _projectRepository.DeleteAsync(id);
+        }
+
+        // Neue Methode zum Abrufen von Projekten nach Benutzer-ID
+        public async Task<IEnumerable<Project>> GetProjectsByUserIdAsync(int userId)
+        {
+            return await _projectRepository.GetProjectsByUserIdAsync(userId);
         }
     }
 }

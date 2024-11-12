@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Task = System.Threading.Tasks.Task;
 
-namespace WorkManagementApp.Repositories
+namespace WorkManagementApp.Repositories.Users
 {
     public class UserRepository : IRepository<User>
     {
@@ -53,7 +53,7 @@ namespace WorkManagementApp.Repositories
 
         public async Task<bool> ExistsAsync(int id)
         {
-            return await _context.Users.AnyAsync(u => u.Id == id); 
+            return await _context.Users.AnyAsync(u => u.Id == id);
         }
 
         // Geänderte Methode zur Benutzerabfrage anhand des UserName

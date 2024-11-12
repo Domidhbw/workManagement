@@ -9,14 +9,15 @@
         public TaskStatus Status { get; set; }
         public int Priority { get; set; } // 1 = Hoch, 2 = Mittel, 3 = Niedrig
 
-        // Foreign Keys
+        // Fremdschlüssel zum verknüpften Projekt
         public int ProjectId { get; set; }
         public Project Project { get; set; }
 
+        // Fremdschlüssel zum Benutzer, dem die Aufgabe zugewiesen ist
         public int AssignedToUserId { get; set; }
-        public User AssignedTo { get; set; } // Benutzer, dem die Aufgabe zugewiesen ist
+        public User AssignedTo { get; set; }
 
-        // Task Comments
+        // Kommentare zu dieser Aufgabe
         public ICollection<TaskComment> Comments { get; set; }
     }
 
