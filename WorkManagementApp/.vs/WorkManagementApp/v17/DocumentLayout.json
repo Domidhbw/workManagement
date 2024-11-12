@@ -174,8 +174,7 @@
               "RelativeToolTip": "WorkManagementApp\\Controllers\\AuthController.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAswEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T19:42:55.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T19:42:55.65Z"
             },
             {
               "$type": "Document",
@@ -187,8 +186,7 @@
               "RelativeToolTip": "WorkManagementApp\\Controllers\\TasksController.cs",
               "ViewState": "AgIAAFAAAAAAAAAAAAAswHMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T15:26:23.861Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T15:26:23.861Z"
             },
             {
               "$type": "Document",
@@ -200,8 +198,7 @@
               "RelativeToolTip": "WorkManagementApp\\Controllers\\ProjectsController.cs",
               "ViewState": "AgIAAE8AAAAAAAAAAAAswHIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T11:51:42.88Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T11:51:42.88Z"
             },
             {
               "$type": "Document",
@@ -209,9 +206,9 @@
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "WorkManagementApp\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Controllers\\UserController.cs*",
-              "RelativeToolTip": "WorkManagementApp\\Controllers\\UserController.cs*",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAswGcAAAAoAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Controllers\\UserController.cs",
+              "RelativeToolTip": "WorkManagementApp\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAswG0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T12:21:16.632Z",
               "EditorCaption": ""
@@ -226,8 +223,7 @@
               "RelativeToolTip": "WorkManagementApp\\DTO\\RegisterDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T22:41:57.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T22:41:57.288Z"
             },
             {
               "$type": "Document",
@@ -239,8 +235,7 @@
               "RelativeToolTip": "WorkManagementApp\\DTO\\LoginDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T12:03:51.554Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T12:03:51.554Z"
             },
             {
               "$type": "Document",
@@ -252,8 +247,7 @@
               "RelativeToolTip": "WorkManagementApp\\DTO\\ProjectDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T12:04:55.957Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T12:04:55.957Z"
             },
             {
               "$type": "Document",
@@ -265,8 +259,7 @@
               "RelativeToolTip": "WorkManagementApp\\Models\\Task.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T15:07:00.501Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T15:07:00.501Z"
             },
             {
               "$type": "Document",
@@ -278,21 +271,19 @@
               "RelativeToolTip": "WorkManagementApp\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-11T19:08:34.717Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T19:08:34.717Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
               "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\wn00226592\\Source\\Repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Repositories\\Users\\UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Repositories\\Users\\UserRepository.cs",
               "RelativeDocumentMoniker": "WorkManagementApp\\Repositories\\Users\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\wn00226592\\Source\\Repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Repositories\\Users\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Repositories\\Users\\UserRepository.cs",
               "RelativeToolTip": "WorkManagementApp\\Repositories\\Users\\UserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T07:02:30.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T07:02:30.771Z"
             },
             {
               "$type": "Document",
@@ -304,8 +295,7 @@
               "RelativeToolTip": "WorkManagementApp\\Models\\TaskStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T06:57:50.185Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T06:57:50.185Z"
             },
             {
               "$type": "Document",
@@ -317,8 +307,7 @@
               "RelativeToolTip": "WorkManagementApp\\Services\\User and Authentification\\AuthService.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAswDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T19:33:16.239Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T19:33:16.239Z"
             },
             {
               "$type": "Document",
@@ -330,8 +319,7 @@
               "RelativeToolTip": "WorkManagementApp\\Services\\User and Authentification\\UserService.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAYwEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T21:40:55.215Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T21:40:55.215Z"
             },
             {
               "$type": "Document",
@@ -343,8 +331,7 @@
               "RelativeToolTip": "WorkManagementApp\\Program.cs",
               "ViewState": "AgIAABAAAAAAAAAAAADgvyYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T14:42:36.468Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T14:42:36.468Z"
             },
             {
               "$type": "Document",
@@ -356,8 +343,7 @@
               "RelativeToolTip": "WorkManagementApp\\DTO\\UserDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T12:07:18.867Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T12:07:18.867Z"
             },
             {
               "$type": "Document",
@@ -369,8 +355,7 @@
               "RelativeToolTip": "WorkManagementApp\\DTO\\UpdatedUserDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T12:15:33.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T12:15:33.62Z"
             },
             {
               "$type": "Document",
@@ -382,8 +367,7 @@
               "RelativeToolTip": "WorkManagementApp\\DTO\\TaskDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T12:05:11.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T12:05:11.476Z"
             },
             {
               "$type": "Document",
@@ -395,8 +379,7 @@
               "RelativeToolTip": "WorkManagementApp\\Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T06:44:51.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T06:44:51.568Z"
             },
             {
               "$type": "Document",
@@ -408,8 +391,7 @@
               "RelativeToolTip": "WorkManagementApp\\Services\\User and Authentification\\IUserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T21:44:57Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T21:44:57Z"
             },
             {
               "$type": "Document",
@@ -421,21 +403,19 @@
               "RelativeToolTip": "WorkManagementApp\\Services\\Tasks\\TaskService.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAA8wC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T12:22:47.287Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T12:22:47.287Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
               "Title": "TaskRepository.cs",
-              "DocumentMoniker": "C:\\Users\\wn00226592\\Source\\Repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Repositories\\Tasks\\TaskRepository.cs",
+              "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Repositories\\Tasks\\TaskRepository.cs",
               "RelativeDocumentMoniker": "WorkManagementApp\\Repositories\\Tasks\\TaskRepository.cs",
-              "ToolTip": "C:\\Users\\wn00226592\\Source\\Repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Repositories\\Tasks\\TaskRepository.cs",
+              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Repositories\\Tasks\\TaskRepository.cs",
               "RelativeToolTip": "WorkManagementApp\\Repositories\\Tasks\\TaskRepository.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAAwCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T07:09:44.703Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T07:09:44.703Z"
             },
             {
               "$type": "Document",
@@ -447,21 +427,19 @@
               "RelativeToolTip": "WorkManagementApp\\Services\\Projects\\ProjectService.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAA8wDEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T19:45:20.438Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T19:45:20.438Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
               "Title": "ProjectRepository.cs",
-              "DocumentMoniker": "C:\\Users\\wn00226592\\Source\\Repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Repositories\\Projects\\ProjectRepository.cs",
+              "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Repositories\\Projects\\ProjectRepository.cs",
               "RelativeDocumentMoniker": "WorkManagementApp\\Repositories\\Projects\\ProjectRepository.cs",
-              "ToolTip": "C:\\Users\\wn00226592\\Source\\Repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Repositories\\Projects\\ProjectRepository.cs",
+              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Repositories\\Projects\\ProjectRepository.cs",
               "RelativeToolTip": "WorkManagementApp\\Repositories\\Projects\\ProjectRepository.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAAwEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T07:06:46.147Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T07:06:46.147Z"
             },
             {
               "$type": "Document",
@@ -473,8 +451,7 @@
               "RelativeToolTip": "WorkManagementApp\\Models\\Project.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T06:45:03.817Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T06:45:03.817Z"
             },
             {
               "$type": "Document",
@@ -486,8 +463,7 @@
               "RelativeToolTip": "WorkManagementApp\\Services\\Projects\\IProjectService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T11:57:33.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T11:57:33.876Z"
             },
             {
               "$type": "Document",
@@ -499,8 +475,7 @@
               "RelativeToolTip": "WorkManagementApp\\Repositories\\IRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T07:00:20.819Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T07:00:20.819Z"
             },
             {
               "$type": "Document",
@@ -512,8 +487,7 @@
               "RelativeToolTip": "WorkManagementApp\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAA0wCEAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T15:02:21.017Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T15:02:21.017Z"
             },
             {
               "$type": "Document",
@@ -525,21 +499,19 @@
               "RelativeToolTip": "WorkManagementApp\\Services\\Tasks\\ITaskService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T12:23:51.053Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T12:23:51.053Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
               "Title": "ITaskRepository.cs",
-              "DocumentMoniker": "C:\\Users\\wn00226592\\Source\\Repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Repositories\\Tasks\\ITaskRepository.cs",
+              "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Repositories\\Tasks\\ITaskRepository.cs",
               "RelativeDocumentMoniker": "WorkManagementApp\\Repositories\\Tasks\\ITaskRepository.cs",
-              "ToolTip": "C:\\Users\\wn00226592\\Source\\Repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Repositories\\Tasks\\ITaskRepository.cs",
+              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Repositories\\Tasks\\ITaskRepository.cs",
               "RelativeToolTip": "WorkManagementApp\\Repositories\\Tasks\\ITaskRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T11:41:11.662Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T11:41:11.662Z"
             },
             {
               "$type": "Document",
@@ -551,8 +523,7 @@
               "RelativeToolTip": "WorkManagementApp\\Repositories\\Projects\\IProjectRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T11:47:10.796Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T11:47:10.796Z"
             },
             {
               "$type": "Document",
@@ -564,8 +535,7 @@
               "RelativeToolTip": "WorkManagementApp\\Models\\Role.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T19:40:52.007Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T19:40:52.007Z"
             },
             {
               "$type": "Document",
@@ -577,8 +547,7 @@
               "RelativeToolTip": "WorkManagementApp\\Models\\TaskComment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T06:58:59.199Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T06:58:59.199Z"
             },
             {
               "$type": "Document",
