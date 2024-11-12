@@ -207,6 +207,22 @@
   },
   {
     "ContainingType": "WorkManagementApp.Controllers.TasksController",
+    "Method": "GetTasksByProjectId",
+    "RelativePath": "api/Tasks/project/{projectId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "projectId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkManagementApp.Controllers.TasksController",
     "Method": "GetTasksByUserId",
     "RelativePath": "api/Tasks/user/{userId}",
     "HttpMethod": "GET",

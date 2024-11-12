@@ -2,6 +2,7 @@
 using WorkManagementApp.Models;
 using WorkManagementApp.DTOs;
 using WorkManagementApp.Services.Projects;
+using ProjectModel = WorkManagementApp.Models.Project;
 
 namespace WorkManagementApp.Controllers
 {
@@ -21,7 +22,20 @@ namespace WorkManagementApp.Controllers
         public async Task<IActionResult> GetAll()
         {
             var projects = await _projectService.GetAllProjectsAsync();
-            return Ok(projects);
+
+            // Mapping der Project-Entities auf ProjectDto
+            var projectDtos = projects.Select(project => new ProjectDto
+            {
+                ID = project.Id,
+                Name = project.Name,
+                Description = project.Description,
+                StartDate = project.StartDate,
+                EndDate = project.EndDate,
+                ManagerId = project.ManagerId,
+                AssignedUserId = project.AssignedUserId
+            }).ToList();
+
+            return Ok(projectDtos);
         }
 
         // GET: api/projects/{id}
@@ -33,7 +47,20 @@ namespace WorkManagementApp.Controllers
             {
                 return NotFound();
             }
-            return Ok(project);
+
+            // Mapping der Project-Entity auf ProjectDto
+            var projectDto = new ProjectDto
+            {
+                ID = project.Id,
+                Name = project.Name,
+                Description = project.Description,
+                StartDate = project.StartDate,
+                EndDate = project.EndDate,
+                ManagerId = project.ManagerId,
+                AssignedUserId = project.AssignedUserId
+            };
+
+            return Ok(projectDto);
         }
 
         // GET: api/projects/user/{userId}
@@ -45,7 +72,20 @@ namespace WorkManagementApp.Controllers
             {
                 return NotFound();
             }
-            return Ok(projects);
+
+            // Mapping der Project-Entities auf ProjectDto
+            var projectDtos = projects.Select(p => new ProjectDto
+            {
+                ID = p.Id,
+                Name = p.Name,
+                Description = p.Description,
+                StartDate = p.StartDate,
+                EndDate = p.EndDate,
+                ManagerId = p.ManagerId,
+                AssignedUserId = p.AssignedUserId
+            }).ToList();
+
+            return Ok(projectDtos);
         }
 
         // POST: api/projects
@@ -57,7 +97,8 @@ namespace WorkManagementApp.Controllers
                 return BadRequest(ModelState);
             }
 
-            var project = new Project
+            // Mapping des ProjectDto zu ProjectModel
+            var project = new ProjectModel
             {
                 Name = projectDto.Name,
                 Description = projectDto.Description,
