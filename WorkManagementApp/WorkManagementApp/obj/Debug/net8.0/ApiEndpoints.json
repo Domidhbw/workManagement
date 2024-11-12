@@ -50,8 +50,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "projectDto",
-        "Type": "WorkManagementApp.DTOs.ProjectDto",
+        "Name": "createProjectDto",
+        "Type": "WorkManagementApp.DTO.CreateProjectDto",
         "IsRequired": true
       }
     ],
@@ -145,8 +145,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "taskDto",
-        "Type": "WorkManagementApp.DTOs.TaskDto",
+        "Name": "createTaskDto",
+        "Type": "WorkManagementApp.DTO.CreateTaskDto",
         "IsRequired": true
       }
     ],

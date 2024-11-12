@@ -4,6 +4,7 @@ using WorkManagementApp.DTOs;
 using WorkManagementApp.Services.Tasks;
 using TaskModel = WorkManagementApp.Models.Task;
 using ProjectModel = WorkManagementApp.Models.Project;
+using WorkManagementApp.DTO;
 
 namespace WorkManagementApp.Controllers
 {
@@ -116,27 +117,39 @@ namespace WorkManagementApp.Controllers
 
         // POST: api/tasks
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] TaskDto taskDto)
+        public async Task<IActionResult> Create([FromBody] CreateTaskDto createTaskDto)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            // Mapping des TaskDto zu TaskModel
+            // Mapping des CreateTaskDto zu TaskModel
             var task = new TaskModel
             {
-                Title = taskDto.Title,
-                Description = taskDto.Description,
-                DueDate = taskDto.DueDate,
-                Status = taskDto.Status,
-                ProjectId = taskDto.ProjectId,
-                AssignedToUserId = taskDto.AssignedUserId
+                Title = createTaskDto.Title,
+                Description = createTaskDto.Description,
+                DueDate = createTaskDto.DueDate,
+                Status = createTaskDto.Status,
+                ProjectId = createTaskDto.ProjectId,
+                AssignedToUserId = createTaskDto.AssignedUserId
             };
 
             await _taskService.CreateTaskAsync(task);
 
-            return CreatedAtAction(nameof(GetById), new { id = task.Id }, task);
+            // Mapping des TaskModel zu TaskDto, um die ID nach der Erstellung zurückzugeben
+            var taskDtoResponse = new TaskDto
+            {
+                Id = task.Id,  // Die ID wird hier nach der Erstellung gesetzt
+                Title = task.Title,
+                Description = task.Description,
+                DueDate = task.DueDate,
+                Status = task.Status,
+                ProjectId = task.ProjectId,
+                AssignedUserId = task.AssignedToUserId
+            };
+
+            return CreatedAtAction(nameof(GetById), new { id = task.Id }, taskDtoResponse);
         }
 
         // PUT: api/tasks/{id}

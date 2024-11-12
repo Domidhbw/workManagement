@@ -3,6 +3,7 @@ using WorkManagementApp.Models;
 using WorkManagementApp.DTOs;
 using WorkManagementApp.Services.Projects;
 using ProjectModel = WorkManagementApp.Models.Project;
+using WorkManagementApp.DTO;
 
 namespace WorkManagementApp.Controllers
 {
@@ -90,26 +91,39 @@ namespace WorkManagementApp.Controllers
 
         // POST: api/projects
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] ProjectDto projectDto)
+        public async Task<IActionResult> Create([FromBody] CreateProjectDto createProjectDto)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            // Mapping des ProjectDto zu ProjectModel
+            // Mapping des CreateProjectDto zu ProjectModel
             var project = new ProjectModel
             {
-                Name = projectDto.Name,
-                Description = projectDto.Description,
-                StartDate = projectDto.StartDate,
-                EndDate = projectDto.EndDate,
-                ManagerId = projectDto.ManagerId,
-                AssignedUserId = projectDto.AssignedUserId
+                Name = createProjectDto.Name,
+                Description = createProjectDto.Description,
+                StartDate = createProjectDto.StartDate,
+                EndDate = createProjectDto.EndDate,
+                ManagerId = createProjectDto.ManagerId,
+                AssignedUserId = createProjectDto.AssignedUserId
             };
 
             await _projectService.CreateProjectAsync(project);
-            return CreatedAtAction(nameof(GetById), new { id = project.Id }, project);
+
+            // Mapping der ProjectModel zu ProjectDto, um das Projekt mit der ID zurückzugeben
+            var projectDtoResponse = new ProjectDto
+            {
+                ID = project.Id,  // ID wird jetzt gesetzt
+                Name = project.Name,
+                Description = project.Description,
+                StartDate = project.StartDate,
+                EndDate = project.EndDate,
+                ManagerId = project.ManagerId,
+                AssignedUserId = project.AssignedUserId
+            };
+
+            return CreatedAtAction(nameof(GetById), new { id = project.Id }, projectDtoResponse);
         }
 
         // PUT: api/projects/{id}
