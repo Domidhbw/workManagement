@@ -1,4 +1,8 @@
-﻿namespace WorkManagementApp.Models
+﻿using WorkManagementApp.DTO.Task;
+using WorkManagementApp.DTO.Task.WorkManagementApp.DTO.Task;
+using TaskStatus = WorkManagementApp.DTO.Task.TaskStatus;
+
+namespace WorkManagementApp.Models
 {
     public class Task
     {
@@ -7,7 +11,7 @@
         public string Description { get; set; }
         public DateTime DueDate { get; set; }
         public TaskStatus Status { get; set; }
-        public int Priority { get; set; } // 1 = Hoch, 2 = Mittel, 3 = Niedrig
+        public Priority Priority { get; set; } // 1 = Hoch, 2 = Mittel, 3 = Niedrig
 
         // Fremdschlüssel zum verknüpften Projekt
         public int ProjectId { get; set; }

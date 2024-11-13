@@ -1,5 +1,5 @@
-﻿using WorkManagementApp.Models;
-using TaskStatus = WorkManagementApp.Models.TaskStatus;
+﻿using WorkManagementApp.DTO.Task.WorkManagementApp.DTO.Task;
+using TaskStatus = WorkManagementApp.DTO.Task.TaskStatus;
 
 namespace WorkManagementApp.DTO
 {
@@ -11,6 +11,7 @@ namespace WorkManagementApp.DTO
         public TaskStatus Status { get; set; } // Beispiel: "In Bearbeitung", "Erledigt"
         public int ProjectId { get; set; }  // ID des Projekts, zu dem die Aufgabe gehört
         public int AssignedUserId { get; set; }  // ID des Benutzers, dem die Aufgabe zugewiesen ist
+        public Priority Priority { get; set; }
     }
 
 }

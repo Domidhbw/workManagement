@@ -1,4 +1,6 @@
-﻿using TaskModel = WorkManagementApp.Models.Task;
+﻿using WorkManagementApp.Models;
+using Task = System.Threading.Tasks.Task;
+using TaskModel = WorkManagementApp.Models.Task;
 
 namespace WorkManagementApp.Services.Tasks
 {
@@ -11,6 +13,9 @@ namespace WorkManagementApp.Services.Tasks
         Task CreateTaskAsync(TaskModel task);
         Task UpdateTaskAsync(TaskModel task);
         Task DeleteTaskAsync(int id);
+        Task AddCommentToTaskAsync(TaskComment taskComment);
+        Task<IEnumerable<TaskComment>> GetCommentsForTaskAsync(int taskId);
+        Task DeleteCommentFromTaskAsync(int commentId);
     }
 
 }

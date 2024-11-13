@@ -7,10 +7,12 @@ public class ApplicationDbContext : IdentityDbContext<User, Role, int>
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
+    // DbSets für alle Modelle
     public DbSet<Project> Projects { get; set; }
     public DbSet<TaskModel> Tasks { get; set; }
     public DbSet<TaskComment> TaskComments { get; set; }
 
+    // In der Methode OnModelCreating definieren wir die Beziehungen
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);

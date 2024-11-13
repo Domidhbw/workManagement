@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 using WorkManagementApp.Models;
+using WorkManagementApp.Repositories.Comments;
 using WorkManagementApp.Repositories.Projects;
 using WorkManagementApp.Repositories.Tasks;
 using WorkManagementApp.Repositories.Users;
@@ -24,6 +26,7 @@ namespace WorkManagementApp
             // Registrierung der spezifischen Repositories
             builder.Services.AddScoped<ITaskRepository, TaskRepository>();
             builder.Services.AddScoped<IProjectRepository, ProjectRepository>();
+            builder.Services.AddScoped<ITaskCommentRepository, TaskCommentRepository>();
 
             // Registrierung der Services
             builder.Services.AddScoped<IUserService, UserService>();
@@ -47,7 +50,13 @@ namespace WorkManagementApp
             });
 
             // Weitere Standardkonfigurationen
-            builder.Services.AddControllers();
+            // JSON Serializer Optionen anpassen, um zirkuläre Referenzen zu behandeln
+            builder.Services.AddControllers()
+                .AddJsonOptions(options =>
+                {
+                    options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
+                    options.JsonSerializerOptions.MaxDepth = 64; // Optional: Du kannst auch die Max-Tiefe erhöhen, falls nötig
+                });
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
