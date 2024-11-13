@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="DTO\NewFolder\**" />
+    <Content Remove="DTO\NewFolder\**" />
+    <EmbeddedResource Remove="DTO\NewFolder\**" />
+    <None Remove="DTO\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.10" />
@@ -17,10 +24,6 @@
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.2.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.2.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="DTO\NewFolder\" />
   </ItemGroup>
 
 </Project>

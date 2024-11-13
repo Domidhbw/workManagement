@@ -5,6 +5,9 @@ using WorkManagementApp.Services.Tasks;
 using TaskModel = WorkManagementApp.Models.Task;
 using ProjectModel = WorkManagementApp.Models.Project;
 using WorkManagementApp.DTO;
+using WorkManagementApp.DTO.Task.WorkManagementApp.DTO.Task;
+using TaskStatus = WorkManagementApp.DTO.Task.TaskStatus;
+using WorkManagementApp.DTO.Task;
 
 namespace WorkManagementApp.Controllers
 {
@@ -34,7 +37,9 @@ namespace WorkManagementApp.Controllers
                 DueDate = task.DueDate,
                 Status = task.Status,
                 ProjectId = task.ProjectId,
-                AssignedUserId = task.AssignedToUserId
+                AssignedUserId = task.AssignedToUserId,
+                Priority = task.Priority,
+
             }).ToList();
 
             return Ok(taskDtos);
@@ -59,7 +64,8 @@ namespace WorkManagementApp.Controllers
                 DueDate = task.DueDate,
                 Status = task.Status,
                 ProjectId = task.ProjectId,
-                AssignedUserId = task.AssignedToUserId
+                AssignedUserId = task.AssignedToUserId,
+                Priority = task.Priority,
             };
 
             return Ok(taskDto);
@@ -84,7 +90,8 @@ namespace WorkManagementApp.Controllers
                 DueDate = t.DueDate,
                 Status = t.Status,
                 ProjectId = t.ProjectId,
-                AssignedUserId = t.AssignedToUserId
+                AssignedUserId = t.AssignedToUserId,
+                Priority = t.Priority,
             }).ToList();
 
             return Ok(taskDtos);
@@ -109,7 +116,8 @@ namespace WorkManagementApp.Controllers
                 DueDate = t.DueDate,
                 Status = t.Status,
                 ProjectId = t.ProjectId,
-                AssignedUserId = t.AssignedToUserId
+                AssignedUserId = t.AssignedToUserId,
+                Priority = t.Priority,
             }).ToList();
 
             return Ok(taskDtos);
@@ -119,6 +127,23 @@ namespace WorkManagementApp.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateTaskDto createTaskDto)
         {
+            // Validierung der Enum-Werte (Priority und Status)
+            if (!Enum.IsDefined(typeof(Priority), createTaskDto.Priority))
+            {
+                return BadRequest("Ungültige Priorität.");
+            }
+
+            if (!Enum.IsDefined(typeof(TaskStatus), createTaskDto.Status))
+            {
+                return BadRequest("Ungültiger Status.");
+            }
+
+            // Validierung, ob das DueDate in der Zukunft liegt
+            if (createTaskDto.DueDate <= DateTime.Now)
+            {
+                return BadRequest("Das Fälligkeitsdatum muss in der Zukunft liegen.");
+            }
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
@@ -132,7 +157,8 @@ namespace WorkManagementApp.Controllers
                 DueDate = createTaskDto.DueDate,
                 Status = createTaskDto.Status,
                 ProjectId = createTaskDto.ProjectId,
-                AssignedToUserId = createTaskDto.AssignedUserId
+                AssignedToUserId = createTaskDto.AssignedUserId,
+                Priority = createTaskDto.Priority
             };
 
             await _taskService.CreateTaskAsync(task);
@@ -146,7 +172,8 @@ namespace WorkManagementApp.Controllers
                 DueDate = task.DueDate,
                 Status = task.Status,
                 ProjectId = task.ProjectId,
-                AssignedUserId = task.AssignedToUserId
+                AssignedUserId = task.AssignedToUserId,
+                Priority = task.Priority
             };
 
             return CreatedAtAction(nameof(GetById), new { id = task.Id }, taskDtoResponse);
@@ -167,6 +194,23 @@ namespace WorkManagementApp.Controllers
                 return NotFound();
             }
 
+            // Validierung der Enum-Werte (Priority und Status)
+            if (!Enum.IsDefined(typeof(Priority), updatedTaskDto.Priority))
+            {
+                return BadRequest("Ungültige Priorität.");
+            }
+
+            if (!Enum.IsDefined(typeof(TaskStatus), updatedTaskDto.Status))
+            {
+                return BadRequest("Ungültiger Status.");
+            }
+
+            // Validierung, ob das DueDate in der Zukunft liegt
+            if (updatedTaskDto.DueDate <= DateTime.Now)
+            {
+                return BadRequest("Das Fälligkeitsdatum muss in der Zukunft liegen.");
+            }
+
             // Update der TaskModel basierend auf den neuen Daten aus TaskDto
             task.Title = updatedTaskDto.Title;
             task.Description = updatedTaskDto.Description;
@@ -174,10 +218,13 @@ namespace WorkManagementApp.Controllers
             task.Status = updatedTaskDto.Status;
             task.ProjectId = updatedTaskDto.ProjectId;
             task.AssignedToUserId = updatedTaskDto.AssignedUserId;
+            task.Priority = updatedTaskDto.Priority;
 
             await _taskService.UpdateTaskAsync(task);
             return NoContent();
         }
+
+
 
         // DELETE: api/tasks/{id}
         [HttpDelete("{id}")]
@@ -192,5 +239,103 @@ namespace WorkManagementApp.Controllers
             await _taskService.DeleteTaskAsync(id);
             return NoContent();
         }
+
+        // POST: api/tasks/{taskId}/comments
+        [HttpPost("{taskId}/comments")]
+        public async Task<IActionResult> AddComment(int taskId, [FromBody] CreateCommentDto createCommentDto)
+        {
+            // Überprüfen, ob die Aufgabe existiert
+            var task = await _taskService.GetTaskByIdAsync(taskId);
+            if (task == null)
+            {
+                return NotFound("Task not found.");
+            }
+
+            // Optional: DTO-Validierung
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            // Mapping des CreateCommentDto zu TaskComment
+            var taskComment = new TaskComment
+            {
+                CommentText = createCommentDto.CommentText,
+                CreatedAt = DateTime.Now,
+                TaskId = taskId,
+                UserId = createCommentDto.UserId // Der UserId wird hier aus dem DTO übernommen
+            };
+
+            // Kommentar zur Aufgabe hinzufügen
+            await _taskService.AddCommentToTaskAsync(taskComment);
+
+            // Mapping des TaskComment zu CommentDto
+            var commentDto = new CommentDto
+            {
+                Id = taskComment.Id,
+                CommentText = taskComment.CommentText,
+                CreatedAt = taskComment.CreatedAt,
+                UserId = taskComment.UserId
+            };
+
+            // Rückgabe der Antwort mit der neu erstellten Ressource (nur das CommentDto)
+            return CreatedAtAction(nameof(GetCommentsByTaskId), new { taskId = taskId }, commentDto);
+        }
+
+
+
+        // GET: api/tasks/{taskId}/comments
+        [HttpGet("{taskId}/comments")]
+        public async Task<IActionResult> GetCommentsByTaskId(int taskId)
+        {
+            // Holen Sie sich alle Kommentare für die angegebene Aufgabe
+            var comments = await _taskService.GetCommentsForTaskAsync(taskId);
+            if (comments == null || !comments.Any())
+            {
+                return NotFound("No comments found for this task.");
+            }
+
+            // Mapping der Kommentare auf CommentDto
+            var commentDtos = comments.Select(comment => new CommentDto
+            {
+                Id = comment.Id,
+                CommentText = comment.CommentText,
+                CreatedAt = comment.CreatedAt,
+                UserId = comment.UserId
+            }).ToList();
+
+            return Ok(commentDtos); // Rückgabe der Kommentare als List
+        }
+
+
+
+        // DELETE: api/tasks/{taskId}/comments/{commentId}
+        [HttpDelete("{taskId}/comments/{commentId}")]
+        public async Task<IActionResult> DeleteComment(int taskId, int commentId)
+        {
+            // Überprüfen, ob die Aufgabe existiert
+            var task = await _taskService.GetTaskByIdAsync(taskId);
+            if (task == null)
+            {
+                return NotFound("Task not found.");
+            }
+
+            // Löschen des Kommentars
+            var comment = await _taskService.GetCommentsForTaskAsync(taskId);
+            if (comment == null)
+            {
+                return NotFound("Comment not found.");
+            }
+
+            // Lösche den Kommentar
+            await _taskService.DeleteCommentFromTaskAsync(commentId);
+
+            // Erfolgreiche Antwort ohne Inhalt
+            return NoContent();
+        }
+
+
+
+
     }
 }

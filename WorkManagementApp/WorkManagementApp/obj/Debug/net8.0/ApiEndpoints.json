@@ -207,6 +207,64 @@
   },
   {
     "ContainingType": "WorkManagementApp.Controllers.TasksController",
+    "Method": "AddComment",
+    "RelativePath": "api/Tasks/{taskId}/comments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "taskId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "createCommentDto",
+        "Type": "WorkManagementApp.DTO.Task.CreateCommentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkManagementApp.Controllers.TasksController",
+    "Method": "GetCommentsByTaskId",
+    "RelativePath": "api/Tasks/{taskId}/comments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "taskId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkManagementApp.Controllers.TasksController",
+    "Method": "DeleteComment",
+    "RelativePath": "api/Tasks/{taskId}/comments/{commentId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "taskId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "commentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkManagementApp.Controllers.TasksController",
     "Method": "GetTasksByProjectId",
     "RelativePath": "api/Tasks/project/{projectId}",
     "HttpMethod": "GET",

@@ -1,4 +1,4 @@
-﻿namespace WorkManagementApp.Models
+﻿namespace WorkManagementApp.DTO.Task
 {
     public enum TaskStatus
     {
