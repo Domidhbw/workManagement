@@ -61,7 +61,7 @@ namespace WorkManagementApp.Controllers
             var token = await _authService.GenerateJwtToken(user);
 
             // Rückgabe des Tokens als Antwort auf die erfolgreiche Anmeldung
-            return Ok(new { token });
+            return Ok(new { token, userId = user.Id });
         }
     }
 }
