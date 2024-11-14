@@ -51,12 +51,13 @@ namespace WorkManagementApp
 
             // Weitere Standardkonfigurationen
             // JSON Serializer Optionen anpassen, um zirkuläre Referenzen zu behandeln
-            builder.Services.AddControllers()
-                .AddJsonOptions(options =>
-                {
-                    options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
-                    options.JsonSerializerOptions.MaxDepth = 64; // Optional: Du kannst auch die Max-Tiefe erhöhen, falls nötig
-                });
+            //builder.Services.AddControllers()
+            //    .AddJsonOptions(options =>
+            //    {
+            //        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
+            //        options.JsonSerializerOptions.MaxDepth = 64; // Optional: Du kannst auch die Max-Tiefe erhöhen, falls nötig
+            //    });
+            builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
