@@ -1,18 +1,15 @@
 import { Component } from '@angular/core';
-import { ApiService } from '../api.service';
+import { ApiService, ProjectService, TaskService } from '../../services';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
+
 @Component({
   selector: 'app-login',
-  standalone: true, imports: [CommonModule, FormsModule],
-  template: `
-    <div>
-      <h2>Login</h2>
-      <input [(ngModel)]="username" placeholder="Username" />
-      <input [(ngModel)]="password" type="password" placeholder="Password" />
-      <button (click)="login()">Login</button>
-    </div>
-  `,
+  standalone: true,
+  imports: [CommonModule, FormsModule, RouterOutlet, RouterModule],
+  templateUrl: './login.component.html'
 })
 export class LoginComponent {
   username = '';
@@ -24,6 +21,8 @@ export class LoginComponent {
     this.api.login({ username: this.username, password: this.password }).subscribe(
       (response) => {
         console.log('Login successful:', response);
+        sessionStorage.setItem('token', response.token);
+        sessionStorage.setItem('userId', response.userId.toString());
       },
       (error) => {
         console.error('Login failed:', error);

@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { ApiService, ProjectService, TaskService } from '../../services';
 import { TasksComponent } from './tasks.component';
 
 describe('TasksComponent', () => {

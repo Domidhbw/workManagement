@@ -1,0 +1,14 @@
+
+<div>
+  <h2>Login</h2>
+  <input [(ngModel)]="username" placeholder="Username" />
+  <input [(ngModel)]="password" type="password" placeholder="Password" />
+  <button (click)="login()">Login</button>
+  <button>
+    <a routerLink="/register">Registration</a>
+  </button>
+  <button>
+    <a routerLink="/projects">Projects</a>
+  </button>
+  <router-outlet></router-outlet>
+</div>

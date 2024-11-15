@@ -76,7 +76,7 @@ namespace WorkManagementApp
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-            app.UseCors();
+            app.UseCors("FrontendUI");
             app.UseHttpsRedirection();
             app.UseAuthorization();
             app.MapControllers();

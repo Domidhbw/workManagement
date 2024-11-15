@@ -26,11 +26,25 @@ export class ApiService {
     return this.http.post(`${this.baseUrl}/Projects`, data);
   }
 
+  deleteProject(projectId: number): Observable<any> {
+    return this.http.delete(`${this.baseUrl}/Projects/${projectId}`);
+  }
+
+  updateProject(projectId: number, data:any): Observable<any> {
+    return this.http.put(`${this.baseUrl}/Projects/${projectId}`, data);
+  }
+
   getTasks(): Observable<any> {
     return this.http.get(`${this.baseUrl}/Tasks`);
   }
 
   createTask(data: any): Observable<any> {
     return this.http.post(`${this.baseUrl}/Tasks`, data);
+  }
+  deleteTask(taskId: number): Observable<any> {
+    return this.http.delete(`${this.baseUrl}/Tasks/${taskId}`);
+  }
+  getTasksByProjectId(projectId: number): Observable<any> {
+    return this.http.get(`${this.baseUrl}/Tasks/project/${projectId}`);
   }
 }
