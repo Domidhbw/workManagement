@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WorkManagementApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ebacbd29458eaefc5d06cdb09d64f1809de40d4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5fe2849ac5f67237238b0f2f888aa2269a300fd1")]
 [assembly: System.Reflection.AssemblyProductAttribute("WorkManagementApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WorkManagementApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
