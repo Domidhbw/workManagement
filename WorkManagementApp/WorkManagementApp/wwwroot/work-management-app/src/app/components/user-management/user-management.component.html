@@ -2,7 +2,29 @@
                (userSelected)="onUserSelected($event)">
 </app-user-list>
 
-<div *ngIf="selectedUser" class="selected-user">
-  <h3>Selected User ID:</h3>
-  <p>id:{{ selectedUser.id }}</p>
+<div *ngIf="selectedUser" class="edit-user">
+  <h3>Edit User</h3>
+  <form (ngSubmit)="updateUser(selectedUser.id, selectedUser)">
+    <label for="username">Name:</label>
+    <input id="username"
+           [(ngModel)]="selectedUser.username"
+           name="username"
+           required />
+
+    <label for="email">Email:</label>
+    <input id="email"
+           [(ngModel)]="selectedUser.email"
+           name="email"
+           type="email"
+           required />
+
+    <label for="role">Role:</label>
+    <input id="role"
+           [(ngModel)]="selectedUser.role"
+           name="role"
+           required />
+
+    <button type="submit">Update User</button>
+    <button type="button" (click)="deleteUser(selectedUser.id)">Delete User</button>
+  </form>
 </div>

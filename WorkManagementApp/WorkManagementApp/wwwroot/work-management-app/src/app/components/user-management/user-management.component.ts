@@ -40,4 +40,30 @@ export class UserManagementComponent implements OnInit {
     this.selectedUser = user; // Handle the selected user
     console.log('Selected User:', user);
   }
+
+  updateUser(userId: number, updatedData: any): void {
+    this.api.updateUser(userId, updatedData).subscribe({
+      next: (response) => {
+        console.log('User updated:', response);
+        this.fetchUsers(); // Refresh the user list after update
+      },
+      error: (error) => {
+        console.error('Error updating user:', error);
+      }
+    });
+  }
+
+  deleteUser(userId: number): void {
+    if (confirm('Are you sure you want to delete this user?')) {
+      this.api.deleteUser(userId).subscribe({
+        next: () => {
+          console.log('User deleted:', userId);
+          this.fetchUsers(); // Refresh the user list after deletion
+        },
+        error: (error) => {
+          console.error('Error deleting user:', error);
+        }
+      });
+    }
+  }
 }
