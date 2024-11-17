@@ -1,30 +1,37 @@
-<app-user-list [users]="users"
-               (userSelected)="onUserSelected($event)">
-</app-user-list>
+<div class="user-management-container">
+  <h2>User Management</h2>
+  <input type="text" [(ngModel)]="searchTerm" placeholder="Search users..." class="search-input" />
 
-<div *ngIf="selectedUser" class="edit-user">
-  <h3>Edit User</h3>
-  <form (ngSubmit)="updateUser(selectedUser.id, selectedUser)">
-    <label for="username">Name:</label>
-    <input id="username"
-           [(ngModel)]="selectedUser.username"
-           name="username"
-           required />
+  <div class="user-list">
+    <div *ngFor="let user of filteredUsers()" class="user-item" (click)="onUserSelected(user)">
+      <p>{{ user.username }} - {{ user.email }}</p>
+    </div>
+  </div>
 
-    <label for="email">Email:</label>
-    <input id="email"
-           [(ngModel)]="selectedUser.email"
-           name="email"
-           type="email"
-           required />
+  <div *ngIf="selectedUser" class="edit-user">
+    <h3>Edit User</h3>
+    <form (ngSubmit)="updateUser(selectedUser.id, selectedUser)">
+      <label for="username">Name:</label>
+      <input id="username"
+             [(ngModel)]="selectedUser.username"
+             name="username"
+             required />
 
-    <label for="role">Role:</label>
-    <input id="role"
-           [(ngModel)]="selectedUser.role"
-           name="role"
-           required />
+      <label for="email">Email:</label>
+      <input id="email"
+             [(ngModel)]="selectedUser.email"
+             name="email"
+             type="email"
+             required />
 
-    <button type="submit">Update User</button>
-    <button type="button" (click)="deleteUser(selectedUser.id)">Delete User</button>
-  </form>
+      <label for="role">Role:</label>
+      <input id="role"
+             [(ngModel)]="selectedUser.role"
+             name="role"
+             required />
+
+      <button type="submit">Update User</button>
+      <button type="button" (click)="deleteUser(selectedUser.id)">Delete User</button>
+    </form>
+  </div>
 </div>

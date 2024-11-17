@@ -32,7 +32,7 @@ export class TasksComponent implements OnInit {
   assignedUserId = '';
   priority = '';
 
-  constructor(private api: ApiService, private taskService: TaskService, private route: ActivatedRoute) { }
+  constructor(private api: ApiService, private taskService: TaskService, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
@@ -42,6 +42,16 @@ export class TasksComponent implements OnInit {
       }
     });
     this.getTasks();
+  }
+
+  getStatusName(status: string | number): string {
+    const statusMapping: { [key: string]: string } = {
+      '0': 'Not Started',
+      '1': 'In Progress',
+      '2': 'Completed',
+      '3': 'Blocked'
+    };
+    return statusMapping[status.toString()] || 'Unknown Status';
   }
 
   getTasks() {
@@ -120,4 +130,7 @@ export class TasksComponent implements OnInit {
       );
     }
   }
+
 }
+
+
