@@ -2,7 +2,7 @@
   <h2 class="tasks-title">Tasks</h2>
   <button class="btn-primary" (click)="getTasks()">Load Tasks</button>
 
-  <div class="task-columns-container">
+  <div *ngIf="selectedProjectId !== null" class="task-columns-container">
     <div class="task-column" *ngFor="let status of taskStatuses">
       <h3>{{ status }}</h3>
       <div *ngIf="getTasksByStatus(status).length > 0; else noTasksForStatus">
@@ -25,7 +25,12 @@
       </ng-template>
     </div>
   </div>
+
+  <div *ngIf="selectedProjectId === null" class="no-project-selected">
+    <p>Please select a project to view its tasks.</p>
+  </div>
 </div>
+
 
 
 <!-- Edit Task Form -->

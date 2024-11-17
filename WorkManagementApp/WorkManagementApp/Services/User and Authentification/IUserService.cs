@@ -10,7 +10,7 @@ public interface IUserService
     Task<User> RegisterUserAsync(User user, string password, string role);
     Task<User> LoginAsync(string username, string password);
     Task<bool> UserExistsAsync(string username);
-    Task<IdentityResult> UpdateUserAsync(User user);  // Rückgabe von IdentityResult
+    Task<IdentityResult> UpdateUserAsync(User user, string newRole);  
     Task<IdentityResult> DeleteUserAsync(int id);
     Task<IList<string>> GetUserRolesAsync(User user);
 }
