@@ -462,8 +462,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>rautj4j4rk</Fingerprint>
-      <Integrity>o/HYGRCZ1U5uerUHp8Yq5eDeDHtc/IsuovzOx1/LwiE=</Integrity>
+      <Fingerprint>6nwv7bbstz</Fingerprint>
+      <Integrity>AtrMe2LjBtBstdRwtbseCluahaFbFN6Y0C8GeR1BTLI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\tasks\tasks.component.css'))</OriginalItemSpec>
@@ -480,8 +480,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>jspr6ld54j</Fingerprint>
-      <Integrity>UwWo3Hy7rOwSJqt10HxtHans62ySxBrQI19hYLCaa6Q=</Integrity>
+      <Fingerprint>5wz9vx90ir</Fingerprint>
+      <Integrity>9VBGEMiTVIZq+zukiznyIHf2fDDBJNsLcho2unozQnQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\tasks\tasks.component.html'))</OriginalItemSpec>
@@ -498,8 +498,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>n358z3kg9t</Fingerprint>
-      <Integrity>LQWbPFGwzoXpvfLL4WO/IhWC78oo3kGoShFQl2V6d/I=</Integrity>
+      <Fingerprint>867bme071k</Fingerprint>
+      <Integrity>8Hha5kfrn+Tbtu3XU2JaB6Qk3Myt6oMKVZjsrzwOazk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\tasks\tasks.component.ts'))</OriginalItemSpec>

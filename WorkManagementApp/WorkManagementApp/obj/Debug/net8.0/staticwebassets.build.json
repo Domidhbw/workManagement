@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rVj3E4tj6VIza2DqhlF/xXvcO9vwFmjvsdCG57O7zdA=",
+  "Hash": "BBGWuFBSMPHDQOsPvP4gJqugjQ+SFwGOKNsWSlYPS1k=",
   "Source": "WorkManagementApp",
   "BasePath": "_content/WorkManagementApp",
   "Mode": "Default",
@@ -556,8 +556,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "rautj4j4rk",
-      "Integrity": "o/HYGRCZ1U5uerUHp8Yq5eDeDHtc/IsuovzOx1/LwiE=",
+      "Fingerprint": "6nwv7bbstz",
+      "Integrity": "AtrMe2LjBtBstdRwtbseCluahaFbFN6Y0C8GeR1BTLI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.css"
@@ -577,8 +577,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "jspr6ld54j",
-      "Integrity": "UwWo3Hy7rOwSJqt10HxtHans62ySxBrQI19hYLCaa6Q=",
+      "Fingerprint": "5wz9vx90ir",
+      "Integrity": "9VBGEMiTVIZq+zukiznyIHf2fDDBJNsLcho2unozQnQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.html"
@@ -619,8 +619,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "n358z3kg9t",
-      "Integrity": "LQWbPFGwzoXpvfLL4WO/IhWC78oo3kGoShFQl2V6d/I=",
+      "Fingerprint": "867bme071k",
+      "Integrity": "8Hha5kfrn+Tbtu3XU2JaB6Qk3Myt6oMKVZjsrzwOazk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.ts"
@@ -3266,6 +3266,141 @@
       ]
     },
     {
+      "Route": "work-management-app/src/app/components/tasks/tasks.component.5wz9vx90ir.html",
+      "AssetFile": "C:\\Users\\jamie\\Documents\\GitHub\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2767"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9VBGEMiTVIZq+zukiznyIHf2fDDBJNsLcho2unozQnQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 17 Nov 2024 21:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5wz9vx90ir"
+        },
+        {
+          "Name": "label",
+          "Value": "work-management-app/src/app/components/tasks/tasks.component.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9VBGEMiTVIZq+zukiznyIHf2fDDBJNsLcho2unozQnQ="
+        }
+      ]
+    },
+    {
+      "Route": "work-management-app/src/app/components/tasks/tasks.component.6nwv7bbstz.css",
+      "AssetFile": "C:\\Users\\jamie\\Documents\\GitHub\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1317"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AtrMe2LjBtBstdRwtbseCluahaFbFN6Y0C8GeR1BTLI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 17 Nov 2024 21:11:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6nwv7bbstz"
+        },
+        {
+          "Name": "label",
+          "Value": "work-management-app/src/app/components/tasks/tasks.component.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AtrMe2LjBtBstdRwtbseCluahaFbFN6Y0C8GeR1BTLI="
+        }
+      ]
+    },
+    {
+      "Route": "work-management-app/src/app/components/tasks/tasks.component.867bme071k.ts",
+      "AssetFile": "C:\\Users\\jamie\\Documents\\GitHub\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3703"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8Hha5kfrn+Tbtu3XU2JaB6Qk3Myt6oMKVZjsrzwOazk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 17 Nov 2024 21:07:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "867bme071k"
+        },
+        {
+          "Name": "label",
+          "Value": "work-management-app/src/app/components/tasks/tasks.component.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8Hha5kfrn+Tbtu3XU2JaB6Qk3Myt6oMKVZjsrzwOazk="
+        }
+      ]
+    },
+    {
       "Route": "work-management-app/src/app/components/tasks/tasks.component.css",
       "AssetFile": "C:\\Users\\jamie\\Documents\\GitHub\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.css",
       "Selectors": [],
@@ -3284,11 +3419,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"o/HYGRCZ1U5uerUHp8Yq5eDeDHtc/IsuovzOx1/LwiE=\""
+          "Value": "\"AtrMe2LjBtBstdRwtbseCluahaFbFN6Y0C8GeR1BTLI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 20:39:25 GMT"
+          "Value": "Sun, 17 Nov 2024 21:11:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3298,7 +3433,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-o/HYGRCZ1U5uerUHp8Yq5eDeDHtc/IsuovzOx1/LwiE="
+          "Value": "sha256-AtrMe2LjBtBstdRwtbseCluahaFbFN6Y0C8GeR1BTLI="
         }
       ]
     },
@@ -3313,7 +3448,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2591"
+          "Value": "2767"
         },
         {
           "Name": "Content-Type",
@@ -3321,11 +3456,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UwWo3Hy7rOwSJqt10HxtHans62ySxBrQI19hYLCaa6Q=\""
+          "Value": "\"9VBGEMiTVIZq+zukiznyIHf2fDDBJNsLcho2unozQnQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 20:39:26 GMT"
+          "Value": "Sun, 17 Nov 2024 21:07:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3335,142 +3470,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-UwWo3Hy7rOwSJqt10HxtHans62ySxBrQI19hYLCaa6Q="
-        }
-      ]
-    },
-    {
-      "Route": "work-management-app/src/app/components/tasks/tasks.component.jspr6ld54j.html",
-      "AssetFile": "C:\\Users\\jamie\\Documents\\GitHub\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2591"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"UwWo3Hy7rOwSJqt10HxtHans62ySxBrQI19hYLCaa6Q=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 20:39:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "jspr6ld54j"
-        },
-        {
-          "Name": "label",
-          "Value": "work-management-app/src/app/components/tasks/tasks.component.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-UwWo3Hy7rOwSJqt10HxtHans62ySxBrQI19hYLCaa6Q="
-        }
-      ]
-    },
-    {
-      "Route": "work-management-app/src/app/components/tasks/tasks.component.n358z3kg9t.ts",
-      "AssetFile": "C:\\Users\\jamie\\Documents\\GitHub\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.ts",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2999"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "video/vnd.dlna.mpeg-tts"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"LQWbPFGwzoXpvfLL4WO/IhWC78oo3kGoShFQl2V6d/I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 21:01:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "n358z3kg9t"
-        },
-        {
-          "Name": "label",
-          "Value": "work-management-app/src/app/components/tasks/tasks.component.ts"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-LQWbPFGwzoXpvfLL4WO/IhWC78oo3kGoShFQl2V6d/I="
-        }
-      ]
-    },
-    {
-      "Route": "work-management-app/src/app/components/tasks/tasks.component.rautj4j4rk.css",
-      "AssetFile": "C:\\Users\\jamie\\Documents\\GitHub\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1317"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"o/HYGRCZ1U5uerUHp8Yq5eDeDHtc/IsuovzOx1/LwiE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 20:39:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "rautj4j4rk"
-        },
-        {
-          "Name": "label",
-          "Value": "work-management-app/src/app/components/tasks/tasks.component.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-o/HYGRCZ1U5uerUHp8Yq5eDeDHtc/IsuovzOx1/LwiE="
+          "Value": "sha256-9VBGEMiTVIZq+zukiznyIHf2fDDBJNsLcho2unozQnQ="
         }
       ]
     },
@@ -3567,7 +3567,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2999"
+          "Value": "3703"
         },
         {
           "Name": "Content-Type",
@@ -3575,11 +3575,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LQWbPFGwzoXpvfLL4WO/IhWC78oo3kGoShFQl2V6d/I=\""
+          "Value": "\"8Hha5kfrn+Tbtu3XU2JaB6Qk3Myt6oMKVZjsrzwOazk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 21:01:22 GMT"
+          "Value": "Sun, 17 Nov 2024 21:07:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3589,7 +3589,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-LQWbPFGwzoXpvfLL4WO/IhWC78oo3kGoShFQl2V6d/I="
+          "Value": "sha256-8Hha5kfrn+Tbtu3XU2JaB6Qk3Myt6oMKVZjsrzwOazk="
         }
       ]
     },
