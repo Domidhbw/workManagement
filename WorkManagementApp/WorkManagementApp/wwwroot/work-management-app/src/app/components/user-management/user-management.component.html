@@ -1,1 +1,8 @@
-<p>user-management works!</p>
+<app-user-list [users]="users"
+               (userSelected)="onUserSelected($event)">
+</app-user-list>
+
+<div *ngIf="selectedUser" class="selected-user">
+  <h3>Selected User ID:</h3>
+  <p>id:{{ selectedUser.id }}</p>
+</div>
