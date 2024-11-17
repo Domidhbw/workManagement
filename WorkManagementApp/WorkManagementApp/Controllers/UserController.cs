@@ -94,7 +94,7 @@ namespace WorkManagementApp.Controllers
             user.Email = updatedUserDto.Email ?? user.Email;
             user.UserName = updatedUserDto.UserName ?? user.UserName;
 
-            await _userService.UpdateUserAsync(user);
+            await _userService.UpdateUserAsync(user, updatedUserDto.Role);
 
             return NoContent();
         }
