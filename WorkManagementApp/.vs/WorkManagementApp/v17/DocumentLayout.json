@@ -31,7 +31,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-<<<<<<< Updated upstream
               "Title": "login.component.ts",
               "DocumentMoniker": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\login\\login.component.ts",
               "RelativeDocumentMoniker": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\login\\login.component.ts",
@@ -52,48 +51,31 @@
               "RelativeToolTip": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\login\\login.component.html",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-17T21:06:41.341Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T21:06:41.341Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-=======
->>>>>>> Stashed changes
               "Title": "projects.component.ts",
               "DocumentMoniker": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.ts",
               "RelativeDocumentMoniker": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.ts",
               "ToolTip": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.ts",
               "RelativeToolTip": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.ts",
-<<<<<<< Updated upstream
               "ViewState": "AQIAAEkAAAAAAAAAAAAgwCQAAAAXAAAA",
-=======
-              "ViewState": "AQIAAIsAAAAAAAAAAAAgwCMAAAAUAAAA",
->>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-11-17T18:49:17.073Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T18:49:17.073Z"
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
               "DocumentIndex": 3,
-=======
-              "DocumentIndex": 1,
->>>>>>> Stashed changes
               "Title": "projects.component.html",
               "DocumentMoniker": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.html",
               "RelativeDocumentMoniker": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.html",
               "ToolTip": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.html",
               "RelativeToolTip": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.html",
-<<<<<<< Updated upstream
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAFQAAAAJAAAA",
-=======
-              "ViewState": "AQIAADYAAAAAAAAAAAAAAFEAAAAdAAAA",
->>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-17T18:40:13.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T18:40:13.128Z"
             }
           ]
         }
