@@ -17,12 +17,14 @@ namespace WorkManagementApp.Controllers
     {
         private readonly ITaskService _taskService;
 
+        // Konstruktor für den Controller. Der Service wird über Dependency Injection bereitgestellt.
         public TasksController(ITaskService taskService)
         {
             _taskService = taskService;
         }
 
         // GET: api/tasks
+        // Holt alle Aufgaben und gibt sie als eine Liste von TaskDto zurück.
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -39,20 +41,20 @@ namespace WorkManagementApp.Controllers
                 ProjectId = task.ProjectId,
                 AssignedUserId = task.AssignedToUserId,
                 Priority = task.Priority,
-
             }).ToList();
 
-            return Ok(taskDtos);
+            return Ok(taskDtos); // Erfolgreiche Rückgabe als JSON
         }
 
         // GET: api/tasks/{id}
+        // Holt eine Aufgabe anhand ihrer ID und gibt diese als TaskDto zurück.
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             var task = await _taskService.GetTaskByIdAsync(id);
             if (task == null)
             {
-                return NotFound();
+                return NotFound(); // Gibt NotFound zurück, falls die Aufgabe nicht existiert.
             }
 
             // Mapping der Task-Entity auf TaskDto
@@ -68,17 +70,18 @@ namespace WorkManagementApp.Controllers
                 Priority = task.Priority,
             };
 
-            return Ok(taskDto);
+            return Ok(taskDto); // Erfolgreiche Rückgabe der Task als JSON
         }
 
         // GET: api/tasks/user/{userId}
+        // Holt alle Aufgaben eines bestimmten Benutzers anhand seiner ID.
         [HttpGet("user/{userId}")]
         public async Task<IActionResult> GetTasksByUserId(int userId)
         {
             var tasks = await _taskService.GetTasksByUserIdAsync(userId);
             if (tasks == null || !tasks.Any())
             {
-                return NotFound();
+                return NotFound(); // Gibt NotFound zurück, wenn keine Aufgaben für den Benutzer gefunden werden.
             }
 
             // Mapping der Task-Entities auf TaskDto
@@ -94,17 +97,18 @@ namespace WorkManagementApp.Controllers
                 Priority = t.Priority,
             }).ToList();
 
-            return Ok(taskDtos);
+            return Ok(taskDtos); // Rückgabe der Aufgaben als JSON
         }
 
         // GET: api/tasks/project/{projectId}
+        // Holt alle Aufgaben eines bestimmten Projekts anhand seiner ID.
         [HttpGet("project/{projectId}")]
         public async Task<IActionResult> GetTasksByProjectId(int projectId)
         {
             var tasks = await _taskService.GetTasksByProjectIdAsync(projectId);
             if (tasks == null || !tasks.Any())
             {
-                return NotFound();
+                return NotFound(); // Gibt NotFound zurück, wenn keine Aufgaben für das Projekt gefunden werden.
             }
 
             // Mapping der Task-Entities auf TaskDto
@@ -120,10 +124,11 @@ namespace WorkManagementApp.Controllers
                 Priority = t.Priority,
             }).ToList();
 
-            return Ok(taskDtos);
+            return Ok(taskDtos); // Rückgabe der Aufgaben als JSON
         }
 
         // POST: api/tasks
+        // Erstellt eine neue Aufgabe basierend auf den Daten im CreateTaskDto.
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateTaskDto createTaskDto)
         {
@@ -144,6 +149,7 @@ namespace WorkManagementApp.Controllers
                 return BadRequest("Das Fälligkeitsdatum muss in der Zukunft liegen.");
             }
 
+            // Validierung, ob das Model korrekt ist
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
@@ -161,12 +167,13 @@ namespace WorkManagementApp.Controllers
                 Priority = createTaskDto.Priority
             };
 
+            // Aufruf des Services, um die Aufgabe zu erstellen
             await _taskService.CreateTaskAsync(task);
 
             // Mapping des TaskModel zu TaskDto, um die ID nach der Erstellung zurückzugeben
             var taskDtoResponse = new TaskDto
             {
-                Id = task.Id,  // Die ID wird hier nach der Erstellung gesetzt
+                Id = task.Id,
                 Title = task.Title,
                 Description = task.Description,
                 DueDate = task.DueDate,
@@ -180,18 +187,19 @@ namespace WorkManagementApp.Controllers
         }
 
         // PUT: api/tasks/{id}
+        // Aktualisiert eine bestehende Aufgabe anhand ihrer ID mit den neuen Daten aus dem TaskDto.
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] TaskDto updatedTaskDto)
         {
             if (id != updatedTaskDto.Id)
             {
-                return BadRequest();
+                return BadRequest(); // Wenn die IDs nicht übereinstimmen, wird eine BadRequest-Antwort zurückgegeben.
             }
 
             var task = await _taskService.GetTaskByIdAsync(id);
             if (task == null)
             {
-                return NotFound();
+                return NotFound(); // Gibt NotFound zurück, wenn die Aufgabe nicht existiert.
             }
 
             // Validierung der Enum-Werte (Priority und Status)
@@ -220,24 +228,25 @@ namespace WorkManagementApp.Controllers
             task.AssignedToUserId = updatedTaskDto.AssignedUserId;
             task.Priority = updatedTaskDto.Priority;
 
+            // Aufruf des Services, um die Aufgabe zu aktualisieren
             await _taskService.UpdateTaskAsync(task);
-            return NoContent();
+            return NoContent(); // Erfolgreiche Antwort ohne Inhalt
         }
 
-
-
         // DELETE: api/tasks/{id}
+        // Löscht eine Aufgabe anhand ihrer ID.
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             var task = await _taskService.GetTaskByIdAsync(id);
             if (task == null)
             {
-                return NotFound();
+                return NotFound(); // Gibt NotFound zurück, wenn die Aufgabe nicht existiert.
             }
 
+            // Aufruf des Services, um die Aufgabe zu löschen
             await _taskService.DeleteTaskAsync(id);
-            return NoContent();
+            return NoContent(); // Erfolgreiche Antwort ohne Inhalt
         }
 
         // POST: api/tasks/{taskId}/comments

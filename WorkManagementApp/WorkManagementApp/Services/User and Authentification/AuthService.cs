@@ -12,49 +12,55 @@ namespace WorkManagementApp.Services.Authentification
 {
     public class AuthService : IAuthService
     {
-        private readonly string _jwtSecretKey;
-        private UserManager<User> _userManager;
+        private readonly string _jwtSecretKey;  // Secret key for signing the JWT
+        private readonly UserManager<User> _userManager;  // Manages user-related operations (e.g., roles)
 
-        // Der Konstruktor empfängt IConfiguration, um auf die Konfigurationswerte zuzugreifen
+        // Constructor to inject IConfiguration and UserManager services
         public AuthService(IConfiguration configuration, UserManager<User> userManager)
         {
-            // Den SecretKey aus der appsettings.json lesen
+            // Reading the secret key from configuration (appsettings.json)
             _jwtSecretKey = configuration["JwtSettings:SecretKey"];
             _userManager = userManager;
         }
 
-        // Diese Methode erstellt das JWT für den Benutzer
+        // Method to generate a JWT token for a user
         public async Task<string> GenerateJwtToken(User user)
         {
-            // Der geheime Schlüssel für das Token wird hier definiert.
+            // Creating the security key using the secret key from configuration
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSecretKey));
+
+            // Signing credentials that will be used to sign the JWT
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
+            // Get the roles assigned to the user
             var roles = await _userManager.GetRolesAsync(user);
 
+            // Create a list of claims to be added to the JWT
             var claims = new List<Claim>
             {
-                new Claim(ClaimTypes.Name, user.UserName),
-                new Claim(ClaimTypes.Email, user.Email)
+                new Claim(ClaimTypes.Name, user.UserName),  // Add username as a claim
+                new Claim(ClaimTypes.Email, user.Email)    // Add email as a claim
             };
 
+            // Add roles as claims to the JWT
             foreach (var role in roles)
             {
-                claims.Add(new Claim(ClaimTypes.Role, role));
+                claims.Add(new Claim(ClaimTypes.Role, role));  // Add each role as a claim
             }
-            // Das Token wird mit Claims (z.B. Benutzername, Rollen) und einer Ablaufzeit erstellt.
+
+            // Create the token descriptor, which defines the structure of the JWT
             var tokenDescriptor = new JwtSecurityToken(
-                issuer: "https://deinewebsite.com", // Hier kannst du die Aussteller-URL setzen
-                audience: "https://deinewebsite.com", // Die Zielgruppe des Tokens
-                claims: null, // Hier können benutzerdefinierte Claims (wie Rollen) hinzugefügt werden
-                expires: DateTime.Now.AddHours(1), // Das Token läuft nach einer Stunde ab
-                signingCredentials: credentials // Die Signierung des Tokens
+                issuer: "https://deinewebsite.com",    // Issuer of the token (could be your API)
+                audience: "https://deinewebsite.com",  // Audience for which the token is intended
+                claims: claims,                       // Claims to be included in the token (user data and roles)
+                expires: DateTime.Now.AddHours(1),    // Set the expiration time of the token (1 hour)
+                signingCredentials: credentials       // Sign the token using the signing credentials
             );
 
-            // Das Token wird aus dem deskriptiven Token-Objekt erzeugt
+            // Generate the JWT token as a string from the token descriptor
             var token = new JwtSecurityTokenHandler().WriteToken(tokenDescriptor);
 
-            return token; // Das generierte JWT wird zurückgegeben
+            return token;  // Return the generated JWT token
         }
     }
 }
