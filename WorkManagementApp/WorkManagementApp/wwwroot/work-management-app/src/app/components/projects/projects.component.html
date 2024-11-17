@@ -3,7 +3,7 @@
   <div class="button-group">
     <button *ngIf="isLoggedIn()" class="btn-secondary" (click)="logout()">Logout</button>
     <button class="btn-primary" (click)="getProjects()">Load Projects</button>
-    <button class="btn-primary" (click)="showAddProjectForm()">Add Project</button>
+    <button class="btn-primary" *ngIf="isProjectManager" (click)="showAddProjectForm()">Add Project</button>
   </div>
   <ul class="project-list">
     <li *ngFor="let project of projects" class="project-item" [ngStyle]="{'border-color': isDeadlinePassed(project.endDate) ? 'red' : 'inherit'}">
@@ -23,7 +23,6 @@
 </div>
 
 
- Edit Project Form
 <div *ngIf="selectedProject" class="add-project-container">
   <h2>Edit Project</h2>
   <form (ngSubmit)="updateProject()">
