@@ -1,82 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\",
+  "WorkspaceRootPath": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|c:\\users\\wn00226592\\source\\repos\\workmanagement\\workmanagementapp\\workmanagementapp\\services\\user and authentification\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\services\\user and authentification\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|e:\\uni\\sem2\\web\\git\\workmanagement\\workmanagementapp\\workmanagementapp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|c:\\users\\wn00226592\\source\\repos\\workmanagement\\workmanagementapp\\workmanagementapp\\services\\user and authentification\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\services\\user and authentification\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|e:\\uni\\sem2\\web\\git\\workmanagement\\workmanagementapp\\workmanagementapp\\wwwroot\\work-management-app\\src\\main.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\wwwroot\\work-management-app\\src\\main.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|c:\\users\\wn00226592\\source\\repos\\workmanagement\\workmanagementapp\\workmanagementapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|e:\\uni\\sem2\\web\\git\\workmanagement\\workmanagementapp\\workmanagementapp\\wwwroot\\work-management-app\\src\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\wwwroot\\work-management-app\\src\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|c:\\users\\wn00226592\\source\\repos\\workmanagement\\workmanagementapp\\workmanagementapp\\dto\\user and authentification\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\dto\\user and authentification\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|e:\\uni\\sem2\\web\\git\\workmanagement\\workmanagementapp\\workmanagementapp\\wwwroot\\work-management-app\\src\\app\\app.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\wwwroot\\work-management-app\\src\\app\\app.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|c:\\users\\wn00226592\\source\\repos\\workmanagement\\workmanagementapp\\workmanagementapp\\dto\\user and authentification\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\dto\\user and authentification\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|e:\\uni\\sem2\\web\\git\\workmanagement\\workmanagementapp\\workmanagementapp\\wwwroot\\work-management-app\\src\\app\\guards\\admin.guard.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\wwwroot\\work-management-app\\src\\app\\guards\\admin.guard.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|c:\\users\\wn00226592\\source\\repos\\workmanagement\\workmanagementapp\\workmanagementapp\\dto\\user and authentification\\updateduserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\dto\\user and authentification\\updateduserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|e:\\uni\\sem2\\web\\git\\workmanagement\\workmanagementapp\\workmanagementapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|c:\\users\\wn00226592\\source\\repos\\workmanagement\\workmanagementapp\\workmanagementapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|e:\\uni\\sem2\\web\\git\\workmanagement\\workmanagementapp\\workmanagementapp\\wwwroot\\work-management-app\\src\\app\\components\\register\\register.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\wwwroot\\work-management-app\\src\\app\\components\\register\\register.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|c:\\users\\wn00226592\\source\\repos\\workmanagement\\workmanagementapp\\workmanagementapp\\controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|c:\\users\\wn00226592\\source\\repos\\workmanagement\\workmanagementapp\\workmanagementapp\\dto\\task\\commentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\dto\\task\\commentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|c:\\users\\wn00226592\\source\\repos\\workmanagement\\workmanagementapp\\workmanagementapp\\dto\\task\\createtaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\dto\\task\\createtaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|c:\\users\\wn00226592\\source\\repos\\workmanagement\\workmanagementapp\\workmanagementapp\\dto\\task\\priority.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\dto\\task\\priority.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|c:\\users\\wn00226592\\source\\repos\\workmanagement\\workmanagementapp\\workmanagementapp\\dto\\task\\taskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\dto\\task\\taskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|c:\\users\\wn00226592\\source\\repos\\workmanagement\\workmanagementapp\\workmanagementapp\\dto\\task\\taskstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\dto\\task\\taskstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|c:\\users\\wn00226592\\source\\repos\\workmanagement\\workmanagementapp\\workmanagementapp\\dto\\task\\createcommentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\dto\\task\\createcommentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|c:\\users\\wn00226592\\source\\repos\\workmanagement\\workmanagementapp\\workmanagementapp\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|c:\\users\\wn00226592\\source\\repos\\workmanagement\\workmanagementapp\\workmanagementapp\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|c:\\users\\wn00226592\\source\\repos\\workmanagement\\workmanagementapp\\workmanagementapp\\wwwroot\\work-management-app\\src\\app\\app.routes.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|e:\\uni\\sem2\\web\\git\\workmanagement\\workmanagementapp\\workmanagementapp\\wwwroot\\work-management-app\\src\\app\\app.routes.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\wwwroot\\work-management-app\\src\\app\\app.routes.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|c:\\users\\wn00226592\\source\\repos\\workmanagement\\workmanagementapp\\workmanagementapp\\wwwroot\\work-management-app\\src\\app\\components\\login\\login.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\wwwroot\\work-management-app\\src\\app\\components\\login\\login.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|e:\\uni\\sem2\\web\\git\\workmanagement\\workmanagementapp\\workmanagementapp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|c:\\users\\wn00226592\\source\\repos\\workmanagement\\workmanagementapp\\workmanagementapp\\wwwroot\\work-management-app\\src\\app\\guards\\auth.guard.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\wwwroot\\work-management-app\\src\\app\\guards\\auth.guard.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|e:\\uni\\sem2\\web\\git\\workmanagement\\workmanagementapp\\workmanagementapp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|e:\\uni\\sem2\\web\\git\\workmanagement\\workmanagementapp\\workmanagementapp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|e:\\uni\\sem2\\web\\git\\workmanagement\\workmanagementapp\\workmanagementapp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0A8A9176-EECC-47C8-8938-38E9FBB0B1A0}|WorkManagementApp\\WorkManagementApp.csproj|solutionrelative:workmanagementapp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,254 +58,163 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Services\\User and Authentification\\IUserService.cs",
-              "RelativeDocumentMoniker": "WorkManagementApp\\Services\\User and Authentification\\IUserService.cs",
-              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Services\\User and Authentification\\IUserService.cs",
-              "RelativeToolTip": "WorkManagementApp\\Services\\User and Authentification\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:50:48.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Services\\User and Authentification\\UserService.cs",
-              "RelativeDocumentMoniker": "WorkManagementApp\\Services\\User and Authentification\\UserService.cs",
-              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Services\\User and Authentification\\UserService.cs",
-              "RelativeToolTip": "WorkManagementApp\\Services\\User and Authentification\\UserService.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAWwFoAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:41:20.034Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RegisterDTO.cs",
-              "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\DTO\\User and Authentification\\RegisterDTO.cs",
-              "RelativeDocumentMoniker": "WorkManagementApp\\DTO\\User and Authentification\\RegisterDTO.cs",
-              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\DTO\\User and Authentification\\RegisterDTO.cs",
-              "RelativeToolTip": "WorkManagementApp\\DTO\\User and Authentification\\RegisterDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:34:46.699Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginDTO.cs",
-              "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\DTO\\User and Authentification\\LoginDTO.cs",
-              "RelativeDocumentMoniker": "WorkManagementApp\\DTO\\User and Authentification\\LoginDTO.cs",
-              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\DTO\\User and Authentification\\LoginDTO.cs",
-              "RelativeToolTip": "WorkManagementApp\\DTO\\User and Authentification\\LoginDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:34:45.577Z",
+              "DocumentIndex": 7,
+              "Title": "app.routes.ts",
+              "DocumentMoniker": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\app.routes.ts",
+              "RelativeDocumentMoniker": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\app.routes.ts",
+              "ToolTip": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\app.routes.ts",
+              "RelativeToolTip": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\app.routes.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-17T20:40:38.704Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "WorkManagementApp\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "WorkManagementApp\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAswCUAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:34:30.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Priority.cs",
-              "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\DTO\\Task\\Priority.cs",
-              "RelativeDocumentMoniker": "WorkManagementApp\\DTO\\Task\\Priority.cs",
-              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\DTO\\Task\\Priority.cs",
-              "RelativeToolTip": "WorkManagementApp\\DTO\\Task\\Priority.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:34:27.359Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CreateCommentDTO.cs",
-              "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\DTO\\Task\\CreateCommentDTO.cs",
-              "RelativeDocumentMoniker": "WorkManagementApp\\DTO\\Task\\CreateCommentDTO.cs",
-              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\DTO\\Task\\CreateCommentDTO.cs",
-              "RelativeToolTip": "WorkManagementApp\\DTO\\Task\\CreateCommentDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:34:23.47Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CommentDTO.cs",
-              "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\DTO\\Task\\CommentDTO.cs",
-              "RelativeDocumentMoniker": "WorkManagementApp\\DTO\\Task\\CommentDTO.cs",
-              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\DTO\\Task\\CommentDTO.cs",
-              "RelativeToolTip": "WorkManagementApp\\DTO\\Task\\CommentDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:34:22.905Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CreateTaskDTO.cs",
-              "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\DTO\\Task\\CreateTaskDTO.cs",
-              "RelativeDocumentMoniker": "WorkManagementApp\\DTO\\Task\\CreateTaskDTO.cs",
-              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\DTO\\Task\\CreateTaskDTO.cs",
-              "RelativeToolTip": "WorkManagementApp\\DTO\\Task\\CreateTaskDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:34:20.747Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "WorkManagementApp\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Controllers\\UserController.cs",
-              "RelativeToolTip": "WorkManagementApp\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAswGAAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:34:06.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "TasksController.cs",
-              "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Controllers\\TasksController.cs",
-              "RelativeDocumentMoniker": "WorkManagementApp\\Controllers\\TasksController.cs",
-              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Controllers\\TasksController.cs",
-              "RelativeToolTip": "WorkManagementApp\\Controllers\\TasksController.cs",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAmwK0AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:03:10.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProjectsController.cs",
-              "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Controllers\\ProjectsController.cs",
-              "RelativeDocumentMoniker": "WorkManagementApp\\Controllers\\ProjectsController.cs",
-              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Controllers\\ProjectsController.cs",
-              "RelativeToolTip": "WorkManagementApp\\Controllers\\ProjectsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:03:09.673Z",
+              "Title": "register.component.ts",
+              "DocumentMoniker": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\register\\register.component.ts",
+              "RelativeDocumentMoniker": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\register\\register.component.ts",
+              "ToolTip": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\register\\register.component.ts",
+              "RelativeToolTip": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\register\\register.component.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-17T20:36:24.765Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "UpdatedUserDTO.cs",
-              "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\DTO\\User and Authentification\\UpdatedUserDTO.cs",
-              "RelativeDocumentMoniker": "WorkManagementApp\\DTO\\User and Authentification\\UpdatedUserDTO.cs",
-              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\DTO\\User and Authentification\\UpdatedUserDTO.cs",
-              "RelativeToolTip": "WorkManagementApp\\DTO\\User and Authentification\\UpdatedUserDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\Program.cs",
+              "RelativeDocumentMoniker": "WorkManagementApp\\Program.cs",
+              "ToolTip": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\Program.cs",
+              "RelativeToolTip": "WorkManagementApp\\Program.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAAAGUAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:34:49.824Z",
+              "WhenOpened": "2024-11-17T20:26:36.809Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Task.cs",
-              "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Models\\Task.cs",
-              "RelativeDocumentMoniker": "WorkManagementApp\\Models\\Task.cs",
-              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Models\\Task.cs",
-              "RelativeToolTip": "WorkManagementApp\\Models\\Task.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:01:11.313Z"
+              "DocumentIndex": 4,
+              "Title": "admin.guard.ts",
+              "DocumentMoniker": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\guards\\admin.guard.ts",
+              "RelativeDocumentMoniker": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\guards\\admin.guard.ts",
+              "ToolTip": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\guards\\admin.guard.ts",
+              "RelativeToolTip": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\guards\\admin.guard.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-17T20:17:46.186Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "TaskStatus.cs",
-              "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\DTO\\Task\\TaskStatus.cs",
-              "RelativeDocumentMoniker": "WorkManagementApp\\DTO\\Task\\TaskStatus.cs",
-              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\DTO\\Task\\TaskStatus.cs",
-              "RelativeToolTip": "WorkManagementApp\\DTO\\Task\\TaskStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:01:01.976Z",
+              "DocumentIndex": 3,
+              "Title": "app.component.html",
+              "DocumentMoniker": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\app.component.html",
+              "RelativeDocumentMoniker": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\app.component.html",
+              "ToolTip": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\app.component.html",
+              "RelativeToolTip": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\app.component.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-17T19:57:37.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.html",
+              "DocumentMoniker": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\index.html",
+              "RelativeDocumentMoniker": "WorkManagementApp\\wwwroot\\work-management-app\\src\\index.html",
+              "ToolTip": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\index.html",
+              "RelativeToolTip": "WorkManagementApp\\wwwroot\\work-management-app\\src\\index.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-17T19:57:22.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.ts",
+              "DocumentMoniker": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\main.ts",
+              "RelativeDocumentMoniker": "WorkManagementApp\\wwwroot\\work-management-app\\src\\main.ts",
+              "ToolTip": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\main.ts",
+              "RelativeToolTip": "WorkManagementApp\\wwwroot\\work-management-app\\src\\main.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-17T19:57:21.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "projects.component.ts",
+              "DocumentMoniker": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.ts",
+              "RelativeDocumentMoniker": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.ts",
+              "ToolTip": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.ts",
+              "RelativeToolTip": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.ts",
+              "ViewState": "AQIAABMAAAAAAAAAAAAIwCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-17T18:49:17.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "projects.component.html",
+              "DocumentMoniker": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.html",
+              "RelativeDocumentMoniker": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.html",
+              "ToolTip": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.html",
+              "RelativeToolTip": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-17T18:40:13.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "tasks.component.ts",
+              "DocumentMoniker": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.ts",
+              "RelativeDocumentMoniker": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.ts",
+              "ToolTip": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.ts",
+              "RelativeToolTip": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.ts",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAgwCsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-17T18:48:58.867Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "TaskDTO.cs",
-              "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\DTO\\Task\\TaskDTO.cs",
-              "RelativeDocumentMoniker": "WorkManagementApp\\DTO\\Task\\TaskDTO.cs",
-              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\DTO\\Task\\TaskDTO.cs",
-              "RelativeToolTip": "WorkManagementApp\\DTO\\Task\\TaskDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:00:55.18Z",
+              "Title": "tasks.component.html",
+              "DocumentMoniker": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.html",
+              "RelativeDocumentMoniker": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.html",
+              "ToolTip": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.html",
+              "RelativeToolTip": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-17T18:48:52.007Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "login.component.ts",
-              "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\login\\login.component.ts",
-              "RelativeDocumentMoniker": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\login\\login.component.ts",
-              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\login\\login.component.ts",
-              "RelativeToolTip": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\login\\login.component.ts",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-11-17T15:14:04.941Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "app.routes.ts",
-              "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\app.routes.ts",
-              "RelativeDocumentMoniker": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\app.routes.ts",
-              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\app.routes.ts",
-              "RelativeToolTip": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\app.routes.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-11-17T15:09:38.326Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "auth.guard.ts",
-              "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\guards\\auth.guard.ts",
-              "RelativeDocumentMoniker": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\guards\\auth.guard.ts",
-              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\guards\\auth.guard.ts",
-              "RelativeToolTip": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\guards\\auth.guard.ts",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-11-17T15:11:59.69Z"
+              "DocumentIndex": 10,
+              "Title": "tasks.component.css",
+              "DocumentMoniker": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.css",
+              "RelativeDocumentMoniker": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.css",
+              "ToolTip": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.css",
+              "RelativeToolTip": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-17T18:48:50.917Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -18,10 +18,28 @@ export class ApiService {
     return this.http.post(`${this.baseUrl}/Auth/login`, data);
   }
 
+  getUsers(): Observable<any> {
+    return this.http.get(`${this.baseUrl}/User`);
+  }
+
+  getUser(userId: number): Observable<any> {
+    return this.http.get(`${this.baseUrl}/User/${userId}`);
+  }
+
+  updateUser(userId: number, data: any): Observable<any> {
+    return this.http.put(`${this.baseUrl}/User/${userId}`, data);
+  }
+
+  deleteUser(userId: number): Observable<any> {
+    return this.http.delete(`${this.baseUrl}/User/${userId}`);
+  }
+
   getProjects(): Observable<any> {
     return this.http.get(`${this.baseUrl}/Projects`);
   }
-
+  getProjectsByUser(userId: number): Observable<any> {
+    return this.http.get(`${this.baseUrl}/Projects/user/${userId}`);
+  }
   createProject(data: any): Observable<any> {
     return this.http.post(`${this.baseUrl}/Projects`, data);
   }
@@ -41,6 +59,10 @@ export class ApiService {
   createTask(data: any): Observable<any> {
     return this.http.post(`${this.baseUrl}/Tasks`, data);
   }
+  updateTask(taskId: number, data: any): Observable<any> {
+    return this.http.put(`${this.baseUrl}/Tasks/${taskId}`, data);
+  }
+
   deleteTask(taskId: number): Observable<any> {
     return this.http.delete(`${this.baseUrl}/Tasks/${taskId}`);
   }

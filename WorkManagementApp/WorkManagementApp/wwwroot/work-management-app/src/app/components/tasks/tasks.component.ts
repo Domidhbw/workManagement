@@ -1,9 +1,15 @@
-import { Component } from '@angular/core';
-import { ApiService, ProjectService, TaskService } from '../../services';
+import { Component, OnInit } from '@angular/core';
+import { ApiService, TaskService } from '../../services';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { RouterOutlet } from '@angular/router';
-import { RouterModule } from '@angular/router';
+import { RouterOutlet, RouterModule } from '@angular/router';
+
+enum TaskStatus {
+  NotStarted = '0',
+  InProgress = '1',
+  Completed = '2',
+  Blocked = '3'
+}
 
 @Component({
   selector: 'app-tasks',
@@ -12,8 +18,12 @@ import { RouterModule } from '@angular/router';
   templateUrl: './tasks.component.html',
   styleUrls: ['./tasks.component.css']
 })
-export class TasksComponent {
+export class TasksComponent implements OnInit {
+  tasks: any[] = [];
+  selectedTask: any = null;
+  taskStatuses = Object.values(TaskStatus);
 
+  // Task form fields for creating a new task
   title = '';
   description = '';
   dueDate = '';
@@ -22,22 +32,81 @@ export class TasksComponent {
   assignedUserId = '';
   priority = '';
 
-  tasks: any[] = []; // Property to hold tasks
-
   constructor(private api: ApiService, private taskService: TaskService) { }
-
-  getTasks() {
-    this.taskService.fetchTasks();
-    this.tasks = this.taskService.getTasks();
+  ngOnInit(): void {
+    this.getTasks();
   }
+  // Fetch tasks
+  getTasks() {
+    this.api.getTasks().subscribe((response) => {
+      console.log(response);
+      this.tasks = response;
+    });
+  }
+
+  // Create a new task
   createTask() {
-    this.api.createTask({ title: this.title, description: this.description, dueDate: this.dueDate, projectId: this.projectId, assignedUserId: this.assignedUserId, priority: this.priority }).subscribe(
+    const newTask = {
+      title: this.title,
+      description: this.description,
+      dueDate: this.dueDate,
+      status: this.status,
+      projectId: this.projectId,
+      assignedUserId: this.assignedUserId,
+      priority: this.priority,
+    };
+    this.api.createTask(newTask).subscribe(
       (response) => {
-        console.log('Creation of Task successful:', response);
+        console.log('Task created successfully:', response);
+        this.getTasks(); // Refresh the task list
       },
       (error) => {
-        console.error('Creation of Task failed:', error);
+        console.error('Error creating task:', error);
       }
     );
+  }
+
+  // Edit a task
+  editTask(task: any) {
+    this.selectedTask = { ...task }; // Clone the task object for editing
+  }
+
+  // Update a task
+  updateTask() {
+    this.api.updateTask(this.selectedTask.id, this.selectedTask).subscribe(
+      (response) => {
+        console.log('Task updated successfully:', response);
+        this.selectedTask = null; // Clear the selected task
+        this.getTasks(); // Refresh the task list
+      },
+      (error) => {
+        console.error('Error updating task:', error);
+      }
+    );
+  }
+
+  // Cancel editing
+  cancelEdit() {
+    this.selectedTask = null; // Clear the selected task
+  }
+
+  // Delete a task
+  deleteTask(taskId: number) {
+    if (confirm('Are you sure you want to delete this task?')) {
+      this.api.deleteTask(taskId).subscribe(
+        () => {
+          console.log('Task deleted successfully');
+          this.getTasks(); // Refresh the task list
+        },
+        (error) => {
+          console.error('Error deleting task:', error);
+        }
+      );
+    }
+  }
+
+  // Get tasks by status
+  getTasksByStatus(status: string) {
+    return this.tasks.filter(task => task.status === status);
   }
 }

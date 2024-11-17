@@ -9,7 +9,8 @@ import { RouterModule } from '@angular/router';
   selector: 'app-login',
   standalone: true,
   imports: [CommonModule, FormsModule, RouterOutlet, RouterModule],
-  templateUrl: './login.component.html'
+  templateUrl: './login.component.html',
+  styleUrl: './login.component.css'
 })
 export class LoginComponent {
   username = '';
@@ -23,11 +24,21 @@ export class LoginComponent {
         console.log('Login successful:', response);
         sessionStorage.setItem('token', response.token);
         sessionStorage.setItem('userId', response.userId.toString());
-        this.router.navigate(['/protected-route']);
+        this.saveCurrentUser();
+        this.router.navigate(['/projects']);
       },
       (error) => {
         console.error('Login failed:', error);
       }
     );
   }
+
+  saveCurrentUser() {
+    this.api.getUser(Number(sessionStorage.getItem('userId'))).subscribe((response) => {
+      console.log('User:', response);
+      sessionStorage.setItem('user', JSON.stringify(response));
+    }
+    )
+  }
+
 }

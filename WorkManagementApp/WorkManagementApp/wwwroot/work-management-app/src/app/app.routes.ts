@@ -3,7 +3,9 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { TasksComponent } from './components/tasks/tasks.component';
-import { AuthGuard } from './guards/auth.guard'; 
+import { AuthGuard } from './guards/auth.guard';
+import { AdminGuard } from './guards/admin.guard';
+import { UserManagementComponent } from './components/user-management/user-management.component';
 
 export const appRoutes: Routes = [
   { path: '', component: LoginComponent },
@@ -11,4 +13,5 @@ export const appRoutes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'projects', component: ProjectsComponent, canActivate: [AuthGuard] },
   { path: 'tasks', component: TasksComponent, canActivate: [AuthGuard] }, 
+  { path: 'userManagement', component: UserManagementComponent, canActivate: [AdminGuard]}
 ];

@@ -32,6 +32,19 @@ export class ProjectService {
     );
   }
 
+  fetchProjectsByUser() {
+    console.log(sessionStorage.getItem('userId'));
+    this.api.getProjectsByUser(Number(sessionStorage.getItem('userId'))).subscribe(
+      (projects) => {
+        console.log('Projects fetched successfully:', projects);
+        this.setProjects(projects);
+      },
+      (error) => {
+        console.error('Failed to fetch projects:', error);
+      }
+    );
+  }
+
   setProjects(projects: any[]) {
     this.projects = projects;
     projects.forEach(project => {

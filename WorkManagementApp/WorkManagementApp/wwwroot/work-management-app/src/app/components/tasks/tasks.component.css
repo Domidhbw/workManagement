@@ -1,82 +1,77 @@
-/* styles.css */
+/* Container Styles */
+.tasks-container {
+  margin: 20px;
+}
 
-.tasks-container, .add-task-container {
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 20px;
+.tasks-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Task Columns Container */
+.task-columns-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Individual Task Column */
+.task-column {
+  flex: 1;
+  padding: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #f9f9f9;
 }
 
-.tasks-title, .add-task-title {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 15px;
-  color: #333;
-}
+  .task-column h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #333;
+  }
 
-.task-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 15px 0;
-}
-
-.task-item {
-  margin-bottom: 15px;
+/* Task Card Styles */
+.task-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
   padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 3px;
+  margin-bottom: 10px;
   background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
 }
 
-.task-title {
-  font-size: 18px;
-  margin-bottom: 5px;
-}
+  .task-card:hover {
+    transform: scale(1.02);
+  }
 
-.task-description {
-  margin-bottom: 5px;
-  color: #555;
-}
+  .task-card h3 {
+    margin: 0 0 5px;
+    font-size: 18px;
+  }
 
-.task-info {
-  font-size: 14px;
-  color: #777;
-}
+  .task-card p {
+    margin: 2px 0;
+    font-size: 14px;
+    color: #555;
+  }
 
+/* No Tasks Message */
 .no-tasks-message {
   color: #999;
   text-align: center;
+  margin-top: 10px;
 }
 
-.form-group {
-  margin-bottom: 15px;
-}
 
-.input-field {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
+/* Edit Task Form */
+.edit-task-container {
+  margin-top: 20px;
   border: 1px solid #ccc;
-  border-radius: 3px;
-  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #fff;
 }
-
-.btn-primary {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  display: block;
-  margin: 10px 0;
-  width: 100%;
-}
-
-  .btn-primary:hover {
-    background-color: #0056b3;
-  }
