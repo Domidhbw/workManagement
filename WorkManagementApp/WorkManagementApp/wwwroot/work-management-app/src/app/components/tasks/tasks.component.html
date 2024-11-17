@@ -15,6 +15,28 @@
           <p><strong>Assigned User ID:</strong> {{ task.assignedUserId }}</p>
           <p><strong>Due Date:</strong> {{ task.dueDate | date }}</p>
           <p><strong>Priority:</strong> {{ task.priority }}</p>
+          <!-- Comments Section -->
+          <div class="comments-section">
+            <button (click)="fetchTaskComments(task.id)">Show Comments</button>
+            <div *ngIf="taskComments[task.id]">
+              <h4>Comments</h4>
+              <ul>
+                <li *ngFor="let comment of taskComments[task.id]; let i = index">
+                  <p>{{ comment.commentText }}</p>
+                  <p><small>Created At: {{ comment.createdAt | date:'short' }}</small></p>
+                  <button class="btn-small btn-danger" (click)="deleteTaskComment(task.id, comment.id)">Delete</button>
+                </li>
+              </ul>
+              <!-- Default Message if No Comments -->
+              <p *ngIf="taskComments[task.id].length === 0" class="no-comments-message">No comments available. Add the first comment!</p>
+              <!-- Add Comment -->
+              <div class="add-comment">
+                <input [(ngModel)]="newComment[task.id]" placeholder="Add a comment" />
+                <button class="btn-primary" (click)="addTaskComment(task.id)">Add Comment</button>
+              </div>
+            </div>
+          </div>
+
 
           <!-- Buttons to Edit or Delete -->
           <button class="btn-secondary" (click)="editTask(task)">Edit Task</button>
@@ -32,8 +54,6 @@
   </div>
 </div>
 
-
-
 <!-- Edit Task Form -->
 <div *ngIf="selectedTask" class="edit-task-container">
   <h2>Edit Task</h2>
@@ -48,13 +68,16 @@
       <input [(ngModel)]="selectedTask.dueDate" name="dueDate" type="datetime-local" class="input-field" />
     </div>
     <div class="form-group">
-      <input [(ngModel)]="selectedTask.priority" name="priority" type="number" class="input-field" placeholder="Priority" />
-    </div>
-    <div class="form-group">
       <input [(ngModel)]="selectedTask.projectId" name="projectId" type="number" class="input-field" placeholder="Project ID" />
     </div>
     <div class="form-group">
+      <input [(ngModel)]="selectedTask.priority" name="priority" type="number" class="input-field" placeholder="priority" />
+    </div>
+    <div class="form-group">
       <input [(ngModel)]="selectedTask.assignedUserId" name="assignedUserId" type="number" class="input-field" placeholder="Assigned User ID" />
+    </div>
+    <div class="form-group">
+      <input [(ngModel)]="selectedTask.status" name="status" type="number" class="input-field" placeholder="status" />
     </div>
     <button class="btn-primary" type="submit">Update Task</button>
     <button class="btn-secondary" type="button" (click)="cancelEdit()">Cancel</button>

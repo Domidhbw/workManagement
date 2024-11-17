@@ -108,7 +108,7 @@ namespace WorkManagementApp.Controllers
             var tasks = await _taskService.GetTasksByProjectIdAsync(projectId);
             if (tasks == null || !tasks.Any())
             {
-                return NotFound(); // Gibt NotFound zurück, wenn keine Aufgaben für das Projekt gefunden werden.
+                return Ok(); 
             }
 
             // Mapping der Task-Entities auf TaskDto
@@ -301,7 +301,7 @@ namespace WorkManagementApp.Controllers
             var comments = await _taskService.GetCommentsForTaskAsync(taskId);
             if (comments == null || !comments.Any())
             {
-                return NotFound("No comments found for this task.");
+                return NotFound();
             }
 
             // Mapping der Kommentare auf CommentDto

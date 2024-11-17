@@ -76,7 +76,7 @@ namespace WorkManagementApp.Controllers
             var projects = await _projectService.GetProjectsByUserIdAsync(userId);
             if (projects == null || !projects.Any())
             {
-                return NotFound(); // Rückgabe einer NotFound-Antwort, wenn keine Projekte gefunden werden
+                return Ok();
             }
 
             // Mapping der Project-Entities auf ProjectDto
