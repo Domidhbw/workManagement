@@ -30,7 +30,7 @@ export class ApiService {
     return this.http.put(`${this.baseUrl}/User/${userId}`, data);
   }
 
-  delteUser(userId: number): Observable<any> {
+  deleteUser(userId: number): Observable<any> {
     return this.http.delete(`${this.baseUrl}/User/${userId}`);
   }
 
@@ -57,6 +57,10 @@ export class ApiService {
   createTask(data: any): Observable<any> {
     return this.http.post(`${this.baseUrl}/Tasks`, data);
   }
+  updateTask(taskId: number, data: any): Observable<any> {
+    return this.http.put(`${this.baseUrl}/Tasks/${taskId}`, data);
+  }
+
   deleteTask(taskId: number): Observable<any> {
     return this.http.delete(`${this.baseUrl}/Tasks/${taskId}`);
   }
