@@ -1,34 +1,47 @@
-<div>
-  <h2>Tasks</h2>
-  <button (click)="getTasks()">Load Tasks</button>
+<div class="tasks-container">
+  <h2 class="tasks-title">Tasks</h2>
+  <button class="btn-primary" (click)="getTasks()">Load Tasks</button>
 
   <div *ngIf="tasks.length > 0; else noTasks">
-    <ul>
-      <li *ngFor="let task of tasks">
-        <h3>{{ task.title }}</h3>
-        <p>{{ task.description }}</p>
-        <p>Task ID: {{ task.id }}</p>
-        <p>Project ID: {{ task.projectId }}</p>
-        <p>Assigend User ID: {{ task.assignedUserId }}</p>
-        <p>Due Date: {{ task.dueDate}}</p>
+    <ul class="task-list">
+      <li *ngFor="let task of tasks" class="task-item">
+        <h3 class="task-title">{{ task.title }}</h3>
+        <p class="task-description">{{ task.description }}</p>
+        <p class="task-info">Task ID: {{ task.id }}</p>
+        <p class="task-info">Project ID: {{ task.projectId }}</p>
+        <p class="task-info">Assigned User ID: {{ task.assignedUserId }}</p>
+        <p class="task-info">Due Date: {{ task.dueDate }}</p>
       </li>
     </ul>
   </div>
 
   <ng-template #noTasks>
-    <p>No tasks available. Click "Load Tasks" to fetch tasks.</p>
+    <p class="no-tasks-message">No tasks available. Click "Load Tasks" to fetch tasks.</p>
   </ng-template>
 </div>
 
-
-<div>
-  <h2>Add Task to Project</h2>
-  <input [(ngModel)]="title" placeholder="Task title" />
-  <input [(ngModel)]="description" placeholder="Project Description" />
-  <input [(ngModel)]="dueDate" placeholder="2024-11-15T16:12:54.837Z" />
-  <input [(ngModel)]="status" type="number" placeholder="0" />
-  <input [(ngModel)]="projectId" type="number" placeholder="0" />
-  <input [(ngModel)]="assignedUserId" type="number" placeholder="9" />
-  <input [(ngModel)]="priority" type="number" placeholder="0" />
-  <button (click)="createTask()">Create Task</button>
+<div class="add-task-container">
+  <h2 class="add-task-title">Add Task to Project</h2>
+  <div class="form-group">
+    <input [(ngModel)]="title" placeholder="Task title" class="input-field" />
+  </div>
+  <div class="form-group">
+    <input [(ngModel)]="description" placeholder="Project Description" class="input-field" />
+  </div>
+  <div class="form-group">
+    <input [(ngModel)]="dueDate" placeholder="2024-11-15T16:12:54.837Z" class="input-field" />
+  </div>
+  <div class="form-group">
+    <input [(ngModel)]="status" type="number" placeholder="0" class="input-field" />
+  </div>
+  <div class="form-group">
+    <input [(ngModel)]="projectId" type="number" placeholder="0" class="input-field" />
+  </div>
+  <div class="form-group">
+    <input [(ngModel)]="assignedUserId" type="number" placeholder="9" class="input-field" />
+  </div>
+  <div class="form-group">
+    <input [(ngModel)]="priority" type="number" placeholder="0" class="input-field" />
+  </div>
+  <button class="btn-primary" (click)="createTask()">Create Task</button>
 </div>
