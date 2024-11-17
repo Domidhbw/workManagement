@@ -318,8 +318,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>kk5egecrxz</Fingerprint>
-      <Integrity>TGQEVPxiQJLt1IYBdCabvvUGzc+n6gwlSCZV6eUYl40=</Integrity>
+      <Fingerprint>a785f3evxk</Fingerprint>
+      <Integrity>xrNR2/TxHot9qvtNdWMjPBEqvd0Ua/sa+y3TzdtZ7To=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\projects\projects.component.css'))</OriginalItemSpec>
@@ -336,8 +336,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>tihaaw9ml7</Fingerprint>
-      <Integrity>NVHen+tRa402YZePlrKP3FZ6oUVclo5+djCpuGrhQHA=</Integrity>
+      <Fingerprint>2m3k1oer4s</Fingerprint>
+      <Integrity>tg/xu37QYPLQK4xhIfhTa23GBrr169d+GcgRBszVCsg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\projects\projects.component.html'))</OriginalItemSpec>
@@ -354,8 +354,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>o27096ai1t</Fingerprint>
-      <Integrity>MDstSpE5F1KVPuyY2BOQ050eaIKvA/cYnP99H0ZWZBg=</Integrity>
+      <Fingerprint>5c5f5p8897</Fingerprint>
+      <Integrity>O477sFzlSRKQVIxkXUJ3WeRJ8Krxoi+aJuTibV3PYL8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\projects\projects.component.ts'))</OriginalItemSpec>
@@ -462,8 +462,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>gqr13zkah1</Fingerprint>
-      <Integrity>qFFzV+Cty9JRaM+4sCGCyPZujqL/fUHNu62c0zmQW90=</Integrity>
+      <Fingerprint>rnmvr145ka</Fingerprint>
+      <Integrity>d6OEStcsBoBVTM3HtRDavov6YyHZZREtE1XsGZ3W7d4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\tasks\tasks.component.css'))</OriginalItemSpec>
@@ -480,8 +480,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>dovt2pd6ty</Fingerprint>
-      <Integrity>ndsgj5buESkt/OQ8Y9QvKO1XhRpiv/5qemx3CNtDGNE=</Integrity>
+      <Fingerprint>ylvk5ivdw3</Fingerprint>
+      <Integrity>BrqmWkg67ntMXZvvE8pjRkcDRBmeRFEd/V36+hUZTkA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\tasks\tasks.component.html'))</OriginalItemSpec>
@@ -498,8 +498,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>gbre4d2n11</Fingerprint>
-      <Integrity>NMZ5JZXZPiCG9lhCMBaVpusfg8Rdi+Ako06LpRU4TpA=</Integrity>
+      <Fingerprint>pseo1mdrhc</Fingerprint>
+      <Integrity>6am6YQwKHtYTvHFN5WRhfo0PpKrycn37a4G3pSsBh9E=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\tasks\tasks.component.ts'))</OriginalItemSpec>
@@ -606,8 +606,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>5ipweew5fc</Fingerprint>
-      <Integrity>47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=</Integrity>
+      <Fingerprint>xsll1olaoo</Fingerprint>
+      <Integrity>X800QhwcYuPhufN0rVZ8gNQb7MOPYAYO1i8963eZC5o=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\user-management\user-management.component.css'))</OriginalItemSpec>
@@ -624,8 +624,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>dhqm0420pv</Fingerprint>
-      <Integrity>byDy8KkumFejOlrPm0kIg0d7iAo3UETOHrEiHBU5puk=</Integrity>
+      <Fingerprint>2vul4d3dgm</Fingerprint>
+      <Integrity>gighgrDvlNiZHY9apQj2Xzf7zl04uLeX+CLoLTIx2+c=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\user-management\user-management.component.html'))</OriginalItemSpec>
@@ -642,8 +642,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>6k1tnk6ysj</Fingerprint>
-      <Integrity>JtRNKPKZ7YIs/QCNoDebmcN4XAcnqYJ1vqvUBX299X8=</Integrity>
+      <Fingerprint>dw2y9wikjt</Fingerprint>
+      <Integrity>03M5wo6TZYOlXWYHuND27S+DGrC5tgzEM/0vdKfT1ZE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\user-management\user-management.component.ts'))</OriginalItemSpec>
@@ -750,8 +750,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>rn7xlkyig9</Fingerprint>
-      <Integrity>+bVUAUQmxF/06CRoFThHktzZLvEl5O9w8NGURKT3T34=</Integrity>
+      <Fingerprint>l6c1a2zp5p</Fingerprint>
+      <Integrity>7fUih13uwZ9DHlY49l7Naq/uRhTdAC740iCc8mGxOuk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\services\api.service.ts'))</OriginalItemSpec>
