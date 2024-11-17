@@ -33,7 +33,6 @@ namespace WorkManagementApp.Controllers
             {
                 UserName = model.Username,
                 Email = model.Email,
-
             };
 
             var result = await _userService.RegisterUserAsync(user, model.Password, model.Role);
