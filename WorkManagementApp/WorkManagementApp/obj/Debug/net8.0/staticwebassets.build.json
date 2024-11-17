@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2cJZUIKqj3n1RZZDHfCcRdVdOt+KsINUPq6A8bBlYgo=",
+  "Hash": "0rEvBIsTTTuCSn3SP54fa+9+hhNsT89FkTELUyDEnHI=",
   "Source": "WorkManagementApp",
   "BasePath": "_content/WorkManagementApp",
   "Mode": "Default",
@@ -2485,6 +2485,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\work-management-app\\src\\app\\services\\user.service.ts"
+    },
+    {
+      "Identity": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\assets\\bg.svg",
+      "SourceId": "WorkManagementApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\",
+      "BasePath": "_content/WorkManagementApp",
+      "RelativePath": "work-management-app/src/assets/bg.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\work-management-app\\src\\assets\\bg.svg"
     },
     {
       "Identity": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\index.html",

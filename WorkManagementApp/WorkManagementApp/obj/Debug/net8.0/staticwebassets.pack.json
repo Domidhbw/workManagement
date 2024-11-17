@@ -521,6 +521,10 @@
       "PackagePath": "staticwebassets\\work-management-app\\src\\app\\services\\user.service.ts"
     },
     {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\assets\\bg.svg",
+      "PackagePath": "staticwebassets\\work-management-app\\src\\assets\\bg.svg"
+    },
+    {
       "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\index.html",
       "PackagePath": "staticwebassets\\work-management-app\\src\\index.html"
     },
