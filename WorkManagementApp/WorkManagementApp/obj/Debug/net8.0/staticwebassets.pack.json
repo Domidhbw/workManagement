@@ -233,6 +233,22 @@
       "PackagePath": "staticwebassets\\work-management-app\\dist\\out-tsc\\app\\services\\task.service.spec.js.map"
     },
     {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\dist\\out-tsc\\app\\services\\user.service.js",
+      "PackagePath": "staticwebassets\\work-management-app\\dist\\out-tsc\\app\\services\\user.service.js"
+    },
+    {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\dist\\out-tsc\\app\\services\\user.service.js.map",
+      "PackagePath": "staticwebassets\\work-management-app\\dist\\out-tsc\\app\\services\\user.service.js.map"
+    },
+    {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\dist\\out-tsc\\app\\services\\user.service.spec.js",
+      "PackagePath": "staticwebassets\\work-management-app\\dist\\out-tsc\\app\\services\\user.service.spec.js"
+    },
+    {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\dist\\out-tsc\\app\\services\\user.service.spec.js.map",
+      "PackagePath": "staticwebassets\\work-management-app\\dist\\out-tsc\\app\\services\\user.service.spec.js.map"
+    },
+    {
       "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\dist\\out-tsc\\app\\tasks\\tasks.component.js",
       "PackagePath": "staticwebassets\\work-management-app\\dist\\out-tsc\\app\\tasks\\tasks.component.js"
     },
@@ -383,6 +399,14 @@
     {
       "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\services\\task.service.ts",
       "PackagePath": "staticwebassets\\work-management-app\\src\\app\\services\\task.service.ts"
+    },
+    {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\services\\user.service.spec.ts",
+      "PackagePath": "staticwebassets\\work-management-app\\src\\app\\services\\user.service.spec.ts"
+    },
+    {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\services\\user.service.ts",
+      "PackagePath": "staticwebassets\\work-management-app\\src\\app\\services\\user.service.ts"
     },
     {
       "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\index.html",

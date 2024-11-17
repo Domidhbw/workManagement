@@ -3274,25 +3274,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jamie\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\neuba\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jamie\\Source\\Repos\\workManagement2\\WorkManagementApp\\WorkManagementApp\\WorkManagementApp.csproj",
+      "projectUniqueName": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\WorkManagementApp.csproj",
       "projectName": "WorkManagementApp",
-      "projectPath": "C:\\Users\\jamie\\Source\\Repos\\workManagement2\\WorkManagementApp\\WorkManagementApp\\WorkManagementApp.csproj",
-      "packagesPath": "C:\\Users\\jamie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jamie\\Source\\Repos\\workManagement2\\WorkManagementApp\\WorkManagementApp\\obj\\",
+      "projectPath": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\WorkManagementApp.csproj",
+      "packagesPath": "C:\\Users\\neuba\\.nuget\\packages\\",
+      "outputPath": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\jamie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\neuba\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -3373,7 +3376,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
