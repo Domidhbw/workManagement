@@ -69,4 +69,17 @@ export class ApiService {
   getTasksByProjectId(projectId: number): Observable<any> {
     return this.http.get(`${this.baseUrl}/Tasks/project/${projectId}`);
   }
+
+  getTaskComment(taskId: number): Observable<any> {
+    return this.http.get(`${this.baseUrl}/Tasks/${taskId}/comments`);
+  }
+  createTaskComment(taskId: number, data: any): Observable<any> {
+    return this.http.post(`${this.baseUrl}/Tasks/${taskId}/comments`, data);
+  }
+  deleteTaskComment(taskId: number, commentId: number): Observable<any> {
+    return this.http.delete(`${this.baseUrl}/Tasks/${taskId}/comments/${commentId}`);
+  }
+
+
+
 }

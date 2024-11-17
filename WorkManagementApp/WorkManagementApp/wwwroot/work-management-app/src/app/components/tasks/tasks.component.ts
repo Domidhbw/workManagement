@@ -19,6 +19,7 @@ enum TaskStatus {
   styleUrls: ['./tasks.component.css']
 })
 export class TasksComponent implements OnInit {
+  userId = '';
   tasks: any[] = [];
   filteredTasks: any[] = [];
   selectedProjectId: number | null = null;
@@ -31,7 +32,8 @@ export class TasksComponent implements OnInit {
   projectId = '';
   assignedUserId = '';
   priority = '';
-
+  taskComments: { [taskId: number]: { id: number; commentText: string; createdAt: string; userId: number }[] } = {};
+  newComment: { [taskId: number]: string } = {}; // For new comment input per task
   constructor(private api: ApiService, private taskService: TaskService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -42,6 +44,12 @@ export class TasksComponent implements OnInit {
       }
     });
     this.getTasks();
+    const userString = sessionStorage.getItem('user');
+
+    if (userString) {
+      const user = JSON.parse(userString);
+      this.userId = user.id;
+    }
   }
 
   getTasks() {
@@ -57,8 +65,47 @@ export class TasksComponent implements OnInit {
     } else {
       this.filteredTasks = this.tasks;
     }
+  }  // Fetch comments for a specific task
+  fetchTaskComments(taskId: number) {
+    this.api.getTaskComment(taskId).subscribe(
+      (comments) => {
+        this.taskComments[taskId] = comments; // Store comments
+      },
+      (error) => {
+        console.error(`Error fetching comments for task ${taskId}:`, error);
+      }
+    );
   }
 
+  // Add a new comment to a task
+  addTaskComment(taskId: number) {
+    const commentData = { commentText: this.newComment[taskId],userid: this.userId};
+    this.api.createTaskComment(taskId, commentData).subscribe(
+      (comment) => {
+        if (!this.taskComments[taskId]) {
+          this.taskComments[taskId] = [];
+        }
+        this.taskComments[taskId].push(comment); // Append the new comment
+        this.newComment[taskId] = ''; // Clear input field
+      },
+      (error) => {
+        console.error(`Error adding comment to task ${taskId}:`, error);
+      }
+    );
+  }
+
+  // Delete a specific comment
+  deleteTaskComment(taskId: number, commentId: number) {
+    this.api.deleteTaskComment(taskId, commentId).subscribe(
+      () => {
+        // Remove the deleted comment from the list
+        this.taskComments[taskId] = this.taskComments[taskId].filter(comment => comment.id !== commentId);
+      },
+      (error) => {
+        console.error(`Error deleting comment ${commentId} for task ${taskId}:`, error);
+      }
+    );
+  }
   setSelectedProject(projectId: number) {
     this.selectedProjectId = projectId;
     this.filterTasksByProject();
@@ -120,4 +167,6 @@ export class TasksComponent implements OnInit {
       );
     }
   }
+
+
 }
