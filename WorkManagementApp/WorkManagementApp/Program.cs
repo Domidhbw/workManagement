@@ -61,7 +61,14 @@ namespace WorkManagementApp
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            builder.Services.AddCors(options => options.AddPolicy(name: "FrontendUI",
+                policy =>
+                {
+                    policy.WithOrigins("https://localhost:4200", "http://localhost:4200").AllowAnyMethod().AllowAnyHeader();
+                }));
+
             var app = builder.Build();
+
 
             // Konfiguration der HTTP-Anforderungsverarbeitung
             if (app.Environment.IsDevelopment())
@@ -69,10 +76,11 @@ namespace WorkManagementApp
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
+            app.UseCors("FrontendUI");
             app.UseHttpsRedirection();
             app.UseAuthorization();
             app.MapControllers();
+
 
             // Initialisierung der Rollen und Benutzer
             using (var scope = app.Services.CreateScope())

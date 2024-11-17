@@ -1,11 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\WorkManagementApp",
-    "\\WorkManagementApp\\WorkManagementApp",
-    "\\WorkManagementApp\\WorkManagementApp\\Controllers",
-    "\\WorkManagementApp\\WorkManagementApp\\Services"
+    ""
   ],
-  "SelectedNode": "\\WorkManagementApp\\WorkManagementApp\\Controllers\\TasksController.cs",
+  "SelectedNode": "\\WorkManagementApp.sln",
   "PreviewInSolutionExplorer": false
 }
