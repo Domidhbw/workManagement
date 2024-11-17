@@ -48,6 +48,7 @@ wwwroot\work-management-app\src\app\services\task.service.spec.ts
 wwwroot\work-management-app\src\app\services\task.service.ts
 wwwroot\work-management-app\src\app\services\user.service.spec.ts
 wwwroot\work-management-app\src\app\services\user.service.ts
+wwwroot\work-management-app\src\assets\bg.svg
 wwwroot\work-management-app\src\index.html
 wwwroot\work-management-app\src\main.ts
 wwwroot\work-management-app\src\styles.css

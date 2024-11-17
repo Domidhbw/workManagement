@@ -145,4 +145,43 @@ export class ProjectsComponent implements OnInit {
     this.router.navigate(['/login']);
   }
 
+  getProgressPercentage(project: any): number {
+    if (project.startDate && project.endDate) {
+      const startDate = new Date(project.startDate).getTime();
+      const endDate = new Date(project.endDate).getTime();
+      const currentDate = new Date().getTime();
+
+      if (currentDate >= endDate) {
+        return 100;
+      }
+      const totalDuration = endDate - startDate;
+      const elapsed = currentDate - startDate;
+
+      const percentage = (elapsed / totalDuration) * 100;
+      return Math.min(100, Math.max(0, Math.round(percentage))); 
+    }
+    return 0; 
+  }
+
+
+  getProgressColor(project: any): string {
+    const percentage = this.getProgressPercentage(project);
+    if (percentage < 50) {
+      return 'red';
+    } else if (percentage < 75) {
+      return 'yellow';
+    } else {
+      return 'green';
+    }
+  }
+
+  onUserSelected(event: any) {
+    console.log('User selected:', event);
+    this.assignedUserId = event; 
+  }
+
+  navigateToTasks(projectId: number) {
+    this.router.navigate(['/tasks'], { queryParams: { projectId } });
+  }
+
 }

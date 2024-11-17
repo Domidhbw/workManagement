@@ -6,7 +6,7 @@
     <button class="btn-primary" (click)="showAddProjectForm()">Add Project</button>
   </div>
   <ul class="project-list">
-    <li *ngFor="let project of projects" class="project-item" [ngStyle]="{'border-color': isDeadlinePassed(project.endDate) ? 'red' : 'inherit'}">
+    <li *ngFor="let project of projects" class="project-item" [ngStyle]="{'border-color': isDeadlinePassed(project.endDate) ? 'red' : 'inherit'}" (click)="navigateToTasks(project.id)">
       <div class="project-content">
         <p class="project-info">Project ID: {{ project.id }}</p>
         <h3 class="project-name">{{ project.name }}</h3>
@@ -14,16 +14,21 @@
         <p class="project-info" [ngClass]="{'deadline-passed': isDeadlinePassed(project.endDate)}">
           End Date: {{ project.endDate }}
         </p>
-        <!-- Buttons to Edit or Delete -->
-        <button class="btn-secondary" (click)="editProject(project)">Edit Project</button>
-        <button class="btn-danger" (click)="deleteProject(project.id)">Delete Project</button>
+        <!-- Progress Bar -->
+        <div class="progress-bar-container">
+          <div class="progress-bar" [ngStyle]="{'width': getProgressPercentage(project) + '%', 'background-color': getProgressColor(project)}">
+            {{ getProgressPercentage(project) }}%
+          </div>
+        </div>
+        <!-- Buttons to Edit or Delete with stopPropagation -->
+        <button class="btn-secondary" (click)="editProject(project); $event.stopPropagation()">Edit Project</button>
+        <button class="btn-danger" (click)="deleteProject(project.id); $event.stopPropagation()">Delete Project</button>
       </div>
     </li>
   </ul>
 </div>
 
-
- Edit Project Form
+<!-- Edit Task Form -->
 <div *ngIf="selectedProject" class="add-project-container">
   <h2>Edit Project</h2>
   <form (ngSubmit)="updateProject()">
@@ -40,20 +45,15 @@
       <input [(ngModel)]="selectedProject.endDate" name="endDate" type="datetime-local" class="input-field" />
     </div>
     <div class="form-group">
-      <label for="managerId">Assigned manager:</label>
-      <app-user-list [users]="users" (userSelected)="onManagerSelectedEdit($event)"></app-user-list>
+      <input [(ngModel)]="selectedProject.managerId" name="priority" type="number" class="input-field" placeholder="Manager Id" />
     </div>
-    <p>{{assignedManagerEdit}}</p>
     <div class="form-group">
-      <label for="assignedUserId">Assigned User:</label>
-      <app-user-list [users]="users" (userSelected)="onUserSelectedEdit($event)"></app-user-list>
+      <input [(ngModel)]="selectedProject.assignedUserId" name="projectId" type="number" class="input-field" placeholder="Assigned User Id" />
     </div>
-    <p>{{assignedUserEdit}}</p>
     <button class="btn-primary" type="submit">Update Project</button>
     <button class="btn-secondary" type="button" (click)="cancelEdit()">Cancel</button>
   </form>
 </div>
-
 
 <!-- Add Project Form -->
 <div *ngIf="isAddingProject" class="add-project-container">
@@ -72,15 +72,13 @@
       <input [(ngModel)]="endDate" name="endDate" type="datetime-local" class="input-field" />
     </div>
     <div class="form-group">
-      <label for="managerId">Assigned manager:</label>
-      <app-user-list [users]="users" (userSelected)="onManagerSelectedAdd($event)"></app-user-list>
+      <input [(ngModel)]="managerId" name="managerId" type="number" class="input-field" placeholder="Manager Id" />
     </div>
-    <p>{{assignedManager}}</p>
     <div class="form-group">
       <label for="assignedUserId">Assigned User:</label>
-      <app-user-list [users]="users" (userSelected)="onUserSelectedAdd($event)"></app-user-list>
+      <app-user-list [users]="users" (userSelected)="onUserSelected($event)"></app-user-list>
     </div>
-    <p>{{assignedUser}}</p>
+    <p>{{assignedUserId}}</p>
     <button class="btn-primary" type="submit">Create Project</button>
     <button class="btn-secondary" type="button" (click)="cancelAddProject()">Cancel</button>
   </form>

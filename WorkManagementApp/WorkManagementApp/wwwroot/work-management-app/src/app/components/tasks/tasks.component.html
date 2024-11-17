@@ -2,26 +2,31 @@
   <h2 class="tasks-title">Tasks</h2>
   <button class="btn-primary" (click)="getTasks()">Load Tasks</button>
 
-  <div *ngIf="tasks.length > 0; else noTasks">
-    <div class="task-card" *ngFor="let task of tasks">
-      <h3>{{ task.title }}</h3>
-      <p>{{ task.description }}</p>
-      <p><strong>Task ID:</strong> {{ task.id }}</p>
-      <p><strong>Project ID:</strong> {{ task.projectId }}</p>
-      <p><strong>Assigned User ID:</strong> {{ task.assignedUserId }}</p>
-      <p><strong>Due Date:</strong> {{ task.dueDate | date }}</p>
-      <p><strong>Priority:</strong> {{ task.priority }}</p>
+  <div class="task-columns-container">
+    <div class="task-column" *ngFor="let status of taskStatuses">
+      <h3>{{ status }}</h3>
+      <div *ngIf="getTasksByStatus(status).length > 0; else noTasksForStatus">
+        <div class="task-card" *ngFor="let task of getTasksByStatus(status)">
+          <h3>{{ task.title }}</h3>
+          <p>{{ task.description }}</p>
+          <p><strong>Task ID:</strong> {{ task.id }}</p>
+          <p><strong>Project ID:</strong> {{ task.projectId }}</p>
+          <p><strong>Assigned User ID:</strong> {{ task.assignedUserId }}</p>
+          <p><strong>Due Date:</strong> {{ task.dueDate | date }}</p>
+          <p><strong>Priority:</strong> {{ task.priority }}</p>
 
-      <!-- Buttons to Edit or Delete -->
-      <button class="btn-secondary" (click)="editTask(task)">Edit Task</button>
-      <button class="btn-danger" (click)="deleteTask(task.id)">Delete Task</button>
+          <!-- Buttons to Edit or Delete -->
+          <button class="btn-secondary" (click)="editTask(task)">Edit Task</button>
+          <button class="btn-danger" (click)="deleteTask(task.id)">Delete Task</button>
+        </div>
+      </div>
+      <ng-template #noTasksForStatus>
+        <p class="no-tasks-message">No tasks for this status.</p>
+      </ng-template>
     </div>
   </div>
-
-  <ng-template #noTasks>
-    <p class="no-tasks-message">No tasks available. Click "Load Tasks" to fetch tasks.</p>
-  </ng-template>
 </div>
+
 
 <!-- Edit Task Form -->
 <div *ngIf="selectedTask" class="edit-task-container">

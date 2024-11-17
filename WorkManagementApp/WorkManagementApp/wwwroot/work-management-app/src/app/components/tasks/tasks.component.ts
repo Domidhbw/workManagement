@@ -1,9 +1,15 @@
 import { Component } from '@angular/core';
-import { ApiService, ProjectService, TaskService } from '../../services';
+import { ApiService, TaskService } from '../../services';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { RouterOutlet } from '@angular/router';
-import { RouterModule } from '@angular/router';
+import { RouterOutlet, RouterModule } from '@angular/router';
+
+enum TaskStatus {
+  NotStarted = 'Not Started',
+  InProgress = 'In Progress',
+  Completed = 'Completed',
+  Blocked = 'Blocked'
+}
 
 @Component({
   selector: 'app-tasks',
@@ -15,6 +21,7 @@ import { RouterModule } from '@angular/router';
 export class TasksComponent {
   tasks: any[] = [];
   selectedTask: any = null;
+  taskStatuses = Object.values(TaskStatus);
 
   // Task form fields for creating a new task
   title = '';
@@ -40,6 +47,7 @@ export class TasksComponent {
       title: this.title,
       description: this.description,
       dueDate: this.dueDate,
+      status: this.status,
       projectId: this.projectId,
       assignedUserId: this.assignedUserId,
       priority: this.priority,
@@ -92,5 +100,10 @@ export class TasksComponent {
         }
       );
     }
+  }
+
+  // Get tasks by status
+  getTasksByStatus(status: string) {
+    return this.tasks.filter(task => task.status === status);
   }
 }
