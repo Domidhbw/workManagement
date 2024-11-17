@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../../services';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -12,12 +12,14 @@ import { RouterModule } from '@angular/router';
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit {
   username = '';
   password = '';
 
   constructor(private api: ApiService, private router: Router) { } 
+  ngOnInit(): void {
 
+  }
   login() {
     this.api.login({ username: this.username, password: this.password }).subscribe(
       (response) => {
