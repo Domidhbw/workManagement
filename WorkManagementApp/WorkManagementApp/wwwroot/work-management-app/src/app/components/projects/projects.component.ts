@@ -1,46 +1,70 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet, Router } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { ApiService, ProjectService, TaskService } from '../../services';
+import { UserListComponent } from '../user-list/user-list.component'
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterOutlet, RouterModule],
+  imports: [CommonModule, FormsModule, RouterOutlet, RouterModule, UserListComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })
 
-export class ProjectsComponent {
-  constructor(private projectService: ProjectService, private api: ApiService, private router: Router) { }
-
+export class ProjectsComponent implements OnInit {
+  selectedProject: any = null;
   name = '';
   description = '';
   startDate = '';
   endDate = '';
   managerId = '';
-  assignedUserId = '';
+  assignedUserId: number | null = null; // Selected user's ID
+  projects: any[] = [];
+  isAddingProject: boolean = false; // Track whether the "Add Project" form is visible
+  users: any[] = []; // List of users to display in the user list
+  constructor(private projectService: ProjectService, private api: ApiService, private router: Router) { }
 
-  display: any[] = []; 
+  ngOnInit(): void {
+    this.getProjects();
+    this.getUsers();
+  }
 
   getProjects() {
     this.projectService.fetchProjectsByUser();
-    this.display = this.projectService.getProjects();
+    this.projects = this.projectService.getProjects();
   }
 
-  displayTasksForProject(projectId: number) {
-    if (projectId != null) {
-      const taskService = this.projectService.getTaskServiceForProject(projectId);
-      console.log(`Tasks for project ${projectId}:`, taskService.getTasks());
-      return taskService.getTasks();
-    }
-    return;
+  showAddProjectForm() {
+    this.isAddingProject = true;  // Show the Add Project form
+  }
+  getUsers() {
+    this.api.getUsers().subscribe(
+      (response) => {
+        this.users = response;
+      }
+    );
+  }
+  // Handle user selection from UserListComponent
+  onUserSelected(user: any) {
+    this.assignedUserId = user.id; // Set the selected user's ID
   }
   createProject() {
-    this.api.createProject({ name: this.name, description: this.description, startDate: this.startDate, endDate: this.endDate, managerId : this.managerId, assignedUserId: this.assignedUserId }).subscribe(
+    const newProject = {
+      name: this.name,
+      description: this.description,
+      startDate: this.startDate,
+      endDate: this.endDate,
+      managerId: this.managerId,
+      assignedUserId: this.assignedUserId
+    };
+
+    this.api.createProject(newProject).subscribe(
       (response) => {
         console.log('Creation of Project successful:', response);
+        this.isAddingProject = false; // Hide the form after successful creation
+        this.getProjects(); // Refresh the project list
       },
       (error) => {
         console.error('Creation of Project failed:', error);
@@ -48,8 +72,43 @@ export class ProjectsComponent {
     );
   }
 
-  navigateToTasks(projectId: number) {
-    this.router.navigate(['/tasks'], { queryParams: { projectId } });
+  cancelAddProject() {
+    this.isAddingProject = false; // Hide the form
+  }
+
+  editProject(project: any) {
+    this.selectedProject = { ...project }; // Clone the project object for editing
+  }
+
+  deleteProject(projectId: number) {
+    if (confirm('Are you sure you want to delete this Project?')) {
+      this.api.deleteProject(projectId).subscribe(
+        () => {
+          console.log('Project deleted successfully');
+          this.getProjects();
+        },
+        (error) => {
+          console.error('Error deleting project:', error);
+        }
+      );
+    }
+  }
+
+  updateProject() {
+    this.api.updateProject(this.selectedProject.id, this.selectedProject).subscribe(
+      (response) => {
+        console.log('Project updated successfully:', response);
+        this.selectedProject = null;
+        this.getProjects();
+      },
+      (error) => {
+        console.error('Error updating project:', error);
+      }
+    );
+  }
+
+  cancelEdit() {
+    this.selectedProject = null;
   }
 
   isDeadlinePassed(endDate: string): boolean {
@@ -67,4 +126,5 @@ export class ProjectsComponent {
     sessionStorage.removeItem('userId');
     this.router.navigate(['/login']);
   }
+
 }

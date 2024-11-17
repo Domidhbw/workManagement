@@ -33,17 +33,11 @@ export class ProjectService {
   }
 
   fetchProjectsByUser() {
+    console.log(sessionStorage.getItem('userId'));
     this.api.getProjectsByUser(Number(sessionStorage.getItem('userId'))).subscribe(
       (projects) => {
         console.log('Projects fetched successfully:', projects);
         this.setProjects(projects);
-        // Fetch tasks for each project
-        projects.forEach((project: { id: number; }) => {
-          this.api.getTasksByProjectId(project.id).subscribe(tasks => {
-            const taskService = this.getTaskServiceForProject(project.id);
-            taskService.setTasks(tasks);
-          });
-        });
       },
       (error) => {
         console.error('Failed to fetch projects:', error);
