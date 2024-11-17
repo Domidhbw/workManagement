@@ -5,7 +5,6 @@ using WorkManagementApp.Models;
 using WorkManagementApp.Repositories.Comments;
 using WorkManagementApp.Repositories.Projects;
 using WorkManagementApp.Repositories.Tasks;
-using WorkManagementApp.Repositories.Users;
 using WorkManagementApp.Services;
 using WorkManagementApp.Services.Authentification;
 using WorkManagementApp.Services.Projects;
