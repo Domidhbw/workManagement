@@ -29,11 +29,13 @@ export class ProjectsComponent implements OnInit {
   projects: any[] = [];
   isAddingProject: boolean = false; // Track whether the "Add Project" form is visible
   users: any[] = []; // List of users to display in the user list
+  isProjectManager: boolean = false;
   constructor(private projectService: ProjectService, private api: ApiService, private router: Router) { }
 
   ngOnInit(): void {
     this.getProjects();
     this.getUsers();
+    this.canAddProject();
   }
 
   getProjects() {
@@ -143,6 +145,18 @@ export class ProjectsComponent implements OnInit {
     sessionStorage.removeItem('token');
     sessionStorage.removeItem('userId');
     this.router.navigate(['/login']);
+  }
+
+  canAddProject() {
+    const userString = sessionStorage.getItem('user');
+
+    if (userString) {
+      const user = JSON.parse(userString);
+      console.log(user.roles);
+      if (user.roles && user.roles.includes('Projectmanager')) {
+        this.isProjectManager = true;
+      }
+    }
   }
 
   getProgressPercentage(project: any): number {

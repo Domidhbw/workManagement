@@ -17,6 +17,7 @@ export class AdminGuard implements CanActivate {
 
     const user = JSON.parse(userString);
     if (user.roles && user.roles.includes('Admin')) {
+      console.log(user.roles);
       return true;
     }
 
