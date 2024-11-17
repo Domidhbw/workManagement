@@ -79,13 +79,15 @@ export class TasksComponent implements OnInit {
   fetchTaskComments(taskId: number) {
     this.api.getTaskComment(taskId).subscribe(
       (comments) => {
-        this.taskComments[taskId] = comments; // Store comments
+        this.taskComments[taskId] = comments.length > 0 ? comments : []; // Initialize as empty array if no comments
       },
       (error) => {
         console.error(`Error fetching comments for task ${taskId}:`, error);
+        this.taskComments[taskId] = []; // Handle error by initializing as empty array
       }
     );
   }
+
 
   // Add a new comment to a task
   addTaskComment(taskId: number) {
