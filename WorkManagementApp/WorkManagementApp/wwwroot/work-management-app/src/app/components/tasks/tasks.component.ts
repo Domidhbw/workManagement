@@ -20,6 +20,8 @@ enum TaskStatus {
 })
 export class TasksComponent implements OnInit {
   tasks: any[] = [];
+  filteredTasks: any[] = [];
+  selectedProjectId: number | null = null; // Variable zum Filtern nach Projekten
   selectedTask: any = null;
   taskStatuses = Object.values(TaskStatus);
 
@@ -33,15 +35,38 @@ export class TasksComponent implements OnInit {
   priority = '';
 
   constructor(private api: ApiService, private taskService: TaskService) { }
+
   ngOnInit(): void {
     this.getTasks();
   }
+
   // Fetch tasks
   getTasks() {
     this.api.getTasks().subscribe((response) => {
       console.log(response);
       this.tasks = response;
+      this.filterTasksByProject(); // Filter tasks by the selected project when loaded
     });
+  }
+
+  // Filter tasks by the selected project
+  filterTasksByProject() {
+    if (this.selectedProjectId !== null) {
+      this.filteredTasks = this.tasks.filter(task => task.projectId === this.selectedProjectId);
+    } else {
+      this.filteredTasks = this.tasks;
+    }
+  }
+
+  // Set the selected project ID and filter tasks
+  setSelectedProject(projectId: number) {
+    this.selectedProjectId = projectId;
+    this.filterTasksByProject();
+  }
+
+  // Get tasks by status for the filtered tasks
+  getTasksByStatus(status: string) {
+    return this.filteredTasks.filter(task => task.status.toString() === status);
   }
 
   // Create a new task
@@ -103,10 +128,5 @@ export class TasksComponent implements OnInit {
         }
       );
     }
-  }
-
-  // Get tasks by status
-  getTasksByStatus(status: string) {
-    return this.tasks.filter(task => task.status === status);
   }
 }
