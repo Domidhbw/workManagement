@@ -16,7 +16,7 @@ export class RegisterComponent {
   username = '';
   email = '';
   password = '';
-  role = '2';
+  role = 'Mitarbeiter';
 
   constructor(private api: ApiService) { }
 
