@@ -99,8 +99,13 @@ export class ProjectsComponent implements OnInit {
   }
 
   editProject(project: any) {
-    this.selectedProject = { ...project }; // Clone the project object for editing
+    if (this.selectedProject && this.selectedProject.id === project.id) {
+      this.cancelEdit();
+    } else {
+      this.selectedProject = { ...project }; 
+    }
   }
+
 
   deleteProject(projectId: number) {
     if (confirm('Are you sure you want to delete this Project?')) {
