@@ -108,7 +108,7 @@ namespace WorkManagementApp.Controllers
             var tasks = await _taskService.GetTasksByProjectIdAsync(projectId);
             if (tasks == null || !tasks.Any())
             {
-                return Ok();
+                return Ok(); 
             }
 
             // Mapping der Task-Entities auf TaskDto
@@ -301,7 +301,7 @@ namespace WorkManagementApp.Controllers
             var comments = await _taskService.GetCommentsForTaskAsync(taskId);
             if (comments == null || !comments.Any())
             {
-                return Ok("");
+                return NotFound();
             }
 
             // Mapping der Kommentare auf CommentDto
