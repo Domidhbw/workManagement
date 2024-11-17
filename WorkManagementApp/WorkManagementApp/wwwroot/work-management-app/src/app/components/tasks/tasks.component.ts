@@ -1,14 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ApiService, TaskService } from '../../services';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet, RouterModule } from '@angular/router';
 
 enum TaskStatus {
-  NotStarted = 'Not Started',
-  InProgress = 'In Progress',
-  Completed = 'Completed',
-  Blocked = 'Blocked'
+  NotStarted = '0',
+  InProgress = '1',
+  Completed = '2',
+  Blocked = '3'
 }
 
 @Component({
@@ -18,7 +18,7 @@ enum TaskStatus {
   templateUrl: './tasks.component.html',
   styleUrls: ['./tasks.component.css']
 })
-export class TasksComponent {
+export class TasksComponent implements OnInit {
   tasks: any[] = [];
   selectedTask: any = null;
   taskStatuses = Object.values(TaskStatus);
@@ -33,10 +33,13 @@ export class TasksComponent {
   priority = '';
 
   constructor(private api: ApiService, private taskService: TaskService) { }
-
+  ngOnInit(): void {
+    this.getTasks();
+  }
   // Fetch tasks
   getTasks() {
     this.api.getTasks().subscribe((response) => {
+      console.log(response);
       this.tasks = response;
     });
   }
