@@ -20,7 +20,10 @@ export class ProjectsComponent implements OnInit {
   startDate = '';
   endDate = '';
   managerId = '';
+  assignedUser = '';
   assignedUserId: number | null = null; // Selected user's ID
+  assignedManager = '';
+  assignedManagerId: number | null = null; // Selected user's ID
   projects: any[] = [];
   isAddingProject: boolean = false; // Track whether the "Add Project" form is visible
   users: any[] = []; // List of users to display in the user list
@@ -49,6 +52,11 @@ export class ProjectsComponent implements OnInit {
   // Handle user selection from UserListComponent
   onUserSelected(user: any) {
     this.assignedUserId = user.id; // Set the selected user's ID
+    this.assignedUser = user.username;
+  }
+  onManagerSelected(manager: any) {
+    this.assignedManagerId = manager.id; 
+    this.assignedManager = manager.username;
   }
   createProject() {
     const newProject = {
@@ -56,7 +64,7 @@ export class ProjectsComponent implements OnInit {
       description: this.description,
       startDate: this.startDate,
       endDate: this.endDate,
-      managerId: this.managerId,
+      managerId: this.assignedManagerId,
       assignedUserId: this.assignedUserId
     };
 

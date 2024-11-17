@@ -68,13 +68,15 @@
       <input [(ngModel)]="endDate" name="endDate" type="datetime-local" class="input-field" />
     </div>
     <div class="form-group">
-      <input [(ngModel)]="managerId" name="managerId" type="number" class="input-field" placeholder="Manager Id" />
+      <label for="managerId">Assigned manager:</label>
+      <app-user-list [users]="users" (userSelected)="onManagerSelected($event)"></app-user-list>
     </div>
+    <p>{{assignedManager}}</p>
     <div class="form-group">
       <label for="assignedUserId">Assigned User:</label>
       <app-user-list [users]="users" (userSelected)="onUserSelected($event)"></app-user-list>
     </div>
-    <p>{{assignedUserId}}</p>
+    <p>{{assignedUser}}</p>
     <button class="btn-primary" type="submit">Create Project</button>
     <button class="btn-secondary" type="button" (click)="cancelAddProject()">Cancel</button>
   </form>
