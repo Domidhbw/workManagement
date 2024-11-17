@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService, TaskService } from '../../services';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { RouterOutlet, RouterModule } from '@angular/router';
+import { RouterOutlet, RouterModule, ActivatedRoute } from '@angular/router';
 
 enum TaskStatus {
   NotStarted = '0',
@@ -20,10 +20,10 @@ enum TaskStatus {
 })
 export class TasksComponent implements OnInit {
   tasks: any[] = [];
+  filteredTasks: any[] = [];
+  selectedProjectId: number | null = null;
   selectedTask: any = null;
   taskStatuses = Object.values(TaskStatus);
-
-  // Task form fields for creating a new task
   title = '';
   description = '';
   dueDate = '';
@@ -32,19 +32,52 @@ export class TasksComponent implements OnInit {
   assignedUserId = '';
   priority = '';
 
-  constructor(private api: ApiService, private taskService: TaskService) { }
+  constructor(private api: ApiService, private taskService: TaskService, private route: ActivatedRoute) {}
+
   ngOnInit(): void {
+    this.route.queryParams.subscribe(params => {
+      if (params['projectId']) {
+        this.selectedProjectId = +params['projectId'];
+        this.filterTasksByProject();
+      }
+    });
     this.getTasks();
   }
-  // Fetch tasks
+
+  getStatusName(status: string | number): string {
+    const statusMapping: { [key: string]: string } = {
+      '0': 'Not Started',
+      '1': 'In Progress',
+      '2': 'Completed',
+      '3': 'Blocked'
+    };
+    return statusMapping[status.toString()] || 'Unknown Status';
+  }
+
   getTasks() {
     this.api.getTasks().subscribe((response) => {
-      console.log(response);
       this.tasks = response;
+      this.filterTasksByProject();
     });
   }
 
-  // Create a new task
+  filterTasksByProject() {
+    if (this.selectedProjectId !== null) {
+      this.filteredTasks = this.tasks.filter(task => task.projectId === this.selectedProjectId);
+    } else {
+      this.filteredTasks = this.tasks;
+    }
+  }
+
+  setSelectedProject(projectId: number) {
+    this.selectedProjectId = projectId;
+    this.filterTasksByProject();
+  }
+
+  getTasksByStatus(status: string) {
+    return this.filteredTasks.filter(task => task.status.toString() === status);
+  }
+
   createTask() {
     const newTask = {
       title: this.title,
@@ -57,8 +90,7 @@ export class TasksComponent implements OnInit {
     };
     this.api.createTask(newTask).subscribe(
       (response) => {
-        console.log('Task created successfully:', response);
-        this.getTasks(); // Refresh the task list
+        this.getTasks();
       },
       (error) => {
         console.error('Error creating task:', error);
@@ -66,18 +98,15 @@ export class TasksComponent implements OnInit {
     );
   }
 
-  // Edit a task
   editTask(task: any) {
-    this.selectedTask = { ...task }; // Clone the task object for editing
+    this.selectedTask = { ...task };
   }
 
-  // Update a task
   updateTask() {
     this.api.updateTask(this.selectedTask.id, this.selectedTask).subscribe(
       (response) => {
-        console.log('Task updated successfully:', response);
-        this.selectedTask = null; // Clear the selected task
-        this.getTasks(); // Refresh the task list
+        this.selectedTask = null;
+        this.getTasks();
       },
       (error) => {
         console.error('Error updating task:', error);
@@ -85,18 +114,15 @@ export class TasksComponent implements OnInit {
     );
   }
 
-  // Cancel editing
   cancelEdit() {
-    this.selectedTask = null; // Clear the selected task
+    this.selectedTask = null;
   }
 
-  // Delete a task
   deleteTask(taskId: number) {
     if (confirm('Are you sure you want to delete this task?')) {
       this.api.deleteTask(taskId).subscribe(
         () => {
-          console.log('Task deleted successfully');
-          this.getTasks(); // Refresh the task list
+          this.getTasks();
         },
         (error) => {
           console.error('Error deleting task:', error);
@@ -105,8 +131,6 @@ export class TasksComponent implements OnInit {
     }
   }
 
-  // Get tasks by status
-  getTasksByStatus(status: string) {
-    return this.tasks.filter(task => task.status === status);
-  }
 }
+
+
