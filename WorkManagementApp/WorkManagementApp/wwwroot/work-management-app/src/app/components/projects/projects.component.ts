@@ -30,12 +30,14 @@ export class ProjectsComponent implements OnInit {
   isAddingProject: boolean = false; // Track whether the "Add Project" form is visible
   users: any[] = []; // List of users to display in the user list
   isProjectManager: boolean = false;
+  isAdmin: boolean = false;
   constructor(private projectService: ProjectService, private api: ApiService, private router: Router) { }
 
   ngOnInit(): void {
     this.getProjects();
     this.getUsers();
     this.canAddProject();
+    this.canSwitchToUserPage();
   }
 
   getProjects() {
@@ -198,4 +200,19 @@ export class ProjectsComponent implements OnInit {
     this.router.navigate(['/tasks'], { queryParams: { projectId } });
   }
 
+  canSwitchToUserPage() {
+    const userString = sessionStorage.getItem('user');
+
+    if (userString) {
+      const user = JSON.parse(userString);
+      console.log(user.roles);
+      if (user.roles && user.roles.includes('Admin')) {
+        this.isAdmin = true;
+      }
+    }
+  }
+
+  switchToUserPage() {
+    this.router.navigate(['/userManagement']);
+  }
 }
