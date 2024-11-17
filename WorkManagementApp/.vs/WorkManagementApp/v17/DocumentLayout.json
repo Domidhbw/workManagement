@@ -182,8 +182,7 @@
               "RelativeToolTip": "WorkManagementApp\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAIwCQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T15:02:21.017Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T15:02:21.017Z"
             },
             {
               "$type": "Document",
@@ -207,8 +206,7 @@
               "RelativeToolTip": "WorkManagementApp\\Models\\Task.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T15:07:00.501Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T15:07:00.501Z"
             },
             {
               "$type": "Document",
@@ -220,8 +218,7 @@
               "RelativeToolTip": "WorkManagementApp\\Controllers\\TasksController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T15:26:23.861Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T15:26:23.861Z"
             },
             {
               "$type": "Document",
@@ -289,9 +286,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Program.cs",
               "RelativeDocumentMoniker": "WorkManagementApp\\Program.cs",
-              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Program.cs*",
-              "RelativeToolTip": "WorkManagementApp\\Program.cs*",
-              "ViewState": "AgIAACIAAAAAAAAAAAAiwDoAAAAVAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\wn00226592\\source\\repos\\workManagement\\WorkManagementApp\\WorkManagementApp\\Program.cs",
+              "RelativeToolTip": "WorkManagementApp\\Program.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAiwFYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-21T14:42:36.468Z",
               "EditorCaption": ""
