@@ -4,7 +4,7 @@
 
   <div *ngIf="selectedProjectId !== null" class="task-columns-container">
     <div class="task-column" *ngFor="let status of taskStatuses">
-      <h3>{{ status }}</h3>
+      <h3>{{ getStatusName(status) }}</h3>
       <div *ngIf="getTasksByStatus(status).length > 0; else noTasksForStatus">
         <div class="task-card" *ngFor="let task of getTasksByStatus(status)">
           <h3>{{ task.title }}</h3>

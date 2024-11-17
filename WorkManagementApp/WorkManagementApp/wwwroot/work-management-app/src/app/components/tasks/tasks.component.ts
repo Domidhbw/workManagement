@@ -52,6 +52,16 @@ export class TasksComponent implements OnInit {
     }
   }
 
+  getStatusName(status: string | number): string {
+    const statusMapping: { [key: string]: string } = {
+      '0': 'Not Started',
+      '1': 'In Progress',
+      '2': 'Completed',
+      '3': 'Blocked'
+    };
+    return statusMapping[status.toString()] || 'Unknown Status';
+  }
+
   getTasks() {
     this.api.getTasks().subscribe((response) => {
       this.tasks = response;
@@ -170,3 +180,5 @@ export class TasksComponent implements OnInit {
 
 
 }
+
+

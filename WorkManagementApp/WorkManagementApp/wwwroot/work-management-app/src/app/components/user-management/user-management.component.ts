@@ -66,4 +66,18 @@ export class UserManagementComponent implements OnInit {
       });
     }
   }
+
+  searchTerm: string = '';
+
+  filteredUsers() {
+    if (!this.searchTerm) {
+      return this.users;
+    }
+    const lowerCaseSearchTerm = this.searchTerm.toLowerCase();
+    return this.users.filter(user =>
+      user.username.toLowerCase().includes(lowerCaseSearchTerm) ||
+      user.email.toLowerCase().includes(lowerCaseSearchTerm)
+    );
+  }
+
 }
