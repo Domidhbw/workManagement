@@ -37,7 +37,9 @@ export class ApiService {
   getProjects(): Observable<any> {
     return this.http.get(`${this.baseUrl}/Projects`);
   }
-
+  getProjectsByUser(userId: number): Observable<any> {
+    return this.http.get(`${this.baseUrl}/Projects/user/${userId}`);
+  }
   createProject(data: any): Observable<any> {
     return this.http.post(`${this.baseUrl}/Projects`, data);
   }
