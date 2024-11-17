@@ -37,7 +37,7 @@ namespace WorkManagementApp.Services
         }
 
         // Registriere einen neuen Benutzer
-        public async Task<User> RegisterUserAsync(User user, string password, string role = "Mitarbeiter")
+        public async Task<User> RegisterUserAsync(User user, string password, string role)
         {
             var result = await _userManager.CreateAsync(user, password);
 
@@ -74,10 +74,32 @@ namespace WorkManagementApp.Services
         }
 
         // Benutzer aktualisieren
-        public async Task<IdentityResult> UpdateUserAsync(User user)
+        public async Task<IdentityResult> UpdateUserAsync(User user, string newRole)
         {
+            // Überprüfe, ob eine neue Rolle angegeben ist und ob der Benutzer bereits Rollen hat
+            var currentRoles = await _userManager.GetRolesAsync(user);
+
+            // Falls die neue Rolle anders ist als die aktuelle Rolle, aktualisiere die Rolle des Benutzers
+            if (newRole != null && !currentRoles.Contains(newRole))
+            {
+                // Entferne den Benutzer aus allen aktuellen Rollen
+                foreach (var role in currentRoles)
+                {
+                    await _userManager.RemoveFromRoleAsync(user, role);
+                }
+
+                // Falls die Rolle existiert, füge den Benutzer zur neuen Rolle hinzu
+                var roleExist = await _roleManager.RoleExistsAsync(newRole);
+                if (roleExist)
+                {
+                    await _userManager.AddToRoleAsync(user, newRole);
+                }
+            }
+
+            // Aktualisiere die Benutzerdaten
             return await _userManager.UpdateAsync(user);
         }
+
 
         // Benutzer löschen
         public async Task<IdentityResult> DeleteUserAsync(int id)
