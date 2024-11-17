@@ -25,7 +25,7 @@ export class ProjectsComponent {
   display: any[] = []; 
 
   getProjects() {
-    this.projectService.fetchProjects();
+    this.projectService.fetchProjectsByUser();
     this.display = this.projectService.getProjects();
   }
 
