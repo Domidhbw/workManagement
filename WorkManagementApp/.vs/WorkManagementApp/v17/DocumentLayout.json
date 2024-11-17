@@ -46,25 +46,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< Updated upstream
           "SelectedChildIndex": 0,
-=======
-          "SelectedChildIndex": 1,
->>>>>>> Stashed changes
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "api.service.ts",
-              "DocumentMoniker": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\services\\api.service.ts",
-              "RelativeDocumentMoniker": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\services\\api.service.ts",
-              "ToolTip": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\services\\api.service.ts",
-              "RelativeToolTip": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\services\\api.service.ts",
-              "ViewState": "AQIAABkAAAAAAAAAAAAgwCcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-11-17T17:35:52.419Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -88,12 +71,7 @@
               "RelativeToolTip": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\login\\login.component.html",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-<<<<<<< Updated upstream
               "WhenOpened": "2024-11-17T17:32:29.585Z"
-=======
-              "WhenOpened": "2024-11-17T17:32:29.585Z",
-              "EditorCaption": ""
->>>>>>> Stashed changes
             },
             {
               "$type": "Document",
@@ -165,12 +143,7 @@
               "RelativeToolTip": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.ts",
               "ViewState": "AQIAABAAAAAAAAAAAAAgwBsAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-<<<<<<< Updated upstream
               "WhenOpened": "2024-11-17T17:02:28.349Z"
-=======
-              "WhenOpened": "2024-11-17T17:02:28.349Z",
-              "EditorCaption": ""
->>>>>>> Stashed changes
             },
             {
               "$type": "Document",
@@ -182,12 +155,7 @@
               "RelativeToolTip": "WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\user-management\\user-management.component.ts",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-<<<<<<< Updated upstream
               "WhenOpened": "2024-11-17T17:05:49.459Z"
-=======
-              "WhenOpened": "2024-11-17T17:05:49.459Z",
-              "EditorCaption": ""
->>>>>>> Stashed changes
             }
           ]
         }
