@@ -1,6 +1,7 @@
 <div class="tasks-container">
   <h2 class="tasks-title">Tasks</h2>
   <button class="btn-primary" (click)="getTasks()">Load Tasks</button>
+  <button class="btn-secondary" (click)="switchToProjectPage()">Project Overview</button>
 
   <div *ngIf="selectedProjectId !== null" class="task-columns-container">
     <div class="task-column" *ngFor="let status of taskStatuses">

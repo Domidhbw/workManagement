@@ -318,8 +318,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>9cv4yi90j4</Fingerprint>
-      <Integrity>Vw7LtWoC82ybLVXD70JrsNMTFPhl9C3pKeC8zvhjAHA=</Integrity>
+      <Fingerprint>rz3v5cmnea</Fingerprint>
+      <Integrity>9xo/DCw43xpZWEvP12FHQsqXZrj7O0iONE6h5Yb5c6s=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\projects\projects.component.css'))</OriginalItemSpec>
@@ -336,8 +336,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>hvq9cyv4ca</Fingerprint>
-      <Integrity>TTTEXpgRr/ArXABp2D3nBnl05qjWabsTNWEdAf6Hxdo=</Integrity>
+      <Fingerprint>8jt59yag95</Fingerprint>
+      <Integrity>xDXcZPQojIZg7Q9yh4+6Zg3lgr1WA1K67j/kfFYjVA8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\projects\projects.component.html'))</OriginalItemSpec>
@@ -354,8 +354,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>pf6ky5kma3</Fingerprint>
-      <Integrity>lbNH8nt28Q8z8PeF4nmijGXiJnoss9hFU/bvxwMfQHI=</Integrity>
+      <Fingerprint>c2weynzlya</Fingerprint>
+      <Integrity>1CebXb0yJ2YSJUVgj6VxYWf/sL04H0rqBBfu37F7wk8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\projects\projects.component.ts'))</OriginalItemSpec>
@@ -534,8 +534,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>erb1tgnvz1</Fingerprint>
-      <Integrity>yp5NQoTjheQnBHRm9A0JD35Sds4Y9Ua3fqKDbQW3wEM=</Integrity>
+      <Fingerprint>mkpct5kwrl</Fingerprint>
+      <Integrity>dr1JbWgJ2st2W0ypkHE3v+jh6iAXYpMEJabtD1sKEmo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\user-list\user-list.component.css'))</OriginalItemSpec>
@@ -552,8 +552,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>0ag9bu8pfs</Fingerprint>
-      <Integrity>WGIkjZ/K0D2UWXaq6/dD+ewAnnPD/ikFjQ84dHN98Wc=</Integrity>
+      <Fingerprint>7sotblzfwg</Fingerprint>
+      <Integrity>t3Fj6w6GcWEABew5ZhAoHyeeNR5D+q9t8ysgEflgCS0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\user-list\user-list.component.html'))</OriginalItemSpec>
@@ -570,8 +570,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>r1ugi4374h</Fingerprint>
-      <Integrity>4TFD464YVaCyK3SOYF1b4wU0kGMB5tA25woDEzrs80s=</Integrity>
+      <Fingerprint>b7z1cjm8o2</Fingerprint>
+      <Integrity>iX9DKQWFGCTgnr4Y0z9RFLwVQ+zSPETn7ozgFBzavr0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\user-list\user-list.component.ts'))</OriginalItemSpec>

@@ -3,6 +3,7 @@ import { ApiService, TaskService } from '../../services';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet, RouterModule, ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router'; // Import Router
 
 enum TaskStatus {
   NotStarted = '0',
@@ -32,7 +33,7 @@ export class TasksComponent implements OnInit {
   assignedUserId = '';
   priority = '';
 
-  constructor(private api: ApiService, private taskService: TaskService, private route: ActivatedRoute) {}
+  constructor(private api: ApiService, private taskService: TaskService, private route: ActivatedRoute, private router: Router) { } // Added Router
 
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
@@ -131,6 +132,7 @@ export class TasksComponent implements OnInit {
     }
   }
 
+  switchToProjectPage() {
+    this.router.navigate(['/projects']); 
+  }
 }
-
-

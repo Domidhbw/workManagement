@@ -9,10 +9,23 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './user-list.component.css'
 })
 export class UserListComponent {
-  @Input() users: any[] = []; // Input to receive the list of users from the parent component
-  @Output() userSelected = new EventEmitter<any>(); // Output to emit the selected user
+  @Input() users: any[] = []; 
+  @Output() userSelected = new EventEmitter<any>(); 
 
   selectUser(user: any) {
-    this.userSelected.emit(user); // Emit the selected user to the parent component
+    this.userSelected.emit(user); 
   }
+
+  searchTerm: string = '';
+
+  filteredUsers() {
+    if (!this.searchTerm) {
+      return this.users;
+    }
+    const lowerCaseSearchTerm = this.searchTerm.toLowerCase();
+    return this.users.filter(user =>
+      user.username.toLowerCase().includes(lowerCaseSearchTerm)
+    );
+  }
+
 }

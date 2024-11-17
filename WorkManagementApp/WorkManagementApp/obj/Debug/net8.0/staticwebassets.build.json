@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sgEjdsdDgDid2wmF6W9dDuxtUqcDDtia5aeRMTa8seE=",
+  "Hash": "1JcPC+8UG3fO4sO6u60o0qizZiDeUZGUg+w4MZOr3FY=",
   "Source": "WorkManagementApp",
   "BasePath": "_content/WorkManagementApp",
   "Mode": "Default",
@@ -388,8 +388,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "9cv4yi90j4",
-      "Integrity": "Vw7LtWoC82ybLVXD70JrsNMTFPhl9C3pKeC8zvhjAHA=",
+      "Fingerprint": "rz3v5cmnea",
+      "Integrity": "9xo/DCw43xpZWEvP12FHQsqXZrj7O0iONE6h5Yb5c6s=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.css"
@@ -409,8 +409,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "hvq9cyv4ca",
-      "Integrity": "TTTEXpgRr/ArXABp2D3nBnl05qjWabsTNWEdAf6Hxdo=",
+      "Fingerprint": "8jt59yag95",
+      "Integrity": "xDXcZPQojIZg7Q9yh4+6Zg3lgr1WA1K67j/kfFYjVA8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.html"
@@ -451,8 +451,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pf6ky5kma3",
-      "Integrity": "lbNH8nt28Q8z8PeF4nmijGXiJnoss9hFU/bvxwMfQHI=",
+      "Fingerprint": "c2weynzlya",
+      "Integrity": "1CebXb0yJ2YSJUVgj6VxYWf/sL04H0rqBBfu37F7wk8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.ts"
@@ -640,8 +640,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "erb1tgnvz1",
-      "Integrity": "yp5NQoTjheQnBHRm9A0JD35Sds4Y9Ua3fqKDbQW3wEM=",
+      "Fingerprint": "mkpct5kwrl",
+      "Integrity": "dr1JbWgJ2st2W0ypkHE3v+jh6iAXYpMEJabtD1sKEmo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\work-management-app\\src\\app\\components\\user-list\\user-list.component.css"
@@ -661,8 +661,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "0ag9bu8pfs",
-      "Integrity": "WGIkjZ/K0D2UWXaq6/dD+ewAnnPD/ikFjQ84dHN98Wc=",
+      "Fingerprint": "7sotblzfwg",
+      "Integrity": "t3Fj6w6GcWEABew5ZhAoHyeeNR5D+q9t8ysgEflgCS0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\work-management-app\\src\\app\\components\\user-list\\user-list.component.html"
@@ -703,8 +703,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "r1ugi4374h",
-      "Integrity": "4TFD464YVaCyK3SOYF1b4wU0kGMB5tA25woDEzrs80s=",
+      "Fingerprint": "b7z1cjm8o2",
+      "Integrity": "iX9DKQWFGCTgnr4Y0z9RFLwVQ+zSPETn7ozgFBzavr0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\work-management-app\\src\\app\\components\\user-list\\user-list.component.ts"
@@ -2610,8 +2610,8 @@
       ]
     },
     {
-      "Route": "work-management-app/src/app/components/projects/projects.component.9cv4yi90j4.css",
-      "AssetFile": "C:\\Users\\jamie\\Documents\\GitHub\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.css",
+      "Route": "work-management-app/src/app/components/projects/projects.component.8jt59yag95.html",
+      "AssetFile": "C:\\Users\\jamie\\Documents\\GitHub\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2620,19 +2620,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1514"
+          "Value": "4824"
         },
         {
           "Name": "Content-Type",
-          "Value": "text/css"
+          "Value": "text/html"
         },
         {
           "Name": "ETag",
-          "Value": "\"Vw7LtWoC82ybLVXD70JrsNMTFPhl9C3pKeC8zvhjAHA=\""
+          "Value": "\"xDXcZPQojIZg7Q9yh4+6Zg3lgr1WA1K67j/kfFYjVA8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 20:25:20 GMT"
+          "Value": "Sun, 17 Nov 2024 21:51:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2642,15 +2642,60 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "9cv4yi90j4"
+          "Value": "8jt59yag95"
         },
         {
           "Name": "label",
-          "Value": "work-management-app/src/app/components/projects/projects.component.css"
+          "Value": "work-management-app/src/app/components/projects/projects.component.html"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Vw7LtWoC82ybLVXD70JrsNMTFPhl9C3pKeC8zvhjAHA="
+          "Value": "sha256-xDXcZPQojIZg7Q9yh4+6Zg3lgr1WA1K67j/kfFYjVA8="
+        }
+      ]
+    },
+    {
+      "Route": "work-management-app/src/app/components/projects/projects.component.c2weynzlya.ts",
+      "AssetFile": "C:\\Users\\jamie\\Documents\\GitHub\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6499"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1CebXb0yJ2YSJUVgj6VxYWf/sL04H0rqBBfu37F7wk8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 17 Nov 2024 21:49:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c2weynzlya"
+        },
+        {
+          "Name": "label",
+          "Value": "work-management-app/src/app/components/projects/projects.component.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1CebXb0yJ2YSJUVgj6VxYWf/sL04H0rqBBfu37F7wk8="
         }
       ]
     },
@@ -2665,7 +2710,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1514"
+          "Value": "1864"
         },
         {
           "Name": "Content-Type",
@@ -2673,11 +2718,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Vw7LtWoC82ybLVXD70JrsNMTFPhl9C3pKeC8zvhjAHA=\""
+          "Value": "\"9xo/DCw43xpZWEvP12FHQsqXZrj7O0iONE6h5Yb5c6s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 20:25:20 GMT"
+          "Value": "Sun, 17 Nov 2024 21:49:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2687,7 +2732,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Vw7LtWoC82ybLVXD70JrsNMTFPhl9C3pKeC8zvhjAHA="
+          "Value": "sha256-9xo/DCw43xpZWEvP12FHQsqXZrj7O0iONE6h5Yb5c6s="
         }
       ]
     },
@@ -2702,7 +2747,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4585"
+          "Value": "4824"
         },
         {
           "Name": "Content-Type",
@@ -2710,11 +2755,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"TTTEXpgRr/ArXABp2D3nBnl05qjWabsTNWEdAf6Hxdo=\""
+          "Value": "\"xDXcZPQojIZg7Q9yh4+6Zg3lgr1WA1K67j/kfFYjVA8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 21:19:22 GMT"
+          "Value": "Sun, 17 Nov 2024 21:51:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2724,13 +2769,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-TTTEXpgRr/ArXABp2D3nBnl05qjWabsTNWEdAf6Hxdo="
+          "Value": "sha256-xDXcZPQojIZg7Q9yh4+6Zg3lgr1WA1K67j/kfFYjVA8="
         }
       ]
     },
     {
-      "Route": "work-management-app/src/app/components/projects/projects.component.hvq9cyv4ca.html",
-      "AssetFile": "C:\\Users\\jamie\\Documents\\GitHub\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.html",
+      "Route": "work-management-app/src/app/components/projects/projects.component.rz3v5cmnea.css",
+      "AssetFile": "C:\\Users\\jamie\\Documents\\GitHub\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2739,19 +2784,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4585"
+          "Value": "1864"
         },
         {
           "Name": "Content-Type",
-          "Value": "text/html"
+          "Value": "text/css"
         },
         {
           "Name": "ETag",
-          "Value": "\"TTTEXpgRr/ArXABp2D3nBnl05qjWabsTNWEdAf6Hxdo=\""
+          "Value": "\"9xo/DCw43xpZWEvP12FHQsqXZrj7O0iONE6h5Yb5c6s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 21:19:22 GMT"
+          "Value": "Sun, 17 Nov 2024 21:49:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2761,60 +2806,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "hvq9cyv4ca"
+          "Value": "rz3v5cmnea"
         },
         {
           "Name": "label",
-          "Value": "work-management-app/src/app/components/projects/projects.component.html"
+          "Value": "work-management-app/src/app/components/projects/projects.component.css"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-TTTEXpgRr/ArXABp2D3nBnl05qjWabsTNWEdAf6Hxdo="
-        }
-      ]
-    },
-    {
-      "Route": "work-management-app/src/app/components/projects/projects.component.pf6ky5kma3.ts",
-      "AssetFile": "C:\\Users\\jamie\\Documents\\GitHub\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\projects\\projects.component.ts",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6412"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "video/vnd.dlna.mpeg-tts"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lbNH8nt28Q8z8PeF4nmijGXiJnoss9hFU/bvxwMfQHI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 20:45:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "pf6ky5kma3"
-        },
-        {
-          "Name": "label",
-          "Value": "work-management-app/src/app/components/projects/projects.component.ts"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-lbNH8nt28Q8z8PeF4nmijGXiJnoss9hFU/bvxwMfQHI="
+          "Value": "sha256-9xo/DCw43xpZWEvP12FHQsqXZrj7O0iONE6h5Yb5c6s="
         }
       ]
     },
@@ -2911,7 +2911,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6412"
+          "Value": "6499"
         },
         {
           "Name": "Content-Type",
@@ -2919,11 +2919,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"lbNH8nt28Q8z8PeF4nmijGXiJnoss9hFU/bvxwMfQHI=\""
+          "Value": "\"1CebXb0yJ2YSJUVgj6VxYWf/sL04H0rqBBfu37F7wk8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 20:45:47 GMT"
+          "Value": "Sun, 17 Nov 2024 21:49:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2933,7 +2933,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-lbNH8nt28Q8z8PeF4nmijGXiJnoss9hFU/bvxwMfQHI="
+          "Value": "sha256-1CebXb0yJ2YSJUVgj6VxYWf/sL04H0rqBBfu37F7wk8="
         }
       ]
     },
@@ -3594,7 +3594,7 @@
       ]
     },
     {
-      "Route": "work-management-app/src/app/components/user-list/user-list.component.0ag9bu8pfs.html",
+      "Route": "work-management-app/src/app/components/user-list/user-list.component.7sotblzfwg.html",
       "AssetFile": "C:\\Users\\jamie\\Documents\\GitHub\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\user-list\\user-list.component.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3604,7 +3604,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "112"
+          "Value": "339"
         },
         {
           "Name": "Content-Type",
@@ -3612,11 +3612,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"WGIkjZ/K0D2UWXaq6/dD+ewAnnPD/ikFjQ84dHN98Wc=\""
+          "Value": "\"t3Fj6w6GcWEABew5ZhAoHyeeNR5D+q9t8ysgEflgCS0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 19:35:54 GMT"
+          "Value": "Sun, 17 Nov 2024 22:10:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3626,7 +3626,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "0ag9bu8pfs"
+          "Value": "7sotblzfwg"
         },
         {
           "Name": "label",
@@ -3634,7 +3634,52 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-WGIkjZ/K0D2UWXaq6/dD+ewAnnPD/ikFjQ84dHN98Wc="
+          "Value": "sha256-t3Fj6w6GcWEABew5ZhAoHyeeNR5D+q9t8ysgEflgCS0="
+        }
+      ]
+    },
+    {
+      "Route": "work-management-app/src/app/components/user-list/user-list.component.b7z1cjm8o2.ts",
+      "AssetFile": "C:\\Users\\jamie\\Documents\\GitHub\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\user-list\\user-list.component.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "856"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iX9DKQWFGCTgnr4Y0z9RFLwVQ+zSPETn7ozgFBzavr0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 17 Nov 2024 22:10:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b7z1cjm8o2"
+        },
+        {
+          "Name": "label",
+          "Value": "work-management-app/src/app/components/user-list/user-list.component.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iX9DKQWFGCTgnr4Y0z9RFLwVQ+zSPETn7ozgFBzavr0="
         }
       ]
     },
@@ -3649,7 +3694,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "219"
+          "Value": "681"
         },
         {
           "Name": "Content-Type",
@@ -3657,11 +3702,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"yp5NQoTjheQnBHRm9A0JD35Sds4Y9Ua3fqKDbQW3wEM=\""
+          "Value": "\"dr1JbWgJ2st2W0ypkHE3v+jh6iAXYpMEJabtD1sKEmo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 16:53:29 GMT"
+          "Value": "Sun, 17 Nov 2024 22:10:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3671,52 +3716,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-yp5NQoTjheQnBHRm9A0JD35Sds4Y9Ua3fqKDbQW3wEM="
-        }
-      ]
-    },
-    {
-      "Route": "work-management-app/src/app/components/user-list/user-list.component.erb1tgnvz1.css",
-      "AssetFile": "C:\\Users\\jamie\\Documents\\GitHub\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\user-list\\user-list.component.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "219"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"yp5NQoTjheQnBHRm9A0JD35Sds4Y9Ua3fqKDbQW3wEM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 16:53:29 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "erb1tgnvz1"
-        },
-        {
-          "Name": "label",
-          "Value": "work-management-app/src/app/components/user-list/user-list.component.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-yp5NQoTjheQnBHRm9A0JD35Sds4Y9Ua3fqKDbQW3wEM="
+          "Value": "sha256-dr1JbWgJ2st2W0ypkHE3v+jh6iAXYpMEJabtD1sKEmo="
         }
       ]
     },
@@ -3731,7 +3731,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "112"
+          "Value": "339"
         },
         {
           "Name": "Content-Type",
@@ -3739,11 +3739,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"WGIkjZ/K0D2UWXaq6/dD+ewAnnPD/ikFjQ84dHN98Wc=\""
+          "Value": "\"t3Fj6w6GcWEABew5ZhAoHyeeNR5D+q9t8ysgEflgCS0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 19:35:54 GMT"
+          "Value": "Sun, 17 Nov 2024 22:10:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3753,13 +3753,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-WGIkjZ/K0D2UWXaq6/dD+ewAnnPD/ikFjQ84dHN98Wc="
+          "Value": "sha256-t3Fj6w6GcWEABew5ZhAoHyeeNR5D+q9t8ysgEflgCS0="
         }
       ]
     },
     {
-      "Route": "work-management-app/src/app/components/user-list/user-list.component.r1ugi4374h.ts",
-      "AssetFile": "C:\\Users\\jamie\\Documents\\GitHub\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\user-list\\user-list.component.ts",
+      "Route": "work-management-app/src/app/components/user-list/user-list.component.mkpct5kwrl.css",
+      "AssetFile": "C:\\Users\\jamie\\Documents\\GitHub\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\user-list\\user-list.component.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3768,19 +3768,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "706"
+          "Value": "681"
         },
         {
           "Name": "Content-Type",
-          "Value": "video/vnd.dlna.mpeg-tts"
+          "Value": "text/css"
         },
         {
           "Name": "ETag",
-          "Value": "\"4TFD464YVaCyK3SOYF1b4wU0kGMB5tA25woDEzrs80s=\""
+          "Value": "\"dr1JbWgJ2st2W0ypkHE3v+jh6iAXYpMEJabtD1sKEmo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 16:53:29 GMT"
+          "Value": "Sun, 17 Nov 2024 22:10:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3790,15 +3790,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "r1ugi4374h"
+          "Value": "mkpct5kwrl"
         },
         {
           "Name": "label",
-          "Value": "work-management-app/src/app/components/user-list/user-list.component.ts"
+          "Value": "work-management-app/src/app/components/user-list/user-list.component.css"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-4TFD464YVaCyK3SOYF1b4wU0kGMB5tA25woDEzrs80s="
+          "Value": "sha256-dr1JbWgJ2st2W0ypkHE3v+jh6iAXYpMEJabtD1sKEmo="
         }
       ]
     },
@@ -3895,7 +3895,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "706"
+          "Value": "856"
         },
         {
           "Name": "Content-Type",
@@ -3903,11 +3903,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4TFD464YVaCyK3SOYF1b4wU0kGMB5tA25woDEzrs80s=\""
+          "Value": "\"iX9DKQWFGCTgnr4Y0z9RFLwVQ+zSPETn7ozgFBzavr0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 16:53:29 GMT"
+          "Value": "Sun, 17 Nov 2024 22:10:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3917,7 +3917,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-4TFD464YVaCyK3SOYF1b4wU0kGMB5tA25woDEzrs80s="
+          "Value": "sha256-iX9DKQWFGCTgnr4Y0z9RFLwVQ+zSPETn7ozgFBzavr0="
         }
       ]
     },

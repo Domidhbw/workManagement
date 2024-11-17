@@ -204,35 +204,35 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wbc7om0wai"},{"Name":"integrity","Value":"sha256-1JUP\u002BK/7TkTD\u002BCq2Wp0xVIyw/SdHjaieHyWoca6akDk="},{"Name":"label","Value":"_content/WorkManagementApp/work-management-app/src/app/components/login/login.component.html"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"722"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u00221JUP\u002BK/7TkTD\u002BCq2Wp0xVIyw/SdHjaieHyWoca6akDk=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 17:45:55 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/WorkManagementApp/work-management-app/src/app/components/projects/projects.component.9cv4yi90j4.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\projects\projects.component.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/WorkManagementApp/work-management-app/src/app/components/projects/projects.component.8jt59yag95.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\projects\projects.component.html'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9cv4yi90j4"},{"Name":"integrity","Value":"sha256-Vw7LtWoC82ybLVXD70JrsNMTFPhl9C3pKeC8zvhjAHA="},{"Name":"label","Value":"_content/WorkManagementApp/work-management-app/src/app/components/projects/projects.component.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1514"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Vw7LtWoC82ybLVXD70JrsNMTFPhl9C3pKeC8zvhjAHA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 20:25:20 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8jt59yag95"},{"Name":"integrity","Value":"sha256-xDXcZPQojIZg7Q9yh4\u002B6Zg3lgr1WA1K67j/kfFYjVA8="},{"Name":"label","Value":"_content/WorkManagementApp/work-management-app/src/app/components/projects/projects.component.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4824"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022xDXcZPQojIZg7Q9yh4\u002B6Zg3lgr1WA1K67j/kfFYjVA8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 21:51:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WorkManagementApp/work-management-app/src/app/components/projects/projects.component.c2weynzlya.ts">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\projects\projects.component.ts'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"c2weynzlya"},{"Name":"integrity","Value":"sha256-1CebXb0yJ2YSJUVgj6VxYWf/sL04H0rqBBfu37F7wk8="},{"Name":"label","Value":"_content/WorkManagementApp/work-management-app/src/app/components/projects/projects.component.ts"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6499"},{"Name":"Content-Type","Value":"video/vnd.dlna.mpeg-tts"},{"Name":"ETag","Value":"\u00221CebXb0yJ2YSJUVgj6VxYWf/sL04H0rqBBfu37F7wk8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 21:49:38 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WorkManagementApp/work-management-app/src/app/components/projects/projects.component.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\projects\projects.component.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Vw7LtWoC82ybLVXD70JrsNMTFPhl9C3pKeC8zvhjAHA="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1514"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Vw7LtWoC82ybLVXD70JrsNMTFPhl9C3pKeC8zvhjAHA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 20:25:20 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-9xo/DCw43xpZWEvP12FHQsqXZrj7O0iONE6h5Yb5c6s="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1864"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00229xo/DCw43xpZWEvP12FHQsqXZrj7O0iONE6h5Yb5c6s=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 21:49:14 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WorkManagementApp/work-management-app/src/app/components/projects/projects.component.html">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\projects\projects.component.html'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-TTTEXpgRr/ArXABp2D3nBnl05qjWabsTNWEdAf6Hxdo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4585"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022TTTEXpgRr/ArXABp2D3nBnl05qjWabsTNWEdAf6Hxdo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 21:19:22 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-xDXcZPQojIZg7Q9yh4\u002B6Zg3lgr1WA1K67j/kfFYjVA8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4824"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022xDXcZPQojIZg7Q9yh4\u002B6Zg3lgr1WA1K67j/kfFYjVA8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 21:51:01 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/WorkManagementApp/work-management-app/src/app/components/projects/projects.component.hvq9cyv4ca.html">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\projects\projects.component.html'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/WorkManagementApp/work-management-app/src/app/components/projects/projects.component.rz3v5cmnea.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\projects\projects.component.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hvq9cyv4ca"},{"Name":"integrity","Value":"sha256-TTTEXpgRr/ArXABp2D3nBnl05qjWabsTNWEdAf6Hxdo="},{"Name":"label","Value":"_content/WorkManagementApp/work-management-app/src/app/components/projects/projects.component.html"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4585"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022TTTEXpgRr/ArXABp2D3nBnl05qjWabsTNWEdAf6Hxdo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 21:19:22 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/WorkManagementApp/work-management-app/src/app/components/projects/projects.component.pf6ky5kma3.ts">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\projects\projects.component.ts'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"pf6ky5kma3"},{"Name":"integrity","Value":"sha256-lbNH8nt28Q8z8PeF4nmijGXiJnoss9hFU/bvxwMfQHI="},{"Name":"label","Value":"_content/WorkManagementApp/work-management-app/src/app/components/projects/projects.component.ts"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6412"},{"Name":"Content-Type","Value":"video/vnd.dlna.mpeg-tts"},{"Name":"ETag","Value":"\u0022lbNH8nt28Q8z8PeF4nmijGXiJnoss9hFU/bvxwMfQHI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 20:45:47 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rz3v5cmnea"},{"Name":"integrity","Value":"sha256-9xo/DCw43xpZWEvP12FHQsqXZrj7O0iONE6h5Yb5c6s="},{"Name":"label","Value":"_content/WorkManagementApp/work-management-app/src/app/components/projects/projects.component.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1864"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00229xo/DCw43xpZWEvP12FHQsqXZrj7O0iONE6h5Yb5c6s=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 21:49:14 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WorkManagementApp/work-management-app/src/app/components/projects/projects.component.spec.92ulbj2a87.ts">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\projects\projects.component.spec.ts'))</AssetFile>
@@ -249,8 +249,8 @@
     <StaticWebAssetEndpoint Include="_content/WorkManagementApp/work-management-app/src/app/components/projects/projects.component.ts">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\projects\projects.component.ts'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-lbNH8nt28Q8z8PeF4nmijGXiJnoss9hFU/bvxwMfQHI="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"6412"},{"Name":"Content-Type","Value":"video/vnd.dlna.mpeg-tts"},{"Name":"ETag","Value":"\u0022lbNH8nt28Q8z8PeF4nmijGXiJnoss9hFU/bvxwMfQHI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 20:45:47 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-1CebXb0yJ2YSJUVgj6VxYWf/sL04H0rqBBfu37F7wk8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"6499"},{"Name":"Content-Type","Value":"video/vnd.dlna.mpeg-tts"},{"Name":"ETag","Value":"\u00221CebXb0yJ2YSJUVgj6VxYWf/sL04H0rqBBfu37F7wk8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 21:49:38 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WorkManagementApp/work-management-app/src/app/components/register/register.component.5yq8e1vsu0.html">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\register\register.component.html'))</AssetFile>
@@ -348,35 +348,35 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wg775jttd3"},{"Name":"integrity","Value":"sha256-cH0ViJBUaniWxwoWlIU/lKq1KPx8NovVZj1KKLwlcHA="},{"Name":"label","Value":"_content/WorkManagementApp/work-management-app/src/app/components/tasks/tasks.component.ts"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3464"},{"Name":"Content-Type","Value":"video/vnd.dlna.mpeg-tts"},{"Name":"ETag","Value":"\u0022cH0ViJBUaniWxwoWlIU/lKq1KPx8NovVZj1KKLwlcHA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 21:40:13 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/WorkManagementApp/work-management-app/src/app/components/user-list/user-list.component.0ag9bu8pfs.html">
+    <StaticWebAssetEndpoint Include="_content/WorkManagementApp/work-management-app/src/app/components/user-list/user-list.component.7sotblzfwg.html">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\user-list\user-list.component.html'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0ag9bu8pfs"},{"Name":"integrity","Value":"sha256-WGIkjZ/K0D2UWXaq6/dD\u002BewAnnPD/ikFjQ84dHN98Wc="},{"Name":"label","Value":"_content/WorkManagementApp/work-management-app/src/app/components/user-list/user-list.component.html"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"112"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022WGIkjZ/K0D2UWXaq6/dD\u002BewAnnPD/ikFjQ84dHN98Wc=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 19:35:54 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7sotblzfwg"},{"Name":"integrity","Value":"sha256-t3Fj6w6GcWEABew5ZhAoHyeeNR5D\u002Bq9t8ysgEflgCS0="},{"Name":"label","Value":"_content/WorkManagementApp/work-management-app/src/app/components/user-list/user-list.component.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"339"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022t3Fj6w6GcWEABew5ZhAoHyeeNR5D\u002Bq9t8ysgEflgCS0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 22:10:23 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WorkManagementApp/work-management-app/src/app/components/user-list/user-list.component.b7z1cjm8o2.ts">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\user-list\user-list.component.ts'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"b7z1cjm8o2"},{"Name":"integrity","Value":"sha256-iX9DKQWFGCTgnr4Y0z9RFLwVQ\u002BzSPETn7ozgFBzavr0="},{"Name":"label","Value":"_content/WorkManagementApp/work-management-app/src/app/components/user-list/user-list.component.ts"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"856"},{"Name":"Content-Type","Value":"video/vnd.dlna.mpeg-tts"},{"Name":"ETag","Value":"\u0022iX9DKQWFGCTgnr4Y0z9RFLwVQ\u002BzSPETn7ozgFBzavr0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 22:10:23 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WorkManagementApp/work-management-app/src/app/components/user-list/user-list.component.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\user-list\user-list.component.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-yp5NQoTjheQnBHRm9A0JD35Sds4Y9Ua3fqKDbQW3wEM="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"219"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022yp5NQoTjheQnBHRm9A0JD35Sds4Y9Ua3fqKDbQW3wEM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 16:53:29 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/WorkManagementApp/work-management-app/src/app/components/user-list/user-list.component.erb1tgnvz1.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\user-list\user-list.component.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"erb1tgnvz1"},{"Name":"integrity","Value":"sha256-yp5NQoTjheQnBHRm9A0JD35Sds4Y9Ua3fqKDbQW3wEM="},{"Name":"label","Value":"_content/WorkManagementApp/work-management-app/src/app/components/user-list/user-list.component.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"219"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022yp5NQoTjheQnBHRm9A0JD35Sds4Y9Ua3fqKDbQW3wEM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 16:53:29 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-dr1JbWgJ2st2W0ypkHE3v\u002Bjh6iAXYpMEJabtD1sKEmo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"681"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022dr1JbWgJ2st2W0ypkHE3v\u002Bjh6iAXYpMEJabtD1sKEmo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 22:10:23 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WorkManagementApp/work-management-app/src/app/components/user-list/user-list.component.html">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\user-list\user-list.component.html'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-WGIkjZ/K0D2UWXaq6/dD\u002BewAnnPD/ikFjQ84dHN98Wc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"112"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022WGIkjZ/K0D2UWXaq6/dD\u002BewAnnPD/ikFjQ84dHN98Wc=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 19:35:54 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-t3Fj6w6GcWEABew5ZhAoHyeeNR5D\u002Bq9t8ysgEflgCS0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"339"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022t3Fj6w6GcWEABew5ZhAoHyeeNR5D\u002Bq9t8ysgEflgCS0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 22:10:23 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/WorkManagementApp/work-management-app/src/app/components/user-list/user-list.component.r1ugi4374h.ts">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\user-list\user-list.component.ts'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/WorkManagementApp/work-management-app/src/app/components/user-list/user-list.component.mkpct5kwrl.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\user-list\user-list.component.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"r1ugi4374h"},{"Name":"integrity","Value":"sha256-4TFD464YVaCyK3SOYF1b4wU0kGMB5tA25woDEzrs80s="},{"Name":"label","Value":"_content/WorkManagementApp/work-management-app/src/app/components/user-list/user-list.component.ts"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"706"},{"Name":"Content-Type","Value":"video/vnd.dlna.mpeg-tts"},{"Name":"ETag","Value":"\u00224TFD464YVaCyK3SOYF1b4wU0kGMB5tA25woDEzrs80s=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 16:53:29 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mkpct5kwrl"},{"Name":"integrity","Value":"sha256-dr1JbWgJ2st2W0ypkHE3v\u002Bjh6iAXYpMEJabtD1sKEmo="},{"Name":"label","Value":"_content/WorkManagementApp/work-management-app/src/app/components/user-list/user-list.component.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"681"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022dr1JbWgJ2st2W0ypkHE3v\u002Bjh6iAXYpMEJabtD1sKEmo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 22:10:23 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WorkManagementApp/work-management-app/src/app/components/user-list/user-list.component.spec.rpgmqc7j3s.ts">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\user-list\user-list.component.spec.ts'))</AssetFile>
@@ -393,8 +393,8 @@
     <StaticWebAssetEndpoint Include="_content/WorkManagementApp/work-management-app/src/app/components/user-list/user-list.component.ts">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\user-list\user-list.component.ts'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-4TFD464YVaCyK3SOYF1b4wU0kGMB5tA25woDEzrs80s="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"706"},{"Name":"Content-Type","Value":"video/vnd.dlna.mpeg-tts"},{"Name":"ETag","Value":"\u00224TFD464YVaCyK3SOYF1b4wU0kGMB5tA25woDEzrs80s=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 16:53:29 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-iX9DKQWFGCTgnr4Y0z9RFLwVQ\u002BzSPETn7ozgFBzavr0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"856"},{"Name":"Content-Type","Value":"video/vnd.dlna.mpeg-tts"},{"Name":"ETag","Value":"\u0022iX9DKQWFGCTgnr4Y0z9RFLwVQ\u002BzSPETn7ozgFBzavr0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Nov 2024 22:10:23 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WorkManagementApp/work-management-app/src/app/components/user-management/user-management.component.85rz9m5zp1.html">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\work-management-app\src\app\components\user-management\user-management.component.html'))</AssetFile>

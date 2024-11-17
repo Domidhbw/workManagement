@@ -1,4 +1,9 @@
-<div *ngFor="let user of users" (click)="selectUser(user)" class="user-item">
-  {{ user.username }}
-</div>
+<div class="user-management-container">
+  <input type="text" [(ngModel)]="searchTerm" placeholder="Search users..." class="search-input" />
 
+  <div class="user-list">
+    <div *ngFor="let user of filteredUsers()" (click)="selectUser(user)" class="user-item">
+      {{ user.username }}
+    </div>
+  </div>
+</div>
