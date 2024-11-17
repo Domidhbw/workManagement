@@ -25,7 +25,7 @@ export class LoginComponent {
         sessionStorage.setItem('token', response.token);
         sessionStorage.setItem('userId', response.userId.toString());
         this.saveCurrentUser();
-        this.router.navigate(['/protected-route']);
+        this.router.navigate(['/projects']);
       },
       (error) => {
         console.error('Login failed:', error);
