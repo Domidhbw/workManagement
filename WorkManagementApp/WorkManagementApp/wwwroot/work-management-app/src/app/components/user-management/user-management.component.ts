@@ -2,10 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService, ProjectService, TaskService } from '../../services';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { RouterOutlet } from '@angular/router';
-import { RouterModule } from '@angular/router';
-import { UserListComponent} from '../user-list/user-list.component'
-
+import { RouterOutlet, RouterModule } from '@angular/router';
+import { UserListComponent } from '../user-list/user-list.component';
+import { Router } from '@angular/router'; 
 
 @Component({
   selector: 'app-user-management',
@@ -18,8 +17,9 @@ export class UserManagementComponent implements OnInit {
   users: any[] = [];
   selectedUser: any = null;
   newUser: any = { name: '', email: '', password: '', role: '' };
- 
-  constructor(private api: ApiService) { }
+  searchTerm: string = '';
+
+  constructor(private api: ApiService, private router: Router) { } 
 
   ngOnInit(): void {
     this.fetchUsers();
@@ -34,10 +34,11 @@ export class UserManagementComponent implements OnInit {
       error: (error) => {
         console.error('Error loading users:', error);
       }
-    })
+    });
   }
+
   onUserSelected(user: any) {
-    this.selectedUser = user; // Handle the selected user
+    this.selectedUser = user; 
     console.log('Selected User:', user);
   }
 
@@ -45,7 +46,7 @@ export class UserManagementComponent implements OnInit {
     this.api.updateUser(userId, updatedData).subscribe({
       next: (response) => {
         console.log('User updated:', response);
-        this.fetchUsers(); // Refresh the user list after update
+        this.fetchUsers(); 
       },
       error: (error) => {
         console.error('Error updating user:', error);
@@ -58,7 +59,7 @@ export class UserManagementComponent implements OnInit {
       this.api.deleteUser(userId).subscribe({
         next: () => {
           console.log('User deleted:', userId);
-          this.fetchUsers(); // Refresh the user list after deletion
+          this.fetchUsers(); 
         },
         error: (error) => {
           console.error('Error deleting user:', error);
@@ -66,8 +67,6 @@ export class UserManagementComponent implements OnInit {
       });
     }
   }
-
-  searchTerm: string = '';
 
   filteredUsers() {
     if (!this.searchTerm) {
@@ -80,4 +79,7 @@ export class UserManagementComponent implements OnInit {
     );
   }
 
+  switchToProjectPage() {
+    this.router.navigate(['/projects']); 
+  }
 }

@@ -34,10 +34,8 @@ export class TasksComponent implements OnInit {
   assignedUserId = '';
   priority = '';
   taskComments: { [taskId: number]: { id: number; commentText: string; createdAt: string; userId: number }[] } = {};
-  newComment: { [taskId: number]: string } = {}; // For new comment input per task
-  constructor(private api: ApiService, private taskService: TaskService, private route: ActivatedRoute) { }
-
-  constructor(private api: ApiService, private taskService: TaskService, private route: ActivatedRoute, private router: Router) { } // Added Router
+  newComment: { [taskId: number]: string } = {};
+  constructor(private api: ApiService, private taskService: TaskService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {

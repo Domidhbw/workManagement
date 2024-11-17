@@ -17,7 +17,7 @@
           <p><strong>Priority:</strong> {{ task.priority }}</p>
           <!-- Comments Section -->
           <div class="comments-section">
-            <button (click)="fetchTaskComments(task.id)">Show Comments</button>
+            <button class="btn-secondary" (click)="fetchTaskComments(task.id)">Show Comments</button>
             <div *ngIf="taskComments[task.id]">
               <h4>Comments</h4>
               <ul>
