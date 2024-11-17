@@ -93,3 +93,25 @@
   transition: width 0.3s ease;
 }
 
+.projects-layout {
+  display: flex;
+  gap: 20px;
+}
+
+.project-list {
+  flex: 2;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  max-height: 600px;
+}
+
+.edit-project-container {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  max-width: 300px;
+}
