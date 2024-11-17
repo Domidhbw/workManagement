@@ -1,6 +1,7 @@
 <div class="tasks-container">
   <h2 class="tasks-title">Tasks</h2>
   <button class="btn-primary" (click)="getTasks()">Load Tasks</button>
+  <button class="btn-secondary" (click)="showCreateTaskForm()">Add Task</button>
   <button class="btn-secondary" (click)="switchToProjectPage()">Project Overview</button>
 
   <div *ngIf="selectedProjectId !== null" class="task-columns-container">
@@ -36,8 +37,6 @@
               </div>
             </div>
           </div>
-
-
           <!-- Buttons to Edit or Delete -->
           <button class="btn-secondary" (click)="editTask(task)">Edit Task</button>
           <button class="btn-danger" (click)="deleteTask(task.id)">Delete Task</button>
@@ -71,15 +70,64 @@
       <input [(ngModel)]="selectedTask.projectId" name="projectId" type="number" class="input-field" placeholder="Project ID" />
     </div>
     <div class="form-group">
-      <input [(ngModel)]="selectedTask.priority" name="priority" type="number" class="input-field" placeholder="priority" />
+      <input [(ngModel)]="selectedTask.priority" name="priority" type="number" class="input-field" placeholder="Priority" />
     </div>
     <div class="form-group">
       <input [(ngModel)]="selectedTask.assignedUserId" name="assignedUserId" type="number" class="input-field" placeholder="Assigned User ID" />
     </div>
     <div class="form-group">
-      <input [(ngModel)]="selectedTask.status" name="status" type="number" class="input-field" placeholder="status" />
+      <label for="status">Status:</label>
+      <select [(ngModel)]="selectedTask.status" name="status" class="input-field">
+        <option [value]="'0'">Not Started</option>
+        <option [value]="'1'">In Progress</option>
+        <option [value]="'2'">Completed</option>
+        <option [value]="'3'">Blocked</option>
+      </select>
     </div>
+
     <button class="btn-primary" type="submit">Update Task</button>
     <button class="btn-secondary" type="button" (click)="cancelEdit()">Cancel</button>
+  </form>
+</div>
+
+<!-- Create Task Form -->
+<div *ngIf="showCreateForm" class="create-task-container">
+  <h2>Create New Task</h2>
+  <form (ngSubmit)="createTask()">
+    <div class="form-group">
+      <label for="title">Task Title:</label>
+      <input [(ngModel)]="title" name="title" id="title" class="input-field" required />
+    </div>
+    <div class="form-group">
+      <label for="description">Description:</label>
+      <textarea [(ngModel)]="description" name="description" id="description" class="input-field"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="dueDate">Due Date:</label>
+      <input [(ngModel)]="dueDate" name="dueDate" id="dueDate" type="datetime-local" class="input-field" />
+    </div>
+    <div class="form-group">
+      <label for="status">Status:</label>
+      <select [(ngModel)]="status" name="status" id="status" class="input-field">
+        <option [value]="'0'">Not Started</option>
+        <option [value]="'1'">In Progress</option>
+        <option [value]="'2'">Completed</option>
+        <option [value]="'3'">Blocked</option>
+      </select>
+    </div>
+    <!--<div class="form-group">
+      <label for="projectId">Project ID:</label>
+      <input [(ngModel)]="projectId" name="projectId" id="projectId" type="number" class="input-field" [readonly]="true" [value]="selectedProjectId" />
+    </div>-->
+    <div class="form-group">
+      <label for="assignedUserId">Assigned User ID:</label>
+      <input [(ngModel)]="assignedUserId" name="assignedUserId" id="assignedUserId" type="number" class="input-field" />
+    </div>
+    <div class="form-group">
+      <label for="priority">Priority:</label>
+      <input [(ngModel)]="priority" name="priority" id="priority" type="number" class="input-field" />
+    </div>
+    <button class="btn-primary" type="submit">Create Task</button>
+    <button class="btn-secondary" type="button" (click)="cancelCreate()">Cancel</button>
   </form>
 </div>

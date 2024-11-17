@@ -132,11 +132,6 @@ namespace WorkManagementApp.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateTaskDto createTaskDto)
         {
-            // Validierung der Enum-Werte (Priority und Status)
-            if (!Enum.IsDefined(typeof(Priority), createTaskDto.Priority))
-            {
-                return BadRequest("Ungültige Priorität.");
-            }
 
             if (!Enum.IsDefined(typeof(TaskStatus), createTaskDto.Status))
             {
@@ -200,12 +195,6 @@ namespace WorkManagementApp.Controllers
             if (task == null)
             {
                 return NotFound(); // Gibt NotFound zurück, wenn die Aufgabe nicht existiert.
-            }
-
-            // Validierung der Enum-Werte (Priority und Status)
-            if (!Enum.IsDefined(typeof(Priority), updatedTaskDto.Priority))
-            {
-                return BadRequest("Ungültige Priorität.");
             }
 
             if (!Enum.IsDefined(typeof(TaskStatus), updatedTaskDto.Status))

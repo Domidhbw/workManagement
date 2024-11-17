@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet, RouterModule, ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router'; // Import Router
+import { UserListComponent } from '../user-list/user-list.component';
 
 enum TaskStatus {
   NotStarted = '0',
@@ -34,8 +35,15 @@ export class TasksComponent implements OnInit {
   assignedUserId = '';
   priority = '';
   taskComments: { [taskId: number]: { id: number; commentText: string; createdAt: string; userId: number }[] } = {};
-  newComment: { [taskId: number]: string } = {};
-  constructor(private api: ApiService, private taskService: TaskService, private route: ActivatedRoute, private router: Router) { }
+  newComment: { [taskId: number]: string } = {}; // For new comment input per task
+  showCreateForm = false; // Added variable to control the visibility of the create task form
+
+  constructor(
+    private api: ApiService,
+    private taskService: TaskService,
+    private route: ActivatedRoute,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
@@ -76,7 +84,8 @@ export class TasksComponent implements OnInit {
     } else {
       this.filteredTasks = this.tasks;
     }
-  }  // Fetch comments for a specific task
+  }
+
   fetchTaskComments(taskId: number) {
     this.api.getTaskComment(taskId).subscribe(
       (comments) => {
@@ -89,10 +98,8 @@ export class TasksComponent implements OnInit {
     );
   }
 
-
-  // Add a new comment to a task
   addTaskComment(taskId: number) {
-    const commentData = { commentText: this.newComment[taskId],userid: this.userId};
+    const commentData = { commentText: this.newComment[taskId], userid: this.userId };
     this.api.createTaskComment(taskId, commentData).subscribe(
       (comment) => {
         if (!this.taskComments[taskId]) {
@@ -107,11 +114,9 @@ export class TasksComponent implements OnInit {
     );
   }
 
-  // Delete a specific comment
   deleteTaskComment(taskId: number, commentId: number) {
     this.api.deleteTaskComment(taskId, commentId).subscribe(
       () => {
-        // Remove the deleted comment from the list
         this.taskComments[taskId] = this.taskComments[taskId].filter(comment => comment.id !== commentId);
       },
       (error) => {
@@ -119,6 +124,7 @@ export class TasksComponent implements OnInit {
       }
     );
   }
+
   setSelectedProject(projectId: number) {
     this.selectedProjectId = projectId;
     this.filterTasksByProject();
@@ -129,18 +135,27 @@ export class TasksComponent implements OnInit {
   }
 
   createTask() {
+    if (this.selectedProjectId) {
+      this.projectId = this.selectedProjectId.toString();
+    }
+
     const newTask = {
       title: this.title,
       description: this.description,
       dueDate: this.dueDate,
-      status: this.status,
-      projectId: this.projectId,
-      assignedUserId: this.assignedUserId,
-      priority: this.priority,
+      status: Number(this.status),
+      projectId: Number(this.projectId),
+      assignedUserId: Number(this.assignedUserId),
+      priority: Number(this.priority),
     };
+    console.log(newTask);
+
     this.api.createTask(newTask).subscribe(
       (response) => {
+        console.log('Task created successfully:', response);
         this.getTasks();
+        this.resetForm(); // Reset the form after creation
+        this.showCreateForm = false; // Hide the form after creation
       },
       (error) => {
         console.error('Error creating task:', error);
@@ -148,11 +163,37 @@ export class TasksComponent implements OnInit {
     );
   }
 
+  resetForm() {
+    this.title = '';
+    this.description = '';
+    this.dueDate = '';
+    this.status = '0'; // Default status
+    this.projectId = '';
+    this.assignedUserId = '';
+    this.priority = '';
+  }
+
+  showCreateTaskForm() {
+    this.showCreateForm = true; // Show the form when the button is clicked
+  }
+
+  cancelCreate() {
+    this.resetForm(); // Reset the form fields
+    this.showCreateForm = false; // Hide the form
+  }
+
   editTask(task: any) {
     this.selectedTask = { ...task };
+    if (typeof this.selectedTask.status === 'string') {
+      this.selectedTask.status = parseInt(this.selectedTask.status, 10);
+    }
   }
 
   updateTask() {
+    if (typeof this.selectedTask.status === 'string') {
+      this.selectedTask.status = parseInt(this.selectedTask.status, 10);
+    }
+
     this.api.updateTask(this.selectedTask.id, this.selectedTask).subscribe(
       (response) => {
         this.selectedTask = null;
@@ -182,6 +223,6 @@ export class TasksComponent implements OnInit {
   }
 
   switchToProjectPage() {
-    this.router.navigate(['/projects']); 
+    this.router.navigate(['/projects']);
   }
 }
