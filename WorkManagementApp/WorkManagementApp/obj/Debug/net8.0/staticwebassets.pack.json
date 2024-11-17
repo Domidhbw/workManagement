@@ -129,6 +129,54 @@
       "PackagePath": "staticwebassets\\work-management-app\\dist\\out-tsc\\app\\components\\tasks\\tasks.component.spec.js.map"
     },
     {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\dist\\out-tsc\\app\\components\\user-management\\user-management.component.js",
+      "PackagePath": "staticwebassets\\work-management-app\\dist\\out-tsc\\app\\components\\user-management\\user-management.component.js"
+    },
+    {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\dist\\out-tsc\\app\\components\\user-management\\user-management.component.js.map",
+      "PackagePath": "staticwebassets\\work-management-app\\dist\\out-tsc\\app\\components\\user-management\\user-management.component.js.map"
+    },
+    {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\dist\\out-tsc\\app\\components\\user-management\\user-management.component.spec.js",
+      "PackagePath": "staticwebassets\\work-management-app\\dist\\out-tsc\\app\\components\\user-management\\user-management.component.spec.js"
+    },
+    {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\dist\\out-tsc\\app\\components\\user-management\\user-management.component.spec.js.map",
+      "PackagePath": "staticwebassets\\work-management-app\\dist\\out-tsc\\app\\components\\user-management\\user-management.component.spec.js.map"
+    },
+    {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\dist\\out-tsc\\app\\guards\\admin.guard.js",
+      "PackagePath": "staticwebassets\\work-management-app\\dist\\out-tsc\\app\\guards\\admin.guard.js"
+    },
+    {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\dist\\out-tsc\\app\\guards\\admin.guard.js.map",
+      "PackagePath": "staticwebassets\\work-management-app\\dist\\out-tsc\\app\\guards\\admin.guard.js.map"
+    },
+    {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\dist\\out-tsc\\app\\guards\\admin.guard.spec.js",
+      "PackagePath": "staticwebassets\\work-management-app\\dist\\out-tsc\\app\\guards\\admin.guard.spec.js"
+    },
+    {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\dist\\out-tsc\\app\\guards\\admin.guard.spec.js.map",
+      "PackagePath": "staticwebassets\\work-management-app\\dist\\out-tsc\\app\\guards\\admin.guard.spec.js.map"
+    },
+    {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\dist\\out-tsc\\app\\guards\\auth.guard.js",
+      "PackagePath": "staticwebassets\\work-management-app\\dist\\out-tsc\\app\\guards\\auth.guard.js"
+    },
+    {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\dist\\out-tsc\\app\\guards\\auth.guard.js.map",
+      "PackagePath": "staticwebassets\\work-management-app\\dist\\out-tsc\\app\\guards\\auth.guard.js.map"
+    },
+    {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\dist\\out-tsc\\app\\guards\\auth.guard.spec.js",
+      "PackagePath": "staticwebassets\\work-management-app\\dist\\out-tsc\\app\\guards\\auth.guard.spec.js"
+    },
+    {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\dist\\out-tsc\\app\\guards\\auth.guard.spec.js.map",
+      "PackagePath": "staticwebassets\\work-management-app\\dist\\out-tsc\\app\\guards\\auth.guard.spec.js.map"
+    },
+    {
       "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\dist\\out-tsc\\app\\login\\login.component.js",
       "PackagePath": "staticwebassets\\work-management-app\\dist\\out-tsc\\app\\login\\login.component.js"
     },
@@ -371,6 +419,38 @@
     {
       "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\tasks\\tasks.component.ts",
       "PackagePath": "staticwebassets\\work-management-app\\src\\app\\components\\tasks\\tasks.component.ts"
+    },
+    {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\user-management\\user-management.component.css",
+      "PackagePath": "staticwebassets\\work-management-app\\src\\app\\components\\user-management\\user-management.component.css"
+    },
+    {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\user-management\\user-management.component.html",
+      "PackagePath": "staticwebassets\\work-management-app\\src\\app\\components\\user-management\\user-management.component.html"
+    },
+    {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\user-management\\user-management.component.spec.ts",
+      "PackagePath": "staticwebassets\\work-management-app\\src\\app\\components\\user-management\\user-management.component.spec.ts"
+    },
+    {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\components\\user-management\\user-management.component.ts",
+      "PackagePath": "staticwebassets\\work-management-app\\src\\app\\components\\user-management\\user-management.component.ts"
+    },
+    {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\guards\\admin.guard.spec.ts",
+      "PackagePath": "staticwebassets\\work-management-app\\src\\app\\guards\\admin.guard.spec.ts"
+    },
+    {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\guards\\admin.guard.ts",
+      "PackagePath": "staticwebassets\\work-management-app\\src\\app\\guards\\admin.guard.ts"
+    },
+    {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\guards\\auth.guard.spec.ts",
+      "PackagePath": "staticwebassets\\work-management-app\\src\\app\\guards\\auth.guard.spec.ts"
+    },
+    {
+      "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\guards\\auth.guard.ts",
+      "PackagePath": "staticwebassets\\work-management-app\\src\\app\\guards\\auth.guard.ts"
     },
     {
       "Id": "E:\\Uni\\sem2\\web\\git\\workManagement\\WorkManagementApp\\WorkManagementApp\\wwwroot\\work-management-app\\src\\app\\services\\api.service.spec.ts",

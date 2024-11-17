@@ -14,6 +14,12 @@ E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\w
 E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\work-management-app\dist\out-tsc\app\components\projects\projects.component.js.map
 E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\work-management-app\dist\out-tsc\app\components\tasks\tasks.component.js
 E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\work-management-app\dist\out-tsc\app\components\tasks\tasks.component.js.map
+E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\work-management-app\dist\out-tsc\app\guards\auth.guard.js
+E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\work-management-app\dist\out-tsc\app\guards\auth.guard.js.map
+E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\work-management-app\dist\out-tsc\app\guards\admin.guard.js
+E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\work-management-app\dist\out-tsc\app\guards\admin.guard.js.map
+E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\work-management-app\dist\out-tsc\app\components\user-management\user-management.component.js
+E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\work-management-app\dist\out-tsc\app\components\user-management\user-management.component.js.map
 E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\work-management-app\dist\out-tsc\app\app.routes.js
 E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\work-management-app\dist\out-tsc\app\app.routes.js.map
 E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\work-management-app\dist\out-tsc\app\app.config.js
@@ -32,6 +38,12 @@ E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\w
 E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\work-management-app\dist\out-tsc\app\components\register\register.component.spec.js.map
 E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\work-management-app\dist\out-tsc\app\components\tasks\tasks.component.spec.js
 E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\work-management-app\dist\out-tsc\app\components\tasks\tasks.component.spec.js.map
+E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\work-management-app\dist\out-tsc\app\components\user-management\user-management.component.spec.js
+E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\work-management-app\dist\out-tsc\app\components\user-management\user-management.component.spec.js.map
+E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\work-management-app\dist\out-tsc\app\guards\admin.guard.spec.js
+E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\work-management-app\dist\out-tsc\app\guards\admin.guard.spec.js.map
+E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\work-management-app\dist\out-tsc\app\guards\auth.guard.spec.js
+E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\work-management-app\dist\out-tsc\app\guards\auth.guard.spec.js.map
 E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\work-management-app\dist\out-tsc\app\services\api.service.spec.js
 E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\work-management-app\dist\out-tsc\app\services\api.service.spec.js.map
 E:\Uni\sem2\web\git\workManagement\WorkManagementApp\WorkManagementApp\wwwroot\work-management-app\dist\out-tsc\app\services\project.service.spec.js

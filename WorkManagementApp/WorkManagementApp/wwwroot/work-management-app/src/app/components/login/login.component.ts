@@ -24,6 +24,7 @@ export class LoginComponent {
         console.log('Login successful:', response);
         sessionStorage.setItem('token', response.token);
         sessionStorage.setItem('userId', response.userId.toString());
+        this.saveCurrentUser();
         this.router.navigate(['/protected-route']);
       },
       (error) => {
@@ -31,4 +32,13 @@ export class LoginComponent {
       }
     );
   }
+
+  saveCurrentUser() {
+    this.api.getUser(Number(sessionStorage.getItem('userId'))).subscribe((response) => {
+      console.log('User:', response);
+      sessionStorage.setItem('user', JSON.stringify(response));
+    }
+    )
+  }
+
 }
